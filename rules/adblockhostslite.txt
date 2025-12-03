@@ -3,9 +3,9 @@
 # Description: 适用于 hosts 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockhostslite.txt
-# Version: 20251203164015
-# Last modified: 2025/12/03 16:40:15
-# Blocked domains: 10022
+# Version: 20251204004013
+# Last modified: 2025/12/04 00:40:13
+# Blocked domains: 10015
 #
 127.0.0.1	localhost
 127.0.0.1	localhost.localdomain
@@ -123,7 +123,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	113.31.111.76
 0.0.0.0	113.98.201.248
 0.0.0.0	1133.cc
-0.0.0.0	114.132.150.96
 0.0.0.0	114.55.106.136
 0.0.0.0	114.fm
 0.0.0.0	1.11467.com
@@ -213,7 +212,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	wanproxy.127.net
 0.0.0.0	yt-adp.nosdn.127.net
 0.0.0.0	129.204.103.151
-0.0.0.0	129.204.146.115
 0.0.0.0	129.204.254.108
 0.0.0.0	12i.cn
 0.0.0.0	133u.com
@@ -512,7 +510,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	39.103.217.92
 0.0.0.0	39.104.161.178
 0.0.0.0	39.105.165.37
-0.0.0.0	39.107.242.125
 0.0.0.0	39.107.85.83
 0.0.0.0	abody.39.net
 0.0.0.0	app-g.39.net
@@ -894,7 +891,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	88shu.cn
 0.0.0.0	89757.net
 0.0.0.0	8989u.com
-0.0.0.0	89f321d32156.top
 0.0.0.0	8ao8ao.com
 0.0.0.0	8ff0.cn
 0.0.0.0	8gl.com.cn
@@ -992,11 +988,9 @@ ff02::3	ip6-allhosts
 0.0.0.0	app.9yyg.cn
 0.0.0.0	a-peeloffsexvip.com
 0.0.0.0	a0c77.com
-0.0.0.0	a1643383982.top
 0.0.0.0	tgd.a1eg07.cn
 0.0.0.0	a2m.cn
 0.0.0.0	a32a.com.cn
-0.0.0.0	a360053476.xyz
 0.0.0.0	a395813236.cn
 0.0.0.0	a3p4.net
 0.0.0.0	a48505.cn
@@ -2406,7 +2400,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	moa-upload-online-in.coloros.com
 0.0.0.0	smartcard.apps.coloros.com
 0.0.0.0	com5.com.cn
-0.0.0.0	m.comberry.cn
 0.0.0.0	commander1.com
 0.0.0.0	commandersact.com
 0.0.0.0	trk.compair.com.cn
