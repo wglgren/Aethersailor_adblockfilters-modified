@@ -3,9 +3,9 @@
 # Description: 适用于 hosts 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockhostslite.txt
-# Version: 20251204164010
-# Last modified: 2025/12/04 16:40:10
-# Blocked domains: 10364
+# Version: 20251205004115
+# Last modified: 2025/12/05 00:41:15
+# Blocked domains: 10307
 #
 127.0.0.1	localhost
 127.0.0.1	localhost.localdomain
@@ -135,12 +135,10 @@ ff02::3	ip6-allhosts
 0.0.0.0	115.55.206.13
 0.0.0.0	appversion.115.com
 0.0.0.0	115fx.com
-0.0.0.0	116.198.233.179
 0.0.0.0	116.62.226.163
 0.0.0.0	117.157.17.194
 0.0.0.0	117.50.194.20
 0.0.0.0	117.72.102.110
-0.0.0.0	117.72.222.203
 0.0.0.0	118.25.68.152
 0.0.0.0	118.25.85.198
 0.0.0.0	118.31.18.77
@@ -148,7 +146,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	1188.com
 0.0.0.0	11888vip.cn
 0.0.0.0	bj1.118pan.com
-0.0.0.0	119.29.183.182
 0.0.0.0	119.45.161.174
 0.0.0.0	12-daysofxmas.com
 0.0.0.0	120.24.64.74
@@ -579,7 +576,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	4009997658.com
 0.0.0.0	m.408uo.cn
 0.0.0.0	42.192.49.146
-0.0.0.0	42.230.55.66
 0.0.0.0	426g.com
 0.0.0.0	43.138.28.205
 0.0.0.0	43.226.39.44
@@ -779,7 +775,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	60999.cn
 0.0.0.0	609999.xyz
 0.0.0.0	ee.60w3s.cn
-0.0.0.0	61.183.16.127
 0.0.0.0	61165.com
 0.0.0.0	6119.com.cn
 0.0.0.0	612100.cn
@@ -879,10 +874,8 @@ ff02::3	ip6-allhosts
 0.0.0.0	8.137.114.210
 0.0.0.0	8.137.149.67
 0.0.0.0	8.138.182.17
-0.0.0.0	8.148.237.33
 0.0.0.0	8.148.5.67
 0.0.0.0	8.153.97.202
-0.0.0.0	8.155.161.181
 0.0.0.0	8020home.com.cn
 0.0.0.0	www.805m.com
 0.0.0.0	a.80982.org
@@ -1324,7 +1317,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	errors.aliyun.com
 0.0.0.0	update.aegis.aliyun.com
 0.0.0.0	9-8.oss-cn-hangzhou.aliyuncs.com
-0.0.0.0	ac9olrggo8-default-cn.rum.aliyuncs.com
 0.0.0.0	ad-host-backup-america.oss-us-west-1.aliyuncs.com
 0.0.0.0	ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com
 0.0.0.0	ad-host-backup-europe.oss-eu-central-1.aliyuncs.com
@@ -3877,7 +3869,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	datareportapi.hbooker.com
 0.0.0.0	sensorsdata.hbooker.com
 0.0.0.0	hbqabbg.cn
-0.0.0.0	hbsjx.sh.cn
 0.0.0.0	hbyinzhibao.cn
 0.0.0.0	hbykfswz.com
 0.0.0.0	hbymfswz.com
@@ -5836,7 +5827,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	m.mxguan.com
 0.0.0.0	my-hr.cn
 0.0.0.0	fdc.my0511.com
-0.0.0.0	ads.api.my7v.com
 0.0.0.0	hwads-t.api.my7v.com
 0.0.0.0	apiyd.my91app.com
 0.0.0.0	myad.cn
@@ -6587,7 +6577,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	dn-growing.qbox.me
 0.0.0.0	uplog.qbox.me
 0.0.0.0	qbxbrv.cn
-0.0.0.0	log.qcast.cn
 0.0.0.0	qchannel04.cn
 0.0.0.0	qcjslm.com
 0.0.0.0	bugly.qcloud.com
@@ -7362,7 +7351,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	hm.e.shifen.com
 0.0.0.0	httpdns.n.shifen.com
 0.0.0.0	jpaasne.e.shifen.com
-0.0.0.0	shihe.cn
 0.0.0.0	statichf.shihuocdn.cn
 0.0.0.0	shijixinrui.cn
 0.0.0.0	shilian168.cn
@@ -7370,7 +7358,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	c.shishishiguixinfangfuzhuangshanghan.cn
 0.0.0.0	v.shishishiguixinfangfuzhuangshanghan.cn
 0.0.0.0	shisui.net.cn
-0.0.0.0	analysis.shixunsuda.com
 0.0.0.0	shjjwl.cn
 0.0.0.0	shlutianlp.com
 0.0.0.0	shoesonlinebuy.cn
@@ -7400,7 +7387,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	sigao.cn
 0.0.0.0	sigmob.com
 0.0.0.0	smetrics.marketing.signify.com.cn
-0.0.0.0	signtu.cn
 0.0.0.0	siguatv.cn
 0.0.0.0	sikncs.com
 0.0.0.0	silurian.cn
@@ -7514,7 +7500,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	skicc.cn
 0.0.0.0	c.skwenq.cn
 0.0.0.0	v.skwenq.cn
-0.0.0.0	clog.skysrt.com
 0.0.0.0	skytec.com.cn
 0.0.0.0	sljkj.com
 0.0.0.0	m.slshiye.cn
@@ -8379,7 +8364,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	uk8866.cn
 0.0.0.0	uknjma.cn
 0.0.0.0	e.uksnyf.cn
-0.0.0.0	countly.ulanzistudio.com
 0.0.0.0	uldaens.com
 0.0.0.0	ultrapay.net
 0.0.0.0	um1.cn
@@ -8895,91 +8879,51 @@ ff02::3	ip6-allhosts
 0.0.0.0	mbs.weathercn.com
 0.0.0.0	zgzxm.weathercn.com
 0.0.0.0	zgzxs.weathercn.com
-0.0.0.0	web-aik-cn-whatsapp.com.cn
 0.0.0.0	web-asc-cn-whatsapp.com.cn
 0.0.0.0	web-ayk-cn-whatsapp.com.cn
-0.0.0.0	web-ayw-cn-whatsapp.com.cn
 0.0.0.0	web-cgm-cn-whatsapp.com.cn
-0.0.0.0	web-ckm-cn-whatsapp.com.cn
 0.0.0.0	web-cug-cn-whatsapp.com.cn
-0.0.0.0	web-cyy-cn-whatsapp.com.cn
 0.0.0.0	web-eae-cn-whatsapp.com.cn
-0.0.0.0	web-eko-cn-whatsapp.com.cn
-0.0.0.0	web-ems-cn-whatsapp.com.cn
 0.0.0.0	web-eoa-cn-whatsapp.com.cn
-0.0.0.0	web-eoo-cn-whatsapp.com.cn
-0.0.0.0	web-esa-cn-whatsapp.com.cn
 0.0.0.0	web-ewc-cn-whatsapp.com.cn
-0.0.0.0	web-eya-cn-whatsapp.com.cn
-0.0.0.0	web-eyg-cn-whatsapp.com.cn
 0.0.0.0	web-fbb-cn-whatsapp.com.cn
 0.0.0.0	web-ffh-cn-whatsapp.com.cn
-0.0.0.0	web-fxb-cn-whatsapp.com.cn
 0.0.0.0	web-fxh-cn-whatsapp.com.cn
 0.0.0.0	web-ggu-cn-whatsapp.com.cn
 0.0.0.0	web-ieg-cn-whatsapp.com.cn
 0.0.0.0	web-iuy-cn-whatsapp.com.cn
-0.0.0.0	web-iwq-cn-whatsapp.com.cn
-0.0.0.0	web-iyk-cn-whatsapp.com.cn
 0.0.0.0	web-kou-cn-whatsapp.com.cn
 0.0.0.0	web-kyy-cn-whatsapp.com.cn
 0.0.0.0	web-lfj-cn-whatsapp.com.cn
 0.0.0.0	web-mgo-cn-whatsapp.com.cn
-0.0.0.0	web-mke-cn-whatsapp.com.cn
-0.0.0.0	web-moc-cn-whatsapp.com.cn
 0.0.0.0	web-moi-cn-whatsapp.com.cn
-0.0.0.0	web-mym-cn-whatsapp.com.cn
 0.0.0.0	web-oau-cn-whatsapp.com.cn
-0.0.0.0	web-oeg-cn-whatsapp.com.cn
-0.0.0.0	web-ogm-cn-whatsapp.com.cn
 0.0.0.0	web-oii-cn-whatsapp.com.cn
 0.0.0.0	web-oka-cn-whatsapp.com.cn
-0.0.0.0	web-oow-cn-whatsapp.com.cn
-0.0.0.0	web-osa-cn-whatsapp.com.cn
 0.0.0.0	web-osg-cn-whatsapp.com.cn
-0.0.0.0	web-oss-cn-whatsapp.com.cn
 0.0.0.0	web-owo-cn-whatsapp.com.cn
-0.0.0.0	web-prb-cn-whatsapp.com.cn
-0.0.0.0	web-prv-cn-whatsapp.com.cn
-0.0.0.0	web-qag-cn-whatsapp.com.cn
 0.0.0.0	web-qcc-cn-whatsapp.com.cn
 0.0.0.0	web-qcw-cn-whatsapp.com.cn
-0.0.0.0	web-qis-cn-whatsapp.com.cn
 0.0.0.0	web-qmy-cn-whatsapp.com.cn
 0.0.0.0	web-qqi-cn-whatsapp.com.cn
-0.0.0.0	web-qqy-cn-whatsapp.com.cn
 0.0.0.0	web-qwa-cn-whatsapp.com.cn
 0.0.0.0	web-qwi-cn-whatsapp.com.cn
 0.0.0.0	web-qyc-cn-whatsapp.com.cn
 0.0.0.0	web-rbt-cn-whatsapp.com.cn
 0.0.0.0	web-rlf-cn-whatsapp.com.cn
-0.0.0.0	web-rxb-cn-whatsapp.com.cn
 0.0.0.0	web-sec-cn-whatsapp.com.cn
 0.0.0.0	web-seq-cn-whatsapp.com.cn
 0.0.0.0	web-sgu-cn-whatsapp.com.cn
 0.0.0.0	web-sog-cn-whatsapp.com.cn
-0.0.0.0	web-sqe-cn-whatsapp.com.cn
 0.0.0.0	web-tjf-cn-whatsapp.com.cn
-0.0.0.0	web-txl-cn-whatsapp.com.cn
 0.0.0.0	web-ucg-cn-whatsapp.com.cn
-0.0.0.0	web-uew-cn-whatsapp.com.cn
-0.0.0.0	web-ukc-cn-whatsapp.com.cn
 0.0.0.0	web-wia-cn-whatsapp.com.cn
-0.0.0.0	web-wmq-cn-whatsapp.com.cn
-0.0.0.0	web-wsq-cn-whatsapp.com.cn
 0.0.0.0	web-xdj-cn-whatsapp.com.cn
-0.0.0.0	web-xfp-cn-whatsapp.com.cn
 0.0.0.0	web-xnz-cn-whatsapp.com.cn
-0.0.0.0	web-xpv-cn-whatsapp.com.cn
 0.0.0.0	web-yaa-cn-whatsapp.com.cn
 0.0.0.0	web-yao-cn-whatsapp.com.cn
 0.0.0.0	web-yay-cn-whatsapp.com.cn
-0.0.0.0	web-yci-cn-whatsapp.com.cn
-0.0.0.0	web-yga-cn-whatsapp.com.cn
-0.0.0.0	web-ykw-cn-whatsapp.com.cn
-0.0.0.0	web-yom-cn-whatsapp.com.cn
 0.0.0.0	web-yqk-cn-whatsapp.com.cn
-0.0.0.0	web-yuq-cn-whatsapp.com.cn
 0.0.0.0	mall.web0312.cn
 0.0.0.0	web2u.cn
 0.0.0.0	web3cdn.cn
@@ -9985,7 +9929,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	yrwap.cn
 0.0.0.0	ys630.com
 0.0.0.0	ys6ot.cn
-0.0.0.0	ad-material.ys7.com
 0.0.0.0	log.ys7.com
 0.0.0.0	ysdqww.com
 0.0.0.0	ysgsq.cn
