@@ -3,9 +3,9 @@
 # Description: 适用于 hosts 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockhostslite.txt
-# Version: 20251204004013
-# Last modified: 2025/12/04 00:40:13
-# Blocked domains: 10015
+# Version: 20251204101041
+# Last modified: 2025/12/04 10:10:41
+# Blocked domains: 9997
 #
 127.0.0.1	localhost
 127.0.0.1	localhost.localdomain
@@ -136,8 +136,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	117.157.17.194
 0.0.0.0	117.50.194.20
 0.0.0.0	117.72.102.110
-0.0.0.0	117.72.206.39
-0.0.0.0	118.178.133.241
 0.0.0.0	118.25.68.152
 0.0.0.0	118.25.85.198
 0.0.0.0	118.31.18.77
@@ -146,7 +144,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	11888vip.cn
 0.0.0.0	bj1.118pan.com
 0.0.0.0	119.45.161.174
-0.0.0.0	119.91.141.214
 0.0.0.0	12-daysofxmas.com
 0.0.0.0	120.24.64.74
 0.0.0.0	120.25.163.165
@@ -212,6 +209,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	wanproxy.127.net
 0.0.0.0	yt-adp.nosdn.127.net
 0.0.0.0	129.204.103.151
+0.0.0.0	129.204.146.115
 0.0.0.0	129.204.254.108
 0.0.0.0	12i.cn
 0.0.0.0	133u.com
@@ -290,12 +288,10 @@ ff02::3	ip6-allhosts
 0.0.0.0	17dk.com
 0.0.0.0	vstlog.17u.cn
 0.0.0.0	17zheng.cn
-0.0.0.0	180.76.153.78
 0.0.0.0	1816soso.com
 0.0.0.0	eezdx.erc.18183.com
 0.0.0.0	img1.18183.com
 0.0.0.0	zpe.klre.18183.com
-0.0.0.0	182.113.1.235
 0.0.0.0	182.113.12.243
 0.0.0.0	182.92.99.95
 0.0.0.0	webwebfenxi.189.cn
@@ -847,7 +843,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	8.137.149.67
 0.0.0.0	8.138.182.17
 0.0.0.0	8.148.5.67
-0.0.0.0	8.153.205.30
 0.0.0.0	8.153.97.202
 0.0.0.0	8.155.161.181
 0.0.0.0	8020home.com.cn
@@ -1427,7 +1422,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	anquan.org
 0.0.0.0	antarangfashion.com
 0.0.0.0	api.antibanads.com
-0.0.0.0	maintain.antiquels.cn
 0.0.0.0	antithesis.cn
 0.0.0.0	bu.antutu.net
 0.0.0.0	srtj.antutu.net
@@ -2437,7 +2431,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	s.coveredsys.cn
 0.0.0.0	cpanclean.cn
 0.0.0.0	cpc.cc
-0.0.0.0	cpqhd.cn
 0.0.0.0	m.cqbaitong.cn
 0.0.0.0	cqfrcgw.cn
 0.0.0.0	cqfxcgw.cn
@@ -3007,7 +3000,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	c2vydmvydxbkyxri-kte1fxva3p.edgeone.app
 0.0.0.0	chrisbenoitkane.edgeone.app
 0.0.0.0	earthewndegtheyased.edgeone.app
-0.0.0.0	formulario-registro-firma-v9l4k3kmhu.edgeone.app
 0.0.0.0	hkz2311011313001-l5deuphxox.edgeone.app
 0.0.0.0	hq-cpanel-uptime-upgrade-hnrv61j7if.edgeone.app
 0.0.0.0	pointball-llvwkkfsoo.edgeone.app
@@ -3608,7 +3600,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	gsfcloud.com
 0.0.0.0	logs.gshopper.com
 0.0.0.0	stat.gspaceteam.com
-0.0.0.0	gsshz.cn
 0.0.0.0	csi.gstatic.com
 0.0.0.0	gszbba.cn
 0.0.0.0	gt8bv.com
@@ -3989,7 +3980,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	hnol.net
 0.0.0.0	protection.hnpolice.com
 0.0.0.0	hnwlyy.com.cn
-0.0.0.0	hnwydgw.cn
 0.0.0.0	hnwzbjt.cn
 0.0.0.0	hnwzdsm.cn
 0.0.0.0	hnxxt.net
@@ -4970,7 +4960,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	open.kwaizt.com
 0.0.0.0	kwdgudw.cn
 0.0.0.0	xg.kxapctq.cn
-0.0.0.0	www3-vpass.kxevl.cn
 0.0.0.0	ky595images.com
 0.0.0.0	kychq.cn
 0.0.0.0	vpass-jp.kysat.cn
@@ -5627,7 +5616,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	moonwish.com.cn
 0.0.0.0	cdnjs.mopair-erm.net
 0.0.0.0	moquanad.com
-0.0.0.0	maintain.mos-gov.cn
 0.0.0.0	motsjnv.cn
 0.0.0.0	motuopj.cn
 0.0.0.0	elq.mouser.cn
@@ -5648,7 +5636,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	c.msn.com.cn
 0.0.0.0	livewebbs2pcdn.msstatic.com
 0.0.0.0	pp-cdnfile1pcdn.msstatic.com
-0.0.0.0	vpass-jp.mtehz.cn
 0.0.0.0	mthhhuq.cn
 0.0.0.0	advert.mting.info
 0.0.0.0	x.mtrend.cn
@@ -5825,7 +5812,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	ad.newzgc.com
 0.0.0.0	nfsq6888.com
 0.0.0.0	eo.nftqkq.cn
-0.0.0.0	nggerxr.cn
 0.0.0.0	ngmco.net
 0.0.0.0	vpass-jp.nherf.cn
 0.0.0.0	nhfpdc.cn
@@ -6377,7 +6363,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	pig.pupuapi.com
 0.0.0.0	analytics.pushgrid.net
 0.0.0.0	ums.pushpia.cn
-0.0.0.0	vpass-jp.pwjho.cn
 0.0.0.0	atttp123.pwns.fun
 0.0.0.0	bbb.pwwbr.cn
 0.0.0.0	img.py69.cn
@@ -6762,7 +6747,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	a.qunzou.com
 0.0.0.0	qutaovip.com
 0.0.0.0	ad.quwin.cn
-0.0.0.0	quwiq.cn
 0.0.0.0	vn-ebay.quxlpuj.cn
 0.0.0.0	quyaoya.com
 0.0.0.0	c.qv566.cn
@@ -6869,7 +6853,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	rkzby.cn
 0.0.0.0	rljjt.cn
 0.0.0.0	rmlvjtf.cn
-0.0.0.0	efozbk.rmrglpf.cn
 0.0.0.0	wgnydrsvtn.rmrglpf.cn
 0.0.0.0	rnqkf.cn
 0.0.0.0	kmpl.rnqxp.cn
@@ -8224,7 +8207,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	vpass-jp.vbfbk.cn
 0.0.0.0	log.vcgame.cn
 0.0.0.0	kmr.vcunkbo.cn
-0.0.0.0	vczjb.cn
 0.0.0.0	vegaschina.cn
 0.0.0.0	vegent.cn
 0.0.0.0	vengood.com
