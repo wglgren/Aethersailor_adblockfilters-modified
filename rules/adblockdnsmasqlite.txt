@@ -3,9 +3,9 @@
 # Description: 适用于 DNSMasq 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnsmasqlite.txt
-# Version: 20251206003750
-# Last modified: 2025/12/06 00:37:50
-# Blocked domains: 10177
+# Version: 20251206100410
+# Last modified: 2025/12/06 10:04:10
+# Blocked domains: 10170
 #
 local=/395131115419474531.002.sh.cn/
 local=/005555.com/
@@ -103,11 +103,11 @@ local=/110.40.199.21/
 local=/v.110route.cn/
 local=/ytx-file.110route.cn/
 local=/1.11130.com.cn/
-local=/112.18.10.80/
 local=/oss-asq-static.11222.cn/
 local=/113.31.111.76/
 local=/113.98.201.248/
 local=/1133.cc/
+local=/114.132.150.96/
 local=/114.55.106.136/
 local=/114.fm/
 local=/1.11467.com/
@@ -116,16 +116,15 @@ local=/115.190.235.92/
 local=/appversion.115.com/
 local=/tg.1155t.cn/
 local=/115fx.com/
+local=/116.198.233.179/
 local=/116.62.226.163/
 local=/117.157.17.194/
 local=/117.50.194.20/
 local=/117.72.102.110/
 local=/117.72.206.39/
-local=/117.72.222.203/
 local=/118.178.133.241/
 local=/118.25.68.152/
 local=/118.25.85.198/
-local=/118.31.18.77/
 local=/118678.com/
 local=/1188.com/
 local=/11888vip.cn/
@@ -135,7 +134,6 @@ local=/119.91.141.214/
 local=/12-daysofxmas.com/
 local=/120.24.64.74/
 local=/120.25.163.165/
-local=/120.46.212.33/
 local=/120.48.50.33/
 local=/120.79.192.88/
 local=/120.79.255.238/
@@ -587,7 +585,6 @@ local=/47.116.208.81/
 local=/47.120.70.161/
 local=/47.121.137.8/
 local=/47.93.28.103/
-local=/47.97.113.42/
 local=/47.98.224.91/
 local=/m.479db.cn/
 local=/49.234.46.15/
@@ -856,6 +853,7 @@ local=/8.134.51.218/
 local=/8.137.114.210/
 local=/8.137.149.67/
 local=/8.138.182.17/
+local=/8.153.205.30/
 local=/8.153.97.202/
 local=/8020home.com.cn/
 local=/www.805m.com/
@@ -1479,7 +1477,6 @@ local=/aptean.cn/
 local=/track.aqara.com/
 local=/track-ger.aqara.com/
 local=/aqgyju.cn/
-local=/aqianniao.com/
 local=/aqw886.cn/
 local=/arealx.com/
 local=/arewcdf116.cn/
@@ -3031,7 +3028,6 @@ local=/eddong.com/
 local=/c2vydmvydxbkyxri-kte1fxva3p.edgeone.app/
 local=/chrisbenoitkane.edgeone.app/
 local=/earthewndegtheyased.edgeone.app/
-local=/generalupdatedaccountforik-mz58u7ztid.edgeone.app/
 local=/hkz2311011313001-l5deuphxox.edgeone.app/
 local=/hq-cpanel-uptime-upgrade-hnrv61j7if.edgeone.app/
 local=/pointball-llvwkkfsoo.edgeone.app/
@@ -5114,7 +5110,6 @@ local=/kychq.cn/
 local=/vpass-jp.kysat.cn/
 local=/www3-vpass.kysat.cn/
 local=/c.kyvhxik.cn/
-local=/v.kyvhxik.cn/
 local=/kzdh.com/
 local=/e.kzwsh.cn/
 local=/go.eml.l-com.cn/
@@ -5968,7 +5963,6 @@ local=/da.netease.com/
 local=/httpdns-sdk.n.netease.com/
 local=/httpdns.n.netease.com/
 local=/hubble.netease.com/
-local=/m.analytics.126.net.split.ntes53.netease.com/
 local=/mam.netease.com/
 local=/pr.nss.netease.com/
 local=/statis.push.netease.com/
@@ -6075,7 +6069,6 @@ local=/vpass-jp.oegdcn.cn/
 local=/oemka.com/
 local=/07f4acdef99b.ofalias.net/
 local=/offerstrack.net/
-local=/officechair.com.cn/
 local=/officehouse.cn/
 local=/officelearn.cn/
 local=/officeme.cn/
