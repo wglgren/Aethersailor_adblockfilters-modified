@@ -10,8 +10,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025/12/09 16:40:58
-#!support=10212
+#!date=2025/12/10 00:38:00
+#!support=10197
 #!proxy-select=REJECT-DROP
 #
 .395131115419474531.002.sh.cn
@@ -92,7 +92,6 @@
 .106.75.224.31
 .adm.10jqka.com.cn
 .stat.10jqka.com.cn
-.110.40.199.21
 .v.110route.cn
 .ytx-file.110route.cn
 .soft.110route.com
@@ -123,7 +122,6 @@
 .1188.com
 .bj1.118pan.com
 .119.45.161.174
-.119.91.141.214
 .12-daysofxmas.com
 .120.24.64.74
 .120.25.163.165
@@ -707,7 +705,6 @@
 .58tg.com
 .58xiao.cn
 .59.110.28.230
-.59.59.6.86
 .595image.com
 .59cn.cn
 .59gt.cn
@@ -1440,7 +1437,6 @@
 .apkevery.com
 .aplhz.com
 .app-analytics-services.com
-.app-cn-telegram.com.cn
 .app-measurement-cn.com
 .app-measurement.com
 .tongji.app111.com
@@ -2424,7 +2420,6 @@
 .coenprz.cn
 .cogitoai.cn
 .interactivoebrokers-com.coin888.cn
-.coinbaseb.com.cn
 .plausible.coinglass.com
 .coix1.cn
 .colago.cn
@@ -2988,7 +2983,7 @@
 .dw365.cn
 .dweixin.cn
 .tr.dwjq.com.cn
-.dwstat.cn
+.cn01.dwstat.cn
 .untitled.dwstatic.com
 .dxline.cn
 .dxpmedia.com
@@ -3161,7 +3156,6 @@
 .log.ergeduoduo.com
 .erlpbwy.cn
 .www3-vpass.ernlp.cn
-.erun-tech.com
 .eternocorevia.net
 .ethan.wang
 .zghn.ethereh.cn
@@ -4449,7 +4443,6 @@
 .sha.ikwb.com
 .ilkwork.com
 .smetrics.illumina.com.cn
-.ilmxs.com
 .metrics.ilovematlab.cn
 .smetrics.ilovematlab.cn
 .imageter.com
@@ -4745,7 +4738,6 @@
 .jiehunmishu.com
 .api.jietuhb.com
 .jiezoiq.cn
-.www3-vpass.jigfo.cn
 .jiguang.cn
 .jihehuaban.com.cn
 .target.ads.jihuoniao.com
@@ -4942,7 +4934,6 @@
 .kgm-gov-co.me
 .kgm-gov-tt.me
 .kgm-govtr.me
-.kgmgvioz.cc
 .kgmsdgov.pics
 .mail.kguapp.com
 .e.kguaq.com
@@ -5385,7 +5376,6 @@
 .192168.luyouwang.com
 .luyouxia.net
 .lvxingxian.cn
-.tk.lvxrf38.cn
 .wxapp.lvyadx.cn
 .lwfw88.cn
 .lwhhpj.cn
@@ -6529,7 +6519,6 @@
 .ums.pushpia.cn
 .pusure.com
 .pv4b.com
-.pvjlp.cn
 .pvkc.cn
 .pwdigital.cn
 .atttp123.pwns.fun
@@ -8875,7 +8864,6 @@
 .wflight.cn
 .m.wgewj.cn
 .wgnpq.com
-.wh-telegram.com.cn
 .whaleclean.cn
 .whalecloud.com
 .whalecpan.cn
@@ -9905,7 +9893,6 @@
 .yymobilegame.game.yy.com
 .yylady.cn
 .krq.yymmsd.cn
-.www3-vpass.yymuga.cn
 .adapi.yynetwk.com
 .yystzl.cn
 .yyw114.cn
@@ -9979,9 +9966,7 @@
 .zgwcvx.cn
 .1234.zgxue.com
 .td.zgxue.com
-.zh-cn-telegramtg.com.cn
 .zh-imtoken.cn
-.m.zh-imtoken.org.cn
 .zh-wo-whatsapp.com.cn
 .zhads.com
 .tfs.zhamm.cn

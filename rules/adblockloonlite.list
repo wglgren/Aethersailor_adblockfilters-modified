@@ -7,8 +7,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025/12/09 16:40:58
-#!support=10212
+#!date=2025/12/10 00:38:00
+#!support=10197
 #!proxy-select=REJECT
 #
 DOMAIN-SUFFIX,395131115419474531.002.sh.cn
@@ -89,7 +89,6 @@ DOMAIN-SUFFIX,106.54.244.136
 DOMAIN-SUFFIX,106.75.224.31
 DOMAIN-SUFFIX,adm.10jqka.com.cn
 DOMAIN-SUFFIX,stat.10jqka.com.cn
-DOMAIN-SUFFIX,110.40.199.21
 DOMAIN-SUFFIX,v.110route.cn
 DOMAIN-SUFFIX,ytx-file.110route.cn
 DOMAIN-SUFFIX,soft.110route.com
@@ -120,7 +119,6 @@ DOMAIN-SUFFIX,118678.com
 DOMAIN-SUFFIX,1188.com
 DOMAIN-SUFFIX,bj1.118pan.com
 DOMAIN-SUFFIX,119.45.161.174
-DOMAIN-SUFFIX,119.91.141.214
 DOMAIN-SUFFIX,12-daysofxmas.com
 DOMAIN-SUFFIX,120.24.64.74
 DOMAIN-SUFFIX,120.25.163.165
@@ -704,7 +702,6 @@ DOMAIN-SUFFIX,analytics.58pic.com
 DOMAIN-SUFFIX,58tg.com
 DOMAIN-SUFFIX,58xiao.cn
 DOMAIN-SUFFIX,59.110.28.230
-DOMAIN-SUFFIX,59.59.6.86
 DOMAIN-SUFFIX,595image.com
 DOMAIN-SUFFIX,59cn.cn
 DOMAIN-SUFFIX,59gt.cn
@@ -1437,7 +1434,6 @@ DOMAIN-SUFFIX,us-behavior.apitd.net
 DOMAIN-SUFFIX,apkevery.com
 DOMAIN-SUFFIX,aplhz.com
 DOMAIN-SUFFIX,app-analytics-services.com
-DOMAIN-SUFFIX,app-cn-telegram.com.cn
 DOMAIN-SUFFIX,app-measurement-cn.com
 DOMAIN-SUFFIX,app-measurement.com
 DOMAIN-SUFFIX,tongji.app111.com
@@ -2421,7 +2417,6 @@ DOMAIN-SUFFIX,reportwest-midas.codmwest.com
 DOMAIN-SUFFIX,coenprz.cn
 DOMAIN-SUFFIX,cogitoai.cn
 DOMAIN-SUFFIX,interactivoebrokers-com.coin888.cn
-DOMAIN-SUFFIX,coinbaseb.com.cn
 DOMAIN-SUFFIX,plausible.coinglass.com
 DOMAIN-SUFFIX,coix1.cn
 DOMAIN-SUFFIX,colago.cn
@@ -2985,7 +2980,7 @@ DOMAIN-SUFFIX,dvzk66.cn
 DOMAIN-SUFFIX,dw365.cn
 DOMAIN-SUFFIX,dweixin.cn
 DOMAIN-SUFFIX,tr.dwjq.com.cn
-DOMAIN-SUFFIX,dwstat.cn
+DOMAIN-SUFFIX,cn01.dwstat.cn
 DOMAIN-SUFFIX,untitled.dwstatic.com
 DOMAIN-SUFFIX,dxline.cn
 DOMAIN-SUFFIX,dxpmedia.com
@@ -3158,7 +3153,6 @@ DOMAIN-SUFFIX,ergeapp.com
 DOMAIN-SUFFIX,log.ergeduoduo.com
 DOMAIN-SUFFIX,erlpbwy.cn
 DOMAIN-SUFFIX,www3-vpass.ernlp.cn
-DOMAIN-SUFFIX,erun-tech.com
 DOMAIN-SUFFIX,eternocorevia.net
 DOMAIN-SUFFIX,ethan.wang
 DOMAIN-SUFFIX,zghn.ethereh.cn
@@ -4446,7 +4440,6 @@ DOMAIN-SUFFIX,ikunikun.xyz
 DOMAIN-SUFFIX,sha.ikwb.com
 DOMAIN-SUFFIX,ilkwork.com
 DOMAIN-SUFFIX,smetrics.illumina.com.cn
-DOMAIN-SUFFIX,ilmxs.com
 DOMAIN-SUFFIX,metrics.ilovematlab.cn
 DOMAIN-SUFFIX,smetrics.ilovematlab.cn
 DOMAIN-SUFFIX,imageter.com
@@ -4742,7 +4735,6 @@ DOMAIN-SUFFIX,soft.jiegeng.com
 DOMAIN-SUFFIX,jiehunmishu.com
 DOMAIN-SUFFIX,api.jietuhb.com
 DOMAIN-SUFFIX,jiezoiq.cn
-DOMAIN-SUFFIX,www3-vpass.jigfo.cn
 DOMAIN-SUFFIX,jiguang.cn
 DOMAIN-SUFFIX,jihehuaban.com.cn
 DOMAIN-SUFFIX,target.ads.jihuoniao.com
@@ -4939,7 +4931,6 @@ DOMAIN-SUFFIX,kfpnqug.cn
 DOMAIN-SUFFIX,kgm-gov-co.me
 DOMAIN-SUFFIX,kgm-gov-tt.me
 DOMAIN-SUFFIX,kgm-govtr.me
-DOMAIN-SUFFIX,kgmgvioz.cc
 DOMAIN-SUFFIX,kgmsdgov.pics
 DOMAIN-SUFFIX,mail.kguapp.com
 DOMAIN-SUFFIX,e.kguaq.com
@@ -5382,7 +5373,6 @@ DOMAIN-SUFFIX,lustsexloveclub.vip
 DOMAIN-SUFFIX,192168.luyouwang.com
 DOMAIN-SUFFIX,luyouxia.net
 DOMAIN-SUFFIX,lvxingxian.cn
-DOMAIN-SUFFIX,tk.lvxrf38.cn
 DOMAIN-SUFFIX,wxapp.lvyadx.cn
 DOMAIN-SUFFIX,lwfw88.cn
 DOMAIN-SUFFIX,lwhhpj.cn
@@ -6526,7 +6516,6 @@ DOMAIN-SUFFIX,analytics.pushgrid.net
 DOMAIN-SUFFIX,ums.pushpia.cn
 DOMAIN-SUFFIX,pusure.com
 DOMAIN-SUFFIX,pv4b.com
-DOMAIN-SUFFIX,pvjlp.cn
 DOMAIN-SUFFIX,pvkc.cn
 DOMAIN-SUFFIX,pwdigital.cn
 DOMAIN-SUFFIX,atttp123.pwns.fun
@@ -8872,7 +8861,6 @@ DOMAIN-SUFFIX,wfbdjl.cn
 DOMAIN-SUFFIX,wflight.cn
 DOMAIN-SUFFIX,m.wgewj.cn
 DOMAIN-SUFFIX,wgnpq.com
-DOMAIN-SUFFIX,wh-telegram.com.cn
 DOMAIN-SUFFIX,whaleclean.cn
 DOMAIN-SUFFIX,whalecloud.com
 DOMAIN-SUFFIX,whalecpan.cn
@@ -9902,7 +9890,6 @@ DOMAIN-SUFFIX,stat.game.yy.com
 DOMAIN-SUFFIX,yymobilegame.game.yy.com
 DOMAIN-SUFFIX,yylady.cn
 DOMAIN-SUFFIX,krq.yymmsd.cn
-DOMAIN-SUFFIX,www3-vpass.yymuga.cn
 DOMAIN-SUFFIX,adapi.yynetwk.com
 DOMAIN-SUFFIX,yystzl.cn
 DOMAIN-SUFFIX,yyw114.cn
@@ -9976,9 +9963,7 @@ DOMAIN-SUFFIX,zgunion.cn
 DOMAIN-SUFFIX,zgwcvx.cn
 DOMAIN-SUFFIX,1234.zgxue.com
 DOMAIN-SUFFIX,td.zgxue.com
-DOMAIN-SUFFIX,zh-cn-telegramtg.com.cn
 DOMAIN-SUFFIX,zh-imtoken.cn
-DOMAIN-SUFFIX,m.zh-imtoken.org.cn
 DOMAIN-SUFFIX,zh-wo-whatsapp.com.cn
 DOMAIN-SUFFIX,zhads.com
 DOMAIN-SUFFIX,tfs.zhamm.cn

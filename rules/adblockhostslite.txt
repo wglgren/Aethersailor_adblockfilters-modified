@@ -3,9 +3,9 @@
 # Description: 适用于 hosts 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockhostslite.txt
-# Version: 20251209164058
-# Last modified: 2025/12/09 16:40:58
-# Blocked domains: 10212
+# Version: 20251210003759
+# Last modified: 2025/12/10 00:37:59
+# Blocked domains: 10197
 #
 127.0.0.1	localhost
 127.0.0.1	localhost.localdomain
@@ -100,7 +100,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	106.75.224.31
 0.0.0.0	adm.10jqka.com.cn
 0.0.0.0	stat.10jqka.com.cn
-0.0.0.0	110.40.199.21
 0.0.0.0	v.110route.cn
 0.0.0.0	ytx-file.110route.cn
 0.0.0.0	soft.110route.com
@@ -131,7 +130,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	1188.com
 0.0.0.0	bj1.118pan.com
 0.0.0.0	119.45.161.174
-0.0.0.0	119.91.141.214
 0.0.0.0	12-daysofxmas.com
 0.0.0.0	120.24.64.74
 0.0.0.0	120.25.163.165
@@ -715,7 +713,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	58tg.com
 0.0.0.0	58xiao.cn
 0.0.0.0	59.110.28.230
-0.0.0.0	59.59.6.86
 0.0.0.0	595image.com
 0.0.0.0	59cn.cn
 0.0.0.0	59gt.cn
@@ -1448,7 +1445,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	apkevery.com
 0.0.0.0	aplhz.com
 0.0.0.0	app-analytics-services.com
-0.0.0.0	app-cn-telegram.com.cn
 0.0.0.0	app-measurement-cn.com
 0.0.0.0	app-measurement.com
 0.0.0.0	tongji.app111.com
@@ -2432,7 +2428,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	coenprz.cn
 0.0.0.0	cogitoai.cn
 0.0.0.0	interactivoebrokers-com.coin888.cn
-0.0.0.0	coinbaseb.com.cn
 0.0.0.0	plausible.coinglass.com
 0.0.0.0	coix1.cn
 0.0.0.0	colago.cn
@@ -2996,7 +2991,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	dw365.cn
 0.0.0.0	dweixin.cn
 0.0.0.0	tr.dwjq.com.cn
-0.0.0.0	dwstat.cn
+0.0.0.0	cn01.dwstat.cn
 0.0.0.0	untitled.dwstatic.com
 0.0.0.0	dxline.cn
 0.0.0.0	dxpmedia.com
@@ -3169,7 +3164,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	log.ergeduoduo.com
 0.0.0.0	erlpbwy.cn
 0.0.0.0	www3-vpass.ernlp.cn
-0.0.0.0	erun-tech.com
 0.0.0.0	eternocorevia.net
 0.0.0.0	ethan.wang
 0.0.0.0	zghn.ethereh.cn
@@ -4457,7 +4451,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	sha.ikwb.com
 0.0.0.0	ilkwork.com
 0.0.0.0	smetrics.illumina.com.cn
-0.0.0.0	ilmxs.com
 0.0.0.0	metrics.ilovematlab.cn
 0.0.0.0	smetrics.ilovematlab.cn
 0.0.0.0	imageter.com
@@ -4753,7 +4746,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	jiehunmishu.com
 0.0.0.0	api.jietuhb.com
 0.0.0.0	jiezoiq.cn
-0.0.0.0	www3-vpass.jigfo.cn
 0.0.0.0	jiguang.cn
 0.0.0.0	jihehuaban.com.cn
 0.0.0.0	target.ads.jihuoniao.com
@@ -4950,7 +4942,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	kgm-gov-co.me
 0.0.0.0	kgm-gov-tt.me
 0.0.0.0	kgm-govtr.me
-0.0.0.0	kgmgvioz.cc
 0.0.0.0	kgmsdgov.pics
 0.0.0.0	mail.kguapp.com
 0.0.0.0	e.kguaq.com
@@ -5393,7 +5384,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	192168.luyouwang.com
 0.0.0.0	luyouxia.net
 0.0.0.0	lvxingxian.cn
-0.0.0.0	tk.lvxrf38.cn
 0.0.0.0	wxapp.lvyadx.cn
 0.0.0.0	lwfw88.cn
 0.0.0.0	lwhhpj.cn
@@ -6537,7 +6527,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	ums.pushpia.cn
 0.0.0.0	pusure.com
 0.0.0.0	pv4b.com
-0.0.0.0	pvjlp.cn
 0.0.0.0	pvkc.cn
 0.0.0.0	pwdigital.cn
 0.0.0.0	atttp123.pwns.fun
@@ -8883,7 +8872,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	wflight.cn
 0.0.0.0	m.wgewj.cn
 0.0.0.0	wgnpq.com
-0.0.0.0	wh-telegram.com.cn
 0.0.0.0	whaleclean.cn
 0.0.0.0	whalecloud.com
 0.0.0.0	whalecpan.cn
@@ -9913,7 +9901,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	yymobilegame.game.yy.com
 0.0.0.0	yylady.cn
 0.0.0.0	krq.yymmsd.cn
-0.0.0.0	www3-vpass.yymuga.cn
 0.0.0.0	adapi.yynetwk.com
 0.0.0.0	yystzl.cn
 0.0.0.0	yyw114.cn
@@ -9987,9 +9974,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	zgwcvx.cn
 0.0.0.0	1234.zgxue.com
 0.0.0.0	td.zgxue.com
-0.0.0.0	zh-cn-telegramtg.com.cn
 0.0.0.0	zh-imtoken.cn
-0.0.0.0	m.zh-imtoken.org.cn
 0.0.0.0	zh-wo-whatsapp.com.cn
 0.0.0.0	zhads.com
 0.0.0.0	tfs.zhamm.cn
