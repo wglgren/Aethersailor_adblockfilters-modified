@@ -3,9 +3,9 @@
 # Description: 适用于 hosts 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockhostslite.txt
-# Version: 20251212164043
-# Last modified: 2025/12/12 16:40:43
-# Blocked domains: 10171
+# Version: 20251213003702
+# Last modified: 2025/12/13 00:37:02
+# Blocked domains: 10089
 #
 127.0.0.1	localhost
 127.0.0.1	localhost.localdomain
@@ -98,7 +98,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	101.43.49.183
 0.0.0.0	1.1010pic.com
 0.0.0.0	2.1010pic.com
-0.0.0.0	103.120.89.25
 0.0.0.0	103.205.253.156
 0.0.0.0	103.205.253.251
 0.0.0.0	103.40.13.122
@@ -121,7 +120,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	113.98.201.248
 0.0.0.0	1133.cc
 0.0.0.0	114.132.150.96
-0.0.0.0	114.55.106.136
 0.0.0.0	114.fm
 0.0.0.0	1.11467.com
 0.0.0.0	115.159.149.113
@@ -130,6 +128,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	appversion.115.com
 0.0.0.0	tg.1155t.cn
 0.0.0.0	115fx.com
+0.0.0.0	116.198.233.179
 0.0.0.0	116.62.226.163
 0.0.0.0	117.157.17.194
 0.0.0.0	117.50.194.20
@@ -137,6 +136,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	117.72.206.39
 0.0.0.0	118.178.133.241
 0.0.0.0	118.25.68.152
+0.0.0.0	118.31.16.216
 0.0.0.0	118678.com
 0.0.0.0	1188.com
 0.0.0.0	bj1.118pan.com
@@ -562,14 +562,12 @@ ff02::3	ip6-allhosts
 0.0.0.0	4009997658.com
 0.0.0.0	m.408uo.cn
 0.0.0.0	42.192.49.146
-0.0.0.0	42.226.75.91
 0.0.0.0	420909.cn
 0.0.0.0	426g.com
 0.0.0.0	43.138.248.196
 0.0.0.0	43.138.28.205
 0.0.0.0	43.139.169.60
 0.0.0.0	43.139.50.42
-0.0.0.0	43.226.39.44
 0.0.0.0	43.249.192.196
 0.0.0.0	43366.cn
 0.0.0.0	stat.api.4399.com
@@ -595,6 +593,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	47.98.224.91
 0.0.0.0	m.479db.cn
 0.0.0.0	49.234.46.15
+0.0.0.0	49.234.48.162
 0.0.0.0	4d0m.cn
 0.0.0.0	4h44.com
 0.0.0.0	jb.4hw.com.cn
@@ -864,6 +863,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	8.137.149.67
 0.0.0.0	8.138.182.17
 0.0.0.0	8.148.237.33
+0.0.0.0	8.153.205.30
 0.0.0.0	8.153.97.202
 0.0.0.0	8020home.com.cn
 0.0.0.0	a.80982.org
@@ -1332,7 +1332,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	first-hufu.oss-cn-shanghai.aliyuncs.com
 0.0.0.0	free-cdn.oss-cn-shanghai.aliyuncs.com
 0.0.0.0	fs-uc-nearme-com-cn.oss-cn-hangzhou.aliyuncs.com
-0.0.0.0	g9m3a0kv73-sdk.rum.aliyuncs.com
 0.0.0.0	haa3j9plpi-default-cn.rum.aliyuncs.com
 0.0.0.0	hdtu.oss-cn-beijing.aliyuncs.com
 0.0.0.0	hkuu.oss-cn-hongkong.aliyuncs.com
@@ -1586,7 +1585,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	m.b2fwnu.cn
 0.0.0.0	b3wg2.cn
 0.0.0.0	m.b6wabb.cn
-0.0.0.0	b7f890f2787aae85039fcde5e5ecbfd0.top
 0.0.0.0	b910268668.cn
 0.0.0.0	apishow.babybus.com
 0.0.0.0	apishowstats.babybus.com
@@ -3625,7 +3623,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	media.globalsign.com
 0.0.0.0	seal.globalsign.com
 0.0.0.0	africa.edm.globalsources.com
-0.0.0.0	analytics.globalsources.com
 0.0.0.0	electronics.edm.globalsources.com
 0.0.0.0	electronics.tradeshow.globalsources.com
 0.0.0.0	exhibition.edm.globalsources.com
@@ -4061,7 +4058,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	hiido.com
 0.0.0.0	qiejushuo.hirz.cn
 0.0.0.0	analytics.shop.hisense.com
-0.0.0.0	api-4know-eu.hismarttv.com
 0.0.0.0	api-gps.hismarttv.com
 0.0.0.0	api-gps-em.hismarttv.com
 0.0.0.0	api-gps-eu.hismarttv.com
@@ -4080,7 +4076,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	auth-launcher-sa.hismarttv.com
 0.0.0.0	auth-na.hismarttv.com
 0.0.0.0	auth-phone-ap.hismarttv.com
-0.0.0.0	auth-phone-na.hismarttv.com
 0.0.0.0	auth-sa.hismarttv.com
 0.0.0.0	cdn-plugin-sync-upgrade-juui.hismarttv.com
 0.0.0.0	msg-em.hismarttv.com
@@ -6207,125 +6202,49 @@ ff02::3	ip6-allhosts
 0.0.0.0	monitor.patzer0.com
 0.0.0.0	paypa1.cn
 0.0.0.0	paypayinsurance.cn
-0.0.0.0	pc-aaaqo-whatsapp.com.cn
-0.0.0.0	pc-bbhpv-whatsapp.com.cn
 0.0.0.0	pc-bbrfj-whatsapp.com.cn
-0.0.0.0	pc-bhflp-whatsapp.com.cn
 0.0.0.0	pc-bnnbd-whatsapp.com.cn
 0.0.0.0	pc-bprnd-whatsapp.com.cn
 0.0.0.0	pc-bvhtz-whatsapp.com.cn
 0.0.0.0	pc-ccwou-whatsapp.com.cn
 0.0.0.0	pc-cwgeu-whatsapp.com.cn
 0.0.0.0	pc-cwwgi-whatsapp.com.cn
-0.0.0.0	pc-dbbbp-whatsapp.com.cn
 0.0.0.0	pc-ddxzz-whatsapp.com.cn
-0.0.0.0	pc-drnnt-whatsapp.com.cn
-0.0.0.0	pc-dzrrt-whatsapp.com.cn
 0.0.0.0	pc-dzznn-whatsapp.com.cn
-0.0.0.0	pc-fbrdt-whatsapp.com.cn
-0.0.0.0	pc-fdnnb-whatsapp.com.cn
-0.0.0.0	pc-fdplz-whatsapp.com.cn
-0.0.0.0	pc-fhxdf-whatsapp.com.cn
-0.0.0.0	pc-fjxzd-whatsapp.com.cn
-0.0.0.0	pc-flhxn-whatsapp.com.cn
-0.0.0.0	pc-fnfnn-whatsapp.com.cn
 0.0.0.0	pc-fntbx-whatsapp.com.cn
 0.0.0.0	pc-fntdv-whatsapp.com.cn
-0.0.0.0	pc-fpjvh-whatsapp.com.cn
-0.0.0.0	pc-fprfp-whatsapp.com.cn
-0.0.0.0	pc-ftndr-whatsapp.com.cn
 0.0.0.0	pc-ftxxh-whatsapp.com.cn
-0.0.0.0	pc-fvrdx-whatsapp.com.cn
-0.0.0.0	pc-fzdxl-whatsapp.com.cn
-0.0.0.0	pc-gqkwa-whatsapp.com.cn
 0.0.0.0	pc-gueqo-whatsapp.com.cn
-0.0.0.0	pc-hfrth-whatsapp.com.cn
-0.0.0.0	pc-hhvjl-whatsapp.com.cn
-0.0.0.0	pc-hjrnn-whatsapp.com.cn
 0.0.0.0	pc-hjttt-whatsapp.com.cn
-0.0.0.0	pc-hlfbx-whatsapp.com.cn
-0.0.0.0	pc-hpbjz-whatsapp.com.cn
-0.0.0.0	pc-hpddd-whatsapp.com.cn
 0.0.0.0	pc-hpfxd-whatsapp.com.cn
-0.0.0.0	pc-hrvnz-whatsapp.com.cn
-0.0.0.0	pc-hthhl-whatsapp.com.cn
 0.0.0.0	pc-hxtjv-whatsapp.com.cn
-0.0.0.0	pc-iaqwm-whatsapp.com.cn
-0.0.0.0	pc-imaaq-whatsapp.com.cn
 0.0.0.0	pc-jbnbz-whatsapp.com.cn
-0.0.0.0	pc-jdhvd-whatsapp.com.cn
-0.0.0.0	pc-jjnlx-whatsapp.com.cn
-0.0.0.0	pc-jrpvp-whatsapp.com.cn
-0.0.0.0	pc-kgqoi-whatsapp.com.cn
-0.0.0.0	pc-lbxtb-whatsapp.com.cn
 0.0.0.0	pc-lfdjd-whatsapp.com.cn
 0.0.0.0	pc-lfhvx-whatsapp.com.cn
 0.0.0.0	pc-lpxfd-whatsapp.com.cn
 0.0.0.0	pc-lthvd-whatsapp.com.cn
-0.0.0.0	pc-ltxdp-whatsapp.com.cn
 0.0.0.0	pc-ndppd-whatsapp.com.cn
 0.0.0.0	pc-ndxzj-whatsapp.com.cn
 0.0.0.0	pc-nfbjd-whatsapp.com.cn
-0.0.0.0	pc-nhbfl-whatsapp.com.cn
-0.0.0.0	pc-njjxf-whatsapp.com.cn
-0.0.0.0	pc-nrrnz-whatsapp.com.cn
-0.0.0.0	pc-nrtth-whatsapp.com.cn
 0.0.0.0	pc-nthrz-whatsapp.com.cn
-0.0.0.0	pc-ntljj-whatsapp.com.cn
-0.0.0.0	pc-nvbdn-whatsapp.com.cn
 0.0.0.0	pc-nzllp-whatsapp.com.cn
 0.0.0.0	pc-nzrht-whatsapp.com.cn
-0.0.0.0	pc-oocuu-whatsapp.com.cn
-0.0.0.0	pc-oqiio-whatsapp.com.cn
 0.0.0.0	pc-pfxfp-whatsapp.com.cn
 0.0.0.0	pc-phnrx-whatsapp.com.cn
 0.0.0.0	pc-prrnr-whatsapp.com.cn
-0.0.0.0	pc-ptnjv-whatsapp.com.cn
-0.0.0.0	pc-pxnhb-whatsapp.com.cn
-0.0.0.0	pc-rbbnp-whatsapp.com.cn
-0.0.0.0	pc-rbtlh-whatsapp.com.cn
-0.0.0.0	pc-rdzrj-whatsapp.com.cn
-0.0.0.0	pc-rfrpl-whatsapp.com.cn
 0.0.0.0	pc-rftlr-whatsapp.com.cn
-0.0.0.0	pc-rjbxf-whatsapp.com.cn
 0.0.0.0	pc-rntxx-whatsapp.com.cn
 0.0.0.0	pc-rrjdz-whatsapp.com.cn
 0.0.0.0	pc-rtpbn-whatsapp.com.cn
-0.0.0.0	pc-rtxtf-whatsapp.com.cn
 0.0.0.0	pc-rxrdl-whatsapp.com.cn
-0.0.0.0	pc-rzblf-whatsapp.com.cn
-0.0.0.0	pc-tdrxz-whatsapp.com.cn
 0.0.0.0	pc-tlzdp-whatsapp.com.cn
-0.0.0.0	pc-tttzh-whatsapp.com.cn
-0.0.0.0	pc-vbdxd-whatsapp.com.cn
 0.0.0.0	pc-vfjhn-whatsapp.com.cn
-0.0.0.0	pc-vllxh-whatsapp.com.cn
-0.0.0.0	pc-vpfpz-whatsapp.com.cn
-0.0.0.0	pc-vpvdv-whatsapp.com.cn
-0.0.0.0	pc-vtpdv-whatsapp.com.cn
-0.0.0.0	pc-vtvfb-whatsapp.com.cn
-0.0.0.0	pc-vxpjl-whatsapp.com.cn
-0.0.0.0	pc-xdbbb-whatsapp.com.cn
-0.0.0.0	pc-xlhpv-whatsapp.com.cn
-0.0.0.0	pc-xnpxn-whatsapp.com.cn
 0.0.0.0	pc-xpzzh-whatsapp.com.cn
-0.0.0.0	pc-xrppb-whatsapp.com.cn
 0.0.0.0	pc-xrzrz-whatsapp.com.cn
-0.0.0.0	pc-xtjhb-whatsapp.com.cn
 0.0.0.0	pc-xvvlp-whatsapp.com.cn
-0.0.0.0	pc-xzrbx-whatsapp.com.cn
-0.0.0.0	pc-zbnpd-whatsapp.com.cn
-0.0.0.0	pc-zjtnr-whatsapp.com.cn
-0.0.0.0	pc-zjvln-whatsapp.com.cn
-0.0.0.0	pc-zlbvt-whatsapp.com.cn
-0.0.0.0	pc-znnln-whatsapp.com.cn
-0.0.0.0	pc-znvfj-whatsapp.com.cn
-0.0.0.0	pc-zrhzl-whatsapp.com.cn
 0.0.0.0	pc-zrvrv-whatsapp.com.cn
-0.0.0.0	pc-zrzdx-whatsapp.com.cn
 0.0.0.0	pc-ztfhb-whatsapp.com.cn
 0.0.0.0	pc-zthxx-whatsapp.com.cn
-0.0.0.0	pc-zxppb-whatsapp.com.cn
 0.0.0.0	pc-zzflx-whatsapp.com.cn
 0.0.0.0	ipad.pc899.cn
 0.0.0.0	count.pcauto.com.cn
@@ -6347,7 +6266,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	iyv.pconline.com.cn
 0.0.0.0	pcpop.com
 0.0.0.0	pcupd.com
-0.0.0.0	pczh-google.com.cn
 0.0.0.0	video-dsp.pddpic.com
 0.0.0.0	download.pdf00.cn
 0.0.0.0	download.pdf00.com
