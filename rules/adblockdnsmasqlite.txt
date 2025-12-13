@@ -3,9 +3,9 @@
 # Description: 适用于 DNSMasq 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnsmasqlite.txt
-# Version: 20251213163546
-# Last modified: 2025/12/13 16:35:46
-# Blocked domains: 9713
+# Version: 20251214003426
+# Last modified: 2025/12/14 00:34:26
+# Blocked domains: 9705
 #
 local=/395131115419474531.002.sh.cn/
 local=/005555.com/
@@ -86,13 +86,11 @@ local=/117.50.194.20/
 local=/117.72.102.110/
 local=/117.72.206.39/
 local=/117.72.242.9/
-local=/118.178.133.241/
 local=/118.25.68.152/
 local=/118.31.16.216/
 local=/118678.com/
 local=/1188.com/
 local=/bj1.118pan.com/
-local=/119.45.161.174/
 local=/119.91.141.214/
 local=/12-daysofxmas.com/
 local=/120.24.64.74/
@@ -507,7 +505,6 @@ local=/44629.com/
 local=/7zva1jn.44j4oo2a.cn/
 local=/8k64sz0.44j4oo2a.cn/
 local=/46676.cn/
-local=/47.104.169.91/
 local=/47.104.173.216/
 local=/47.104.31.7/
 local=/47.104.96.89/
@@ -2530,6 +2527,7 @@ local=/net.daraz.pk/
 local=/darm.cn/
 local=/sgtm.darryring.com/
 local=/dartsearch-cn.net/
+local=/clickserve.dartsearch.net/
 local=/dashet.com/
 local=/datacaciques.com/
 local=/datamaster.com.cn/
@@ -2826,7 +2824,6 @@ local=/dpd-ptostz.cfd/
 local=/drdwy.com/
 local=/dreamfull.cn/
 local=/dreamoffice.cn/
-local=/drivethelife.com/
 local=/email-verification-tbw2hsczpwmnv0lvrtfpuq-authentification.on.drv.tw/
 local=/drxrc.com/
 local=/dsapksd.cn/
@@ -3826,7 +3823,6 @@ local=/api-gps-sa.hismarttv.com/
 local=/api-launcher-em.hismarttv.com/
 local=/api-launcher-eu.hismarttv.com/
 local=/api-launcher-na.hismarttv.com/
-local=/api-launcher-sa.hismarttv.com/
 local=/api.eu.hismarttv.com/
 local=/auth-em.hismarttv.com/
 local=/auth-eu.hismarttv.com/
@@ -6407,8 +6403,6 @@ local=/omgid.qq.com/
 local=/omgmta1.qq.com/
 local=/openapi.guanjia.qq.com/
 local=/openmsf.3g.qq.com/
-local=/oth.eve.mdt.qq.com/
-local=/oth.str.mdt.qq.com/
 local=/p.store.qq.com/
 local=/p2p.qq.com/
 local=/p2pupdate.gamedl.qq.com/
@@ -6919,7 +6913,6 @@ local=/shuzilm.cn/
 local=/m.shwedar.com.cn/
 local=/shwlyb.cn/
 local=/shxinjie.cn/
-local=/ads-monitoring.shziyi.com/
 local=/yun.sifuhe.cn/
 local=/sigao.cn/
 local=/sigmob.com/
@@ -7648,7 +7641,6 @@ local=/tklbxip.cn/
 local=/tkmdng.cn/
 local=/tkmly.cn/
 local=/tlauncher.cn/
-local=/livetech.shopee.co.th.tlivecdn.com/
 local=/tlmybj.cn/
 local=/vpass-jp.tmctk.cn/
 local=/cdn.tmooc.cn/

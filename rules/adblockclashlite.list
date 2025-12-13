@@ -3,9 +3,9 @@
 # Description: 适用于 Shadowrocket 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockclashlite.list
-# Version: 20251213163546
-# Last modified: 2025/12/13 16:35:46
-# Blocked domains: 9713
+# Version: 20251214003427
+# Last modified: 2025/12/14 00:34:27
+# Blocked domains: 9705
 #
 [Rule]
 DOMAIN-SUFFIX,395131115419474531.002.sh.cn,REJECT-DROP
@@ -87,13 +87,11 @@ DOMAIN-SUFFIX,117.50.194.20,REJECT-DROP
 DOMAIN-SUFFIX,117.72.102.110,REJECT-DROP
 DOMAIN-SUFFIX,117.72.206.39,REJECT-DROP
 DOMAIN-SUFFIX,117.72.242.9,REJECT-DROP
-DOMAIN-SUFFIX,118.178.133.241,REJECT-DROP
 DOMAIN-SUFFIX,118.25.68.152,REJECT-DROP
 DOMAIN-SUFFIX,118.31.16.216,REJECT-DROP
 DOMAIN-SUFFIX,118678.com,REJECT-DROP
 DOMAIN-SUFFIX,1188.com,REJECT-DROP
 DOMAIN-SUFFIX,bj1.118pan.com,REJECT-DROP
-DOMAIN-SUFFIX,119.45.161.174,REJECT-DROP
 DOMAIN-SUFFIX,119.91.141.214,REJECT-DROP
 DOMAIN-SUFFIX,12-daysofxmas.com,REJECT-DROP
 DOMAIN-SUFFIX,120.24.64.74,REJECT-DROP
@@ -508,7 +506,6 @@ DOMAIN-SUFFIX,44629.com,REJECT-DROP
 DOMAIN-SUFFIX,7zva1jn.44j4oo2a.cn,REJECT-DROP
 DOMAIN-SUFFIX,8k64sz0.44j4oo2a.cn,REJECT-DROP
 DOMAIN-SUFFIX,46676.cn,REJECT-DROP
-DOMAIN-SUFFIX,47.104.169.91,REJECT-DROP
 DOMAIN-SUFFIX,47.104.173.216,REJECT-DROP
 DOMAIN-SUFFIX,47.104.31.7,REJECT-DROP
 DOMAIN-SUFFIX,47.104.96.89,REJECT-DROP
@@ -2531,6 +2528,7 @@ DOMAIN-SUFFIX,net.daraz.pk,REJECT-DROP
 DOMAIN-SUFFIX,darm.cn,REJECT-DROP
 DOMAIN-SUFFIX,sgtm.darryring.com,REJECT-DROP
 DOMAIN-SUFFIX,dartsearch-cn.net,REJECT-DROP
+DOMAIN-SUFFIX,clickserve.dartsearch.net,REJECT-DROP
 DOMAIN-SUFFIX,dashet.com,REJECT-DROP
 DOMAIN-SUFFIX,datacaciques.com,REJECT-DROP
 DOMAIN-SUFFIX,datamaster.com.cn,REJECT-DROP
@@ -2827,7 +2825,6 @@ DOMAIN-SUFFIX,dpd-ptostz.cfd,REJECT-DROP
 DOMAIN-SUFFIX,drdwy.com,REJECT-DROP
 DOMAIN-SUFFIX,dreamfull.cn,REJECT-DROP
 DOMAIN-SUFFIX,dreamoffice.cn,REJECT-DROP
-DOMAIN-SUFFIX,drivethelife.com,REJECT-DROP
 DOMAIN-SUFFIX,email-verification-tbw2hsczpwmnv0lvrtfpuq-authentification.on.drv.tw,REJECT-DROP
 DOMAIN-SUFFIX,drxrc.com,REJECT-DROP
 DOMAIN-SUFFIX,dsapksd.cn,REJECT-DROP
@@ -3827,7 +3824,6 @@ DOMAIN-SUFFIX,api-gps-sa.hismarttv.com,REJECT-DROP
 DOMAIN-SUFFIX,api-launcher-em.hismarttv.com,REJECT-DROP
 DOMAIN-SUFFIX,api-launcher-eu.hismarttv.com,REJECT-DROP
 DOMAIN-SUFFIX,api-launcher-na.hismarttv.com,REJECT-DROP
-DOMAIN-SUFFIX,api-launcher-sa.hismarttv.com,REJECT-DROP
 DOMAIN-SUFFIX,api.eu.hismarttv.com,REJECT-DROP
 DOMAIN-SUFFIX,auth-em.hismarttv.com,REJECT-DROP
 DOMAIN-SUFFIX,auth-eu.hismarttv.com,REJECT-DROP
@@ -6408,8 +6404,6 @@ DOMAIN-SUFFIX,omgid.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,omgmta1.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,openapi.guanjia.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,openmsf.3g.qq.com,REJECT-DROP
-DOMAIN-SUFFIX,oth.eve.mdt.qq.com,REJECT-DROP
-DOMAIN-SUFFIX,oth.str.mdt.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,p.store.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,p2p.qq.com,REJECT-DROP
 DOMAIN-SUFFIX,p2pupdate.gamedl.qq.com,REJECT-DROP
@@ -6920,7 +6914,6 @@ DOMAIN-SUFFIX,shuzilm.cn,REJECT-DROP
 DOMAIN-SUFFIX,m.shwedar.com.cn,REJECT-DROP
 DOMAIN-SUFFIX,shwlyb.cn,REJECT-DROP
 DOMAIN-SUFFIX,shxinjie.cn,REJECT-DROP
-DOMAIN-SUFFIX,ads-monitoring.shziyi.com,REJECT-DROP
 DOMAIN-SUFFIX,yun.sifuhe.cn,REJECT-DROP
 DOMAIN-SUFFIX,sigao.cn,REJECT-DROP
 DOMAIN-SUFFIX,sigmob.com,REJECT-DROP
@@ -7649,7 +7642,6 @@ DOMAIN-SUFFIX,tklbxip.cn,REJECT-DROP
 DOMAIN-SUFFIX,tkmdng.cn,REJECT-DROP
 DOMAIN-SUFFIX,tkmly.cn,REJECT-DROP
 DOMAIN-SUFFIX,tlauncher.cn,REJECT-DROP
-DOMAIN-SUFFIX,livetech.shopee.co.th.tlivecdn.com,REJECT-DROP
 DOMAIN-SUFFIX,tlmybj.cn,REJECT-DROP
 DOMAIN-SUFFIX,vpass-jp.tmctk.cn,REJECT-DROP
 DOMAIN-SUFFIX,cdn.tmooc.cn,REJECT-DROP

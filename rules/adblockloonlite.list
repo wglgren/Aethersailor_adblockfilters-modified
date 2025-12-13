@@ -7,8 +7,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025/12/13 16:35:46
-#!support=9713
+#!date=2025/12/14 00:34:26
+#!support=9705
 #!proxy-select=REJECT
 #
 DOMAIN-SUFFIX,395131115419474531.002.sh.cn
@@ -90,13 +90,11 @@ DOMAIN-SUFFIX,117.50.194.20
 DOMAIN-SUFFIX,117.72.102.110
 DOMAIN-SUFFIX,117.72.206.39
 DOMAIN-SUFFIX,117.72.242.9
-DOMAIN-SUFFIX,118.178.133.241
 DOMAIN-SUFFIX,118.25.68.152
 DOMAIN-SUFFIX,118.31.16.216
 DOMAIN-SUFFIX,118678.com
 DOMAIN-SUFFIX,1188.com
 DOMAIN-SUFFIX,bj1.118pan.com
-DOMAIN-SUFFIX,119.45.161.174
 DOMAIN-SUFFIX,119.91.141.214
 DOMAIN-SUFFIX,12-daysofxmas.com
 DOMAIN-SUFFIX,120.24.64.74
@@ -511,7 +509,6 @@ DOMAIN-SUFFIX,44629.com
 DOMAIN-SUFFIX,7zva1jn.44j4oo2a.cn
 DOMAIN-SUFFIX,8k64sz0.44j4oo2a.cn
 DOMAIN-SUFFIX,46676.cn
-DOMAIN-SUFFIX,47.104.169.91
 DOMAIN-SUFFIX,47.104.173.216
 DOMAIN-SUFFIX,47.104.31.7
 DOMAIN-SUFFIX,47.104.96.89
@@ -2534,6 +2531,7 @@ DOMAIN-SUFFIX,net.daraz.pk
 DOMAIN-SUFFIX,darm.cn
 DOMAIN-SUFFIX,sgtm.darryring.com
 DOMAIN-SUFFIX,dartsearch-cn.net
+DOMAIN-SUFFIX,clickserve.dartsearch.net
 DOMAIN-SUFFIX,dashet.com
 DOMAIN-SUFFIX,datacaciques.com
 DOMAIN-SUFFIX,datamaster.com.cn
@@ -2830,7 +2828,6 @@ DOMAIN-SUFFIX,dpd-ptostz.cfd
 DOMAIN-SUFFIX,drdwy.com
 DOMAIN-SUFFIX,dreamfull.cn
 DOMAIN-SUFFIX,dreamoffice.cn
-DOMAIN-SUFFIX,drivethelife.com
 DOMAIN-SUFFIX,email-verification-tbw2hsczpwmnv0lvrtfpuq-authentification.on.drv.tw
 DOMAIN-SUFFIX,drxrc.com
 DOMAIN-SUFFIX,dsapksd.cn
@@ -3830,7 +3827,6 @@ DOMAIN-SUFFIX,api-gps-sa.hismarttv.com
 DOMAIN-SUFFIX,api-launcher-em.hismarttv.com
 DOMAIN-SUFFIX,api-launcher-eu.hismarttv.com
 DOMAIN-SUFFIX,api-launcher-na.hismarttv.com
-DOMAIN-SUFFIX,api-launcher-sa.hismarttv.com
 DOMAIN-SUFFIX,api.eu.hismarttv.com
 DOMAIN-SUFFIX,auth-em.hismarttv.com
 DOMAIN-SUFFIX,auth-eu.hismarttv.com
@@ -6411,8 +6407,6 @@ DOMAIN-SUFFIX,omgid.qq.com
 DOMAIN-SUFFIX,omgmta1.qq.com
 DOMAIN-SUFFIX,openapi.guanjia.qq.com
 DOMAIN-SUFFIX,openmsf.3g.qq.com
-DOMAIN-SUFFIX,oth.eve.mdt.qq.com
-DOMAIN-SUFFIX,oth.str.mdt.qq.com
 DOMAIN-SUFFIX,p.store.qq.com
 DOMAIN-SUFFIX,p2p.qq.com
 DOMAIN-SUFFIX,p2pupdate.gamedl.qq.com
@@ -6923,7 +6917,6 @@ DOMAIN-SUFFIX,shuzilm.cn
 DOMAIN-SUFFIX,m.shwedar.com.cn
 DOMAIN-SUFFIX,shwlyb.cn
 DOMAIN-SUFFIX,shxinjie.cn
-DOMAIN-SUFFIX,ads-monitoring.shziyi.com
 DOMAIN-SUFFIX,yun.sifuhe.cn
 DOMAIN-SUFFIX,sigao.cn
 DOMAIN-SUFFIX,sigmob.com
@@ -7652,7 +7645,6 @@ DOMAIN-SUFFIX,tklbxip.cn
 DOMAIN-SUFFIX,tkmdng.cn
 DOMAIN-SUFFIX,tkmly.cn
 DOMAIN-SUFFIX,tlauncher.cn
-DOMAIN-SUFFIX,livetech.shopee.co.th.tlivecdn.com
 DOMAIN-SUFFIX,tlmybj.cn
 DOMAIN-SUFFIX,vpass-jp.tmctk.cn
 DOMAIN-SUFFIX,cdn.tmooc.cn
