@@ -3,9 +3,9 @@
 # Description: 适用于 hosts 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockhostslite.txt
-# Version: 20251215164320
-# Last modified: 2025/12/15 16:43:20
-# Blocked domains: 9608
+# Version: 20251216004225
+# Last modified: 2025/12/16 00:42:25
+# Blocked domains: 9598
 #
 127.0.0.1	localhost
 127.0.0.1	localhost.localdomain
@@ -92,8 +92,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	oss-asq-static.11222.cn
 0.0.0.0	113.31.111.76
 0.0.0.0	113.98.201.248
-0.0.0.0	114.132.150.96
-0.0.0.0	114.242.100.72
 0.0.0.0	114.55.106.136
 0.0.0.0	115.159.149.113
 0.0.0.0	115.190.235.92
@@ -101,7 +99,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	116.198.233.179
 0.0.0.0	116.62.226.163
 0.0.0.0	117.157.17.194
-0.0.0.0	117.50.194.20
 0.0.0.0	117.72.102.110
 0.0.0.0	117.72.206.39
 0.0.0.0	117.72.222.203
@@ -181,7 +178,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	150100.cn
 0.0.0.0	1503.net
 0.0.0.0	155qk.com
-0.0.0.0	159.75.201.5
 0.0.0.0	159.75.221.127
 0.0.0.0	15tianqi.com
 0.0.0.0	15world.cn
@@ -295,7 +291,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	2009llll.cn
 0.0.0.0	wm.20150.net
 0.0.0.0	201ttkj.cn
-0.0.0.0	202.189.4.56
 0.0.0.0	20201314.cn
 0.0.0.0	20230329.com
 0.0.0.0	202m.com
@@ -515,7 +510,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	42.192.49.146
 0.0.0.0	420909.cn
 0.0.0.0	426g.com
-0.0.0.0	43.138.248.196
 0.0.0.0	43.138.28.205
 0.0.0.0	43.139.169.60
 0.0.0.0	43.139.50.42
@@ -1239,7 +1233,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	aixuntupian.oss-cn-hongkong.aliyuncs.com
 0.0.0.0	alime-pic.oss-cn-hangzhou.aliyuncs.com
 0.0.0.0	appgiftwall.oss-us-west-1.aliyuncs.com
-0.0.0.0	axyleu11gz-default-cn.rum.aliyuncs.com
 0.0.0.0	badding.oss-ap-southeast-1.aliyuncs.com
 0.0.0.0	beacon-api.aliyuncs.com
 0.0.0.0	bruplong.oss-accelerate.aliyuncs.com
@@ -2375,7 +2368,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	cotnetwork.com
 0.0.0.0	coumie.top
 0.0.0.0	s.coveredsys.cn
-0.0.0.0	space-static.coze.site
 0.0.0.0	cpanclean.cn
 0.0.0.0	cpc.cc
 0.0.0.0	cpdc.com.cn
@@ -3273,7 +3265,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	fydigital.cn
 0.0.0.0	bixia.fymm.cn
 0.0.0.0	earlyier.fyoqcs7.cn
-0.0.0.0	ts.fyshark.com
 0.0.0.0	rakuten.ne.jp.fzbox.cn
 0.0.0.0	fzgetdy.cn
 0.0.0.0	v.fzjarow.cn
@@ -5682,7 +5673,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	c.nuhcpf.com
 0.0.0.0	ray2jing.808.nuno.cn
 0.0.0.0	log.nuomi.com
-0.0.0.0	metric.nuonuo.com
 0.0.0.0	m.nuxyz.cn
 0.0.0.0	promotionad.nvcam.net
 0.0.0.0	ad.nvdvr.cn

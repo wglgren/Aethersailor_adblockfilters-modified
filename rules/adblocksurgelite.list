@@ -10,8 +10,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025/12/15 16:43:20
-#!support=9608
+#!date=2025/12/16 00:42:26
+#!support=9598
 #!proxy-select=REJECT-DROP
 #
 .395131115419474531.002.sh.cn
@@ -84,8 +84,6 @@
 .oss-asq-static.11222.cn
 .113.31.111.76
 .113.98.201.248
-.114.132.150.96
-.114.242.100.72
 .114.55.106.136
 .115.159.149.113
 .115.190.235.92
@@ -93,7 +91,6 @@
 .116.198.233.179
 .116.62.226.163
 .117.157.17.194
-.117.50.194.20
 .117.72.102.110
 .117.72.206.39
 .117.72.222.203
@@ -173,7 +170,6 @@
 .150100.cn
 .1503.net
 .155qk.com
-.159.75.201.5
 .159.75.221.127
 .15tianqi.com
 .15world.cn
@@ -287,7 +283,6 @@
 .2009llll.cn
 .wm.20150.net
 .201ttkj.cn
-.202.189.4.56
 .20201314.cn
 .20230329.com
 .202m.com
@@ -507,7 +502,6 @@
 .42.192.49.146
 .420909.cn
 .426g.com
-.43.138.248.196
 .43.138.28.205
 .43.139.169.60
 .43.139.50.42
@@ -1231,7 +1225,6 @@
 .aixuntupian.oss-cn-hongkong.aliyuncs.com
 .alime-pic.oss-cn-hangzhou.aliyuncs.com
 .appgiftwall.oss-us-west-1.aliyuncs.com
-.axyleu11gz-default-cn.rum.aliyuncs.com
 .badding.oss-ap-southeast-1.aliyuncs.com
 .beacon-api.aliyuncs.com
 .bruplong.oss-accelerate.aliyuncs.com
@@ -2367,7 +2360,6 @@
 .cotnetwork.com
 .coumie.top
 .s.coveredsys.cn
-.space-static.coze.site
 .cpanclean.cn
 .cpc.cc
 .cpdc.com.cn
@@ -3265,7 +3257,6 @@
 .fydigital.cn
 .bixia.fymm.cn
 .earlyier.fyoqcs7.cn
-.ts.fyshark.com
 .rakuten.ne.jp.fzbox.cn
 .fzgetdy.cn
 .v.fzjarow.cn
@@ -5674,7 +5665,6 @@
 .c.nuhcpf.com
 .ray2jing.808.nuno.cn
 .log.nuomi.com
-.metric.nuonuo.com
 .m.nuxyz.cn
 .promotionad.nvcam.net
 .ad.nvdvr.cn

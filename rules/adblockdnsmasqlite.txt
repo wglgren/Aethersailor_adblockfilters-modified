@@ -3,9 +3,9 @@
 # Description: 适用于 DNSMasq 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnsmasqlite.txt
-# Version: 20251215164320
-# Last modified: 2025/12/15 16:43:20
-# Blocked domains: 9608
+# Version: 20251216004225
+# Last modified: 2025/12/16 00:42:25
+# Blocked domains: 9598
 #
 local=/395131115419474531.002.sh.cn/
 local=/008k.com/
@@ -77,8 +77,6 @@ local=/112.18.10.80/
 local=/oss-asq-static.11222.cn/
 local=/113.31.111.76/
 local=/113.98.201.248/
-local=/114.132.150.96/
-local=/114.242.100.72/
 local=/114.55.106.136/
 local=/115.159.149.113/
 local=/115.190.235.92/
@@ -86,7 +84,6 @@ local=/appversion.115.com/
 local=/116.198.233.179/
 local=/116.62.226.163/
 local=/117.157.17.194/
-local=/117.50.194.20/
 local=/117.72.102.110/
 local=/117.72.206.39/
 local=/117.72.222.203/
@@ -166,7 +163,6 @@ local=/d.14yaa.com/
 local=/150100.cn/
 local=/1503.net/
 local=/155qk.com/
-local=/159.75.201.5/
 local=/159.75.221.127/
 local=/15tianqi.com/
 local=/15world.cn/
@@ -280,7 +276,6 @@ local=/2009dddd.cn/
 local=/2009llll.cn/
 local=/wm.20150.net/
 local=/201ttkj.cn/
-local=/202.189.4.56/
 local=/20201314.cn/
 local=/20230329.com/
 local=/202m.com/
@@ -500,7 +495,6 @@ local=/m.408uo.cn/
 local=/42.192.49.146/
 local=/420909.cn/
 local=/426g.com/
-local=/43.138.248.196/
 local=/43.138.28.205/
 local=/43.139.169.60/
 local=/43.139.50.42/
@@ -1224,7 +1218,6 @@ local=/ah-scanning.oss-cn-hongkong.aliyuncs.com/
 local=/aixuntupian.oss-cn-hongkong.aliyuncs.com/
 local=/alime-pic.oss-cn-hangzhou.aliyuncs.com/
 local=/appgiftwall.oss-us-west-1.aliyuncs.com/
-local=/axyleu11gz-default-cn.rum.aliyuncs.com/
 local=/badding.oss-ap-southeast-1.aliyuncs.com/
 local=/beacon-api.aliyuncs.com/
 local=/bruplong.oss-accelerate.aliyuncs.com/
@@ -2360,7 +2353,6 @@ local=/sentry-v2.coros.com/
 local=/cotnetwork.com/
 local=/coumie.top/
 local=/s.coveredsys.cn/
-local=/space-static.coze.site/
 local=/cpanclean.cn/
 local=/cpc.cc/
 local=/cpdc.com.cn/
@@ -3258,7 +3250,6 @@ local=/fy6x8o.cn/
 local=/fydigital.cn/
 local=/bixia.fymm.cn/
 local=/earlyier.fyoqcs7.cn/
-local=/ts.fyshark.com/
 local=/rakuten.ne.jp.fzbox.cn/
 local=/fzgetdy.cn/
 local=/v.fzjarow.cn/
@@ -5667,7 +5658,6 @@ local=/pdns.nudt.edu.cn/
 local=/c.nuhcpf.com/
 local=/ray2jing.808.nuno.cn/
 local=/log.nuomi.com/
-local=/metric.nuonuo.com/
 local=/m.nuxyz.cn/
 local=/promotionad.nvcam.net/
 local=/ad.nvdvr.cn/
