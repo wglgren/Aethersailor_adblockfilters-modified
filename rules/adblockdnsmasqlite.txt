@@ -3,9 +3,9 @@
 # Description: 适用于 DNSMasq 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnsmasqlite.txt
-# Version: 20251215003402
-# Last modified: 2025/12/15 00:34:02
-# Blocked domains: 9965
+# Version: 20251215102417
+# Last modified: 2025/12/15 10:24:17
+# Blocked domains: 9964
 #
 local=/395131115419474531.002.sh.cn/
 local=/005555.com/
@@ -78,6 +78,7 @@ local=/101.132.131.225/
 local=/101.34.66.77/
 local=/101.35.56.7/
 local=/101.43.166.60/
+local=/101.43.2.116/
 local=/101.43.49.183/
 local=/1.1010pic.com/
 local=/2.1010pic.com/
@@ -121,6 +122,7 @@ local=/117.50.194.20/
 local=/117.72.102.110/
 local=/117.72.206.39/
 local=/117.72.222.203/
+local=/118.178.133.241/
 local=/118.25.68.152/
 local=/118.31.16.216/
 local=/118678.com/
@@ -131,7 +133,6 @@ local=/119.91.141.214/
 local=/12-daysofxmas.com/
 local=/120.24.64.74/
 local=/120.25.163.165/
-local=/120.46.212.33/
 local=/120.48.50.33/
 local=/120.79.192.88/
 local=/120.79.255.238/
@@ -494,7 +495,6 @@ local=/37wan.com/
 local=/382.cn/
 local=/3889.cn/
 local=/m.38xs.com/
-local=/38zu.cn/
 local=/39.100.33.142/
 local=/39.103.217.92/
 local=/39.104.161.178/
@@ -4450,7 +4450,6 @@ local=/iqtsc.com/
 local=/iqyewu.cn/
 local=/trk.irco.com.cn/
 local=/am.g.ireader.com/
-local=/i.g.ireader.com/
 local=/log.ireader.com/
 local=/irs03.com/
 local=/iscrv.com/

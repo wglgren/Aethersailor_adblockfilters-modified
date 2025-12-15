@@ -4,9 +4,9 @@ payload:
   # Description: 适用于 Clash Meta(Mihomo) 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
   # Homepage: https://github.com/217heidai/adblockfilters
   # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomolite.yaml
-  # Version: 20251215003402
-  # Last modified: 2025/12/15 00:34:02
-  # Blocked domains: 9965
+  # Version: 20251215102417
+  # Last modified: 2025/12/15 10:24:17
+  # Blocked domains: 9964
   #
   - '+.395131115419474531.002.sh.cn'
   - '+.005555.com'
@@ -79,6 +79,7 @@ payload:
   - '+.101.34.66.77'
   - '+.101.35.56.7'
   - '+.101.43.166.60'
+  - '+.101.43.2.116'
   - '+.101.43.49.183'
   - '+.1.1010pic.com'
   - '+.2.1010pic.com'
@@ -122,6 +123,7 @@ payload:
   - '+.117.72.102.110'
   - '+.117.72.206.39'
   - '+.117.72.222.203'
+  - '+.118.178.133.241'
   - '+.118.25.68.152'
   - '+.118.31.16.216'
   - '+.118678.com'
@@ -132,7 +134,6 @@ payload:
   - '+.12-daysofxmas.com'
   - '+.120.24.64.74'
   - '+.120.25.163.165'
-  - '+.120.46.212.33'
   - '+.120.48.50.33'
   - '+.120.79.192.88'
   - '+.120.79.255.238'
@@ -495,7 +496,6 @@ payload:
   - '+.382.cn'
   - '+.3889.cn'
   - '+.m.38xs.com'
-  - '+.38zu.cn'
   - '+.39.100.33.142'
   - '+.39.103.217.92'
   - '+.39.104.161.178'
@@ -4451,7 +4451,6 @@ payload:
   - '+.iqyewu.cn'
   - '+.trk.irco.com.cn'
   - '+.am.g.ireader.com'
-  - '+.i.g.ireader.com'
   - '+.log.ireader.com'
   - '+.irs03.com'
   - '+.iscrv.com'
