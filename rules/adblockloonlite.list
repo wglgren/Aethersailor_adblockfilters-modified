@@ -7,8 +7,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025/12/18 10:10:31
-#!support=9706
+#!date=2025/12/18 16:40:23
+#!support=9697
 #!proxy-select=REJECT
 #
 DOMAIN-SUFFIX,395131115419474531.002.sh.cn
@@ -1282,7 +1282,6 @@ DOMAIN-SUFFIX,dongtukj.oss-cn-hongkong.aliyuncs.com
 DOMAIN-SUFFIX,dreemdmbabys.oss-cn-guangzhou.aliyuncs.com
 DOMAIN-SUFFIX,dressimage.img-cn-beijing.aliyuncs.com
 DOMAIN-SUFFIX,ep2x3kiawg-sdk.rum.aliyuncs.com
-DOMAIN-SUFFIX,etc33.oss-ap-southeast-1.aliyuncs.com
 DOMAIN-SUFFIX,f7vkagmqwq-sdk.rum.aliyuncs.com
 DOMAIN-SUFFIX,facai383.oss-cn-guangzhou.aliyuncs.com
 DOMAIN-SUFFIX,first-hufu.oss-cn-shanghai.aliyuncs.com
@@ -2257,6 +2256,7 @@ DOMAIN-SUFFIX,ykad-data.cp31.ott.cibntv.net
 DOMAIN-SUFFIX,cieloo2.duckdns.org
 DOMAIN-SUFFIX,cig.com.cn
 DOMAIN-SUFFIX,cihc.cn
+DOMAIN-SUFFIX,cippe.com.cn
 DOMAIN-SUFFIX,metrics.citi.cn
 DOMAIN-SUFFIX,metrics.citi.com.cn
 DOMAIN-SUFFIX,metrics.citibank.cn
@@ -2427,7 +2427,6 @@ DOMAIN-SUFFIX,16.tcp.cpolar.top
 DOMAIN-SUFFIX,17.tcp.cpolar.top
 DOMAIN-SUFFIX,8.tcp.cpolar.top
 DOMAIN-SUFFIX,m.cqbaitong.cn
-DOMAIN-SUFFIX,cqcebq.cn
 DOMAIN-SUFFIX,cqmjjx.cn
 DOMAIN-SUFFIX,adimg.cqnews.net
 DOMAIN-SUFFIX,cbjg.cqnews.net
@@ -2776,7 +2775,6 @@ DOMAIN-SUFFIX,img16.diyifanwen.com
 DOMAIN-SUFFIX,djfsml.com
 DOMAIN-SUFFIX,sentry-io.djiops.com
 DOMAIN-SUFFIX,statistical-report.djiservice.org
-DOMAIN-SUFFIX,djlrar.cn
 DOMAIN-SUFFIX,m.djunf.com
 DOMAIN-SUFFIX,e.dkd21.cn
 DOMAIN-SUFFIX,m.dkd21.cn
@@ -3242,7 +3240,6 @@ DOMAIN-SUFFIX,api-flow.flyme.cn
 DOMAIN-SUFFIX,bro.flyme.cn
 DOMAIN-SUFFIX,madx.flyme.cn
 DOMAIN-SUFFIX,b.flyreading.cn
-DOMAIN-SUFFIX,log-auth.flysleep.cn
 DOMAIN-SUFFIX,flyye.cn
 DOMAIN-SUFFIX,fm120.cn
 DOMAIN-SUFFIX,fm120.com
@@ -5300,7 +5297,6 @@ DOMAIN-SUFFIX,mangomob.net
 DOMAIN-SUFFIX,adsapi.manhuaren.com
 DOMAIN-SUFFIX,bi.manhuaren.com
 DOMAIN-SUFFIX,euadsapi.manhuaren.com
-DOMAIN-SUFFIX,videoapi.manhuaren.com
 DOMAIN-SUFFIX,maniyakat.cn
 DOMAIN-SUFFIX,m.manparis.cn
 DOMAIN-SUFFIX,manyou.com
@@ -6824,7 +6820,6 @@ DOMAIN-SUFFIX,c.rxconkz.cn
 DOMAIN-SUFFIX,v.rxconkz.cn
 DOMAIN-SUFFIX,rxfygd.cn
 DOMAIN-SUFFIX,rxys.cn
-DOMAIN-SUFFIX,qrcode-711.rxytu.com
 DOMAIN-SUFFIX,ry-odp-whatsapp.com.cn
 DOMAIN-SUFFIX,ryre.cn
 DOMAIN-SUFFIX,rywnvzd.cn
@@ -8828,7 +8823,6 @@ DOMAIN-SUFFIX,tj1-new.scf.pt.xiaomi.com
 DOMAIN-SUFFIX,tj1.master.pt.xiaomi.com
 DOMAIN-SUFFIX,tj1.payment.pt.xiaomi.com
 DOMAIN-SUFFIX,tj1.scf.pt.xiaomi.com
-DOMAIN-SUFFIX,tj1.staging.fund.pt.xiaomi.com
 DOMAIN-SUFFIX,tj1.staging.ins.pt.xiaomi.com
 DOMAIN-SUFFIX,tj1.staging.mifi.pt.xiaomi.com
 DOMAIN-SUFFIX,tj1.staging.nfcpay.xiaomi.com
@@ -9209,7 +9203,6 @@ DOMAIN-SUFFIX,l.ykimg.com
 DOMAIN-SUFFIX,sub.ykimg.com
 DOMAIN-SUFFIX,ykkbwdf.cn
 DOMAIN-SUFFIX,ykkhihg.cn
-DOMAIN-SUFFIX,711.ykkpkj.com
 DOMAIN-SUFFIX,yklfg.cn
 DOMAIN-SUFFIX,ykotyeo.cn
 DOMAIN-SUFFIX,yl04z4v.cn
@@ -9474,7 +9467,6 @@ DOMAIN-SUFFIX,zerolcp.cn
 DOMAIN-SUFFIX,src.zf313.com
 DOMAIN-SUFFIX,ssp.zf313.com
 DOMAIN-SUFFIX,zg40c.cn
-DOMAIN-SUFFIX,zg8.cn
 DOMAIN-SUFFIX,zgbmw.com.cn
 DOMAIN-SUFFIX,zgclmw.cn
 DOMAIN-SUFFIX,zggxkj.com.cn
@@ -9687,7 +9679,6 @@ DOMAIN-SUFFIX,stat.zuimeitianqi.com
 DOMAIN-SUFFIX,zunmi.cn
 DOMAIN-SUFFIX,zunue.cn
 DOMAIN-SUFFIX,1.zuowenjun.com
-DOMAIN-SUFFIX,zvchss.cn
 DOMAIN-SUFFIX,e.zvfuka.cn
 DOMAIN-SUFFIX,m.zvfuka.cn
 DOMAIN-SUFFIX,m.zwda.com

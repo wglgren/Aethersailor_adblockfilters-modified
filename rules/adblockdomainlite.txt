@@ -3,9 +3,9 @@
 ! Description: 适用于 InviZible Pro、personalDNSfilter 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdomainlite.txt
-! Version: 20251218101031
-! Last modified: 2025/12/18 10:10:31
-! Blocked domains: 9706
+! Version: 20251218164023
+! Last modified: 2025/12/18 16:40:23
+! Blocked domains: 9697
 !
 395131115419474531.002.sh.cn
 011211.cn
@@ -1278,7 +1278,6 @@ dongtukj.oss-cn-hongkong.aliyuncs.com
 dreemdmbabys.oss-cn-guangzhou.aliyuncs.com
 dressimage.img-cn-beijing.aliyuncs.com
 ep2x3kiawg-sdk.rum.aliyuncs.com
-etc33.oss-ap-southeast-1.aliyuncs.com
 f7vkagmqwq-sdk.rum.aliyuncs.com
 facai383.oss-cn-guangzhou.aliyuncs.com
 first-hufu.oss-cn-shanghai.aliyuncs.com
@@ -2253,6 +2252,7 @@ ykad-data.cp31.ott.cibntv.net
 cieloo2.duckdns.org
 cig.com.cn
 cihc.cn
+cippe.com.cn
 metrics.citi.cn
 metrics.citi.com.cn
 metrics.citibank.cn
@@ -2423,7 +2423,6 @@ cpdc.com.cn
 17.tcp.cpolar.top
 8.tcp.cpolar.top
 m.cqbaitong.cn
-cqcebq.cn
 cqmjjx.cn
 adimg.cqnews.net
 cbjg.cqnews.net
@@ -2772,7 +2771,6 @@ img16.diyifanwen.com
 djfsml.com
 sentry-io.djiops.com
 statistical-report.djiservice.org
-djlrar.cn
 m.djunf.com
 e.dkd21.cn
 m.dkd21.cn
@@ -3238,7 +3236,6 @@ api-flow.flyme.cn
 bro.flyme.cn
 madx.flyme.cn
 b.flyreading.cn
-log-auth.flysleep.cn
 flyye.cn
 fm120.cn
 fm120.com
@@ -5296,7 +5293,6 @@ mangomob.net
 adsapi.manhuaren.com
 bi.manhuaren.com
 euadsapi.manhuaren.com
-videoapi.manhuaren.com
 maniyakat.cn
 m.manparis.cn
 manyou.com
@@ -6820,7 +6816,6 @@ c.rxconkz.cn
 v.rxconkz.cn
 rxfygd.cn
 rxys.cn
-qrcode-711.rxytu.com
 ry-odp-whatsapp.com.cn
 ryre.cn
 rywnvzd.cn
@@ -8824,7 +8819,6 @@ tj1-new.scf.pt.xiaomi.com
 tj1.master.pt.xiaomi.com
 tj1.payment.pt.xiaomi.com
 tj1.scf.pt.xiaomi.com
-tj1.staging.fund.pt.xiaomi.com
 tj1.staging.ins.pt.xiaomi.com
 tj1.staging.mifi.pt.xiaomi.com
 tj1.staging.nfcpay.xiaomi.com
@@ -9205,7 +9199,6 @@ l.ykimg.com
 sub.ykimg.com
 ykkbwdf.cn
 ykkhihg.cn
-711.ykkpkj.com
 yklfg.cn
 ykotyeo.cn
 yl04z4v.cn
@@ -9470,7 +9463,6 @@ zerolcp.cn
 src.zf313.com
 ssp.zf313.com
 zg40c.cn
-zg8.cn
 zgbmw.com.cn
 zgclmw.cn
 zggxkj.com.cn
@@ -9683,7 +9675,6 @@ stat.zuimeitianqi.com
 zunmi.cn
 zunue.cn
 1.zuowenjun.com
-zvchss.cn
 e.zvfuka.cn
 m.zvfuka.cn
 m.zwda.com
