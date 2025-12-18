@@ -4,9 +4,9 @@ payload:
   # Description: 适用于 Clash Meta(Mihomo) 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
   # Homepage: https://github.com/217heidai/adblockfilters
   # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockmihomolite.yaml
-  # Version: 20251218004052
-  # Last modified: 2025/12/18 00:40:52
-  # Blocked domains: 9708
+  # Version: 20251218101031
+  # Last modified: 2025/12/18 10:10:31
+  # Blocked domains: 9706
   #
   - '+.395131115419474531.002.sh.cn'
   - '+.011211.cn'
@@ -82,6 +82,7 @@ payload:
   - '+.101.34.66.77'
   - '+.101.35.56.7'
   - '+.101.43.166.60'
+  - '+.101.43.2.116'
   - '+.101.43.49.183'
   - '+.1.1010pic.com'
   - '+.2.1010pic.com'
@@ -102,11 +103,11 @@ payload:
   - '+.v.110route.cn'
   - '+.ytx-file.110route.cn'
   - '+.1.11130.com.cn'
+  - '+.112.18.10.80'
   - '+.oss-asq-static.11222.cn'
   - '+.113.31.111.76'
   - '+.113.98.201.248'
   - '+.1133.cc'
-  - '+.114.132.150.96'
   - '+.114.55.106.136'
   - '+.114.fm'
   - '+.1.11467.com'
@@ -114,11 +115,11 @@ payload:
   - '+.115.190.235.92'
   - '+.appversion.115.com'
   - '+.115fx.com'
-  - '+.116.198.233.179'
   - '+.117.157.17.194'
   - '+.117.50.194.20'
   - '+.117.72.102.110'
   - '+.117.72.206.39'
+  - '+.118.178.133.241'
   - '+.118.25.68.152'
   - '+.118.25.85.198'
   - '+.118.31.16.216'
@@ -159,7 +160,6 @@ payload:
   - '+.123juzi.net'
   - '+.123ko.cn'
   - '+.bdad.123pan.cn'
-  - '+.124.221.215.174'
   - '+.124.248.66.227'
   - '+.ent1.12584.cn'
   - '+.health1.12584.cn'
@@ -3211,7 +3211,6 @@ payload:
   - '+.findbigsoftpack.cn'
   - '+.findbigurls.cn'
   - '+.ad.findic.com'
-  - '+._xmpp-client._tcp.findmy-appie.cn'
   - '+.fire3.com.cn'
   - '+.firefang.cn'
   - '+.fireworksai.cn'
@@ -5176,7 +5175,6 @@ payload:
   - '+.lningcity.com.cn'
   - '+.lnk0.com'
   - '+.lnk8.cn'
-  - '+.lnnuuks.cn'
   - '+.gnj4pit.lntnhtc.cn'
   - '+.n1q8cbr.lntnhtc.cn'
   - '+.plausible.lobehub-inc.cn'
