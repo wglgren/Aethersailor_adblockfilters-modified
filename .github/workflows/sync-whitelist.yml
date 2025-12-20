@@ -4,6 +4,9 @@ on:
   schedule:
     # Run hourly at :30 (e.g., 00:30, 01:30, 02:30, etc.)
     - cron: '30 * * * *'
+  push:
+    paths:
+      - 'rules/white2.txt'
   workflow_dispatch:
 
 env:
