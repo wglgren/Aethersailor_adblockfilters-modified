@@ -6,3 +6,4 @@
 # Example:
 # dns.weixin.qq.com.cn
 # api.example.com
+dns.weixin.qq.com.cn
