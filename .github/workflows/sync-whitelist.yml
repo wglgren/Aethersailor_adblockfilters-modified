@@ -27,27 +27,21 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
       
-      - name: Fetch and Merge Upstream Whitelist
+      - name: Sync Upstream Whitelist
         run: |
-          # Download upstream whitelist
+          # Download whitelist from upstream
           curl -fsSL "https://raw.githubusercontent.com/${{ env.UPSTREAM_REPO }}/${{ env.UPSTREAM_BRANCH }}/${{ env.TARGET_FILE }}" -o white_upstream.txt
           
-          # Merge with intelligent deduplication
-          python3 merge_whitelist.py "${{ env.TARGET_FILE }}" white_upstream.txt white_merged.txt
-          
           # Check if file has changed
-          if ! cmp -s white_merged.txt "${{ env.TARGET_FILE }}"; then
+          if ! cmp -s white_upstream.txt "${{ env.TARGET_FILE }}"; then
             echo "Whitelist has been updated"
-            mv white_merged.txt "${{ env.TARGET_FILE }}"
+            mv white_upstream.txt "${{ env.TARGET_FILE }}"
             echo "CHANGED=true" >> $GITHUB_ENV
           else
             echo "Whitelist is already up to date"
-            rm white_merged.txt
+            rm white_upstream.txt
             echo "CHANGED=false" >> $GITHUB_ENV
           fi
-          
-          # Cleanup
-          rm -f white_upstream.txt
       
       - name: Commit Changes
         if: env.CHANGED == 'true'
