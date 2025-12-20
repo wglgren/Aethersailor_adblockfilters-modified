@@ -1,246 +1,229 @@
+# https://github.com/217heidai/adblockfilters/issues/205
 # https://github.com/217heidai/adblockfilters/issues/201
-||nimiq.com^$third-party
-||pool.nimiq.watch^$third-party
 # https://github.com/217heidai/adblockfilters/issues/199
-resellerclub.com
 # https://github.com/217heidai/adblockfilters/issues/196
-s.youtube.com
 # https://github.com/217heidai/adblockfilters/issues/195
-jf365.boc.cn
-mlife.jf365.boc.cn
 # https://github.com/217heidai/adblockfilters/issues/191
-aem.playstation.com
-metrics.aem.playstation.com
-smetrics.aem.playstation.com
-online-metrix.net
-cdn.branch.io
 # https://github.com/217heidai/adblockfilters/issues/190
-q2.qlogo.cn
 # https://github.com/217heidai/adblockfilters/issues/189
-tongji.baidu.com
 # https://github.com/217heidai/adblockfilters/issues/182
-appdownload.alicdn.com
 # https://github.com/217heidai/adblockfilters/issues/180
-youtube.com#%#//scriptlet('json-prune-fetch-response', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots', '', '/playlist\?list=|player\?|watch\?[tv]=/')
 # https://github.com/217heidai/adblockfilters/issues/179
-apps.coloros.com
 # https://github.com/217heidai/adblockfilters/issues/178
-wximg.wxs.qq.com
 # https://github.com/217heidai/adblockfilters/issues/175
-ads.privacy.qq.com
-rdelivery.qq.com
 # https://github.com/217heidai/adblockfilters/issues/174
-msdk.qq.com
-ssl.msdk.qq.com
-ap6.ssl.msdk.qq.com
 # https://github.com/217heidai/adblockfilters/issues/173
-ads.heytapmobi.com
-sms.ads.heytapmobi.com
 # https://github.com/217heidai/adblockfilters/issues/171
-client-uc.heytapmobi.com
 # https://github.com/217heidai/adblockfilters/issues/170
-i6.weather.oppomobile.com
 # https://github.com/217heidai/adblockfilters/issues/169
-thm.market.xiaomi.com
-a.market.xiaomi.com
-t2.a.market.xiaomi.com
-t3.a.market.xiaomi.com
-t1.market.xiaomi.com
-t2.market.xiaomi.com
-t3.market.xiaomi.com
-t4.market.xiaomi.com
-t5.market.xiaomi.com
-fs-im-kefu.7moor-fs1.com
-mime.baidu.com
-tnc3-alisc1.bytedance.com
 # 影响东风汽车主页访问
-dfmc.com.cn
 # https://github.com/217heidai/adblockfilters/issues/165
-analytics-api.smzdm.com
-erebor.douban.com
 # https://github.com/217heidai/adblockfilters/issues/164
-simg.sinajs.cn
 # https://github.com/217heidai/adblockfilters/issues/162
-ccc-x.jd.com
 # https://github.com/217heidai/adblockfilters/issues/160
-edith.xiaohongshu.com
 # https://github.com/217heidai/adblockfilters/issues/159
-mdt.qq.com
-game.eve.mdt.qq.com
 # https://github.com/217heidai/adblockfilters/issues/153
-wl.jd.com
 # https://github.com/217heidai/adblockfilters/issues/152
-onethingpcs.com
-pkoplink.com
-data.kuiniuca.com
-xycdn.com.gslb.kuiniuca.com
 # https://github.com/217heidai/adblockfilters/issues/151
-vmat.gtimg.com
 # https://github.com/217heidai/adblockfilters/issues/149
-ms.bdstatic.com
 # https://github.com/217heidai/adblockfilters/issues/148
-lf6-cdn-tos.bytecdntp.com
 # https://github.com/217heidai/adblockfilters/issues/145
-amdc.m.taobao.com
 # https://github.com/217heidai/adblockfilters/issues/140
+# https://github.com/217heidai/adblockfilters/issues/136
+# https://github.com/217heidai/adblockfilters/issues/135
+# https://github.com/217heidai/adblockfilters/issues/134
+# https://github.com/217heidai/adblockfilters/issues/132
+# https://github.com/217heidai/adblockfilters/issues/131
+# https://github.com/217heidai/adblockfilters/issues/130
+# https://github.com/217heidai/adblockfilters/issues/129
+# https://github.com/217heidai/adblockfilters/issues/127
+# https://github.com/217heidai/adblockfilters/issues/126
+# https://github.com/217heidai/adblockfilters/issues/125
+# https://github.com/217heidai/adblockfilters/issues/124
+# https://github.com/217heidai/adblockfilters/issues/123
+# https://github.com/217heidai/adblockfilters/issues/122
+# https://github.com/217heidai/adblockfilters/issues/120
+# https://github.com/217heidai/adblockfilters/issues/119
+# https://github.com/217heidai/adblockfilters/issues/118
+# https://github.com/217heidai/adblockfilters/issues/117
+# https://github.com/217heidai/adblockfilters/issues/116
+# https://github.com/217heidai/adblockfilters/issues/114
+# https://github.com/217heidai/adblockfilters/issues/113
+# https://github.com/217heidai/adblockfilters/issues/112
+# https://github.com/217heidai/adblockfilters/issues/111
+# https://github.com/hagezi/dns-blocklists/issues/4820
+# https://github.com/217heidai/adblockfilters/issues/108
+# https://github.com/217heidai/adblockfilters/issues/105
+# https://github.com/217heidai/adblockfilters/issues/92
+# https://github.com/217heidai/adblockfilters/issues/88
+# https://github.com/217heidai/adblockfilters/issues/87
+# https://github.com/217heidai/adblockfilters/issues/84
+# https://github.com/217heidai/adblockfilters/issues/82
+# https://github.com/217heidai/adblockfilters/issues/81
+# https://github.com/217heidai/adblockfilters/issues/79
+# https://github.com/217heidai/adblockfilters/issues/69
+# https://github.com/217heidai/adblockfilters/issues/68
+# https://github.com/217heidai/adblockfilters/issues/66
+# 影响魅族手机天气中实时台风路径
+# https://github.com/217heidai/adblockfilters/issues/60
+# https://github.com/217heidai/adblockfilters/issues/59
+# https://github.com/217heidai/adblockfilters/issues/58
+# https://github.com/217heidai/adblockfilters/issues/57
+# https://github.com/217heidai/adblockfilters/issues/56
+# https://github.com/217heidai/adblockfilters/issues/53
+# https://github.com/217heidai/adblockfilters/issues/51
+# https://github.com/217heidai/adblockfilters/issues/50
+# 影响 deepin 登陆，https://login.deepin.org
+# https://github.com/217heidai/adblockfilters/issues/48
+# https://github.com/217heidai/adblockfilters/issues/46
+# https://github.com/217heidai/adblockfilters/issues/44
+# https://github.com/217heidai/adblockfilters/issues/39
+# https://uprising.kip.pro/join?ref=6Q4ARF 
+# https://github.com/217heidai/adblockfilters/issues/38
+# https://github.com/217heidai/adblockfilters/issues/37
+# https://github.com/217heidai/adblockfilters/issues/35
+# https://github.com/217heidai/adblockfilters/issues/34
+# https://github.com/217heidai/adblockfilters/issues/32
+# https://github.com/217heidai/adblockfilters/issues/29
+# https://github.com/217heidai/adblockfilters/issues/26
+# https://github.com/217heidai/adblockfilters/issues/25
+# https://github.com/217heidai/adblockfilters/issues/22
+# https://github.com/217heidai/adblockfilters/issues/19
+# https://github.com/217heidai/adblockfilters/issues/17
+# https://github.com/217heidai/adblockfilters/issues/16
+# https://github.com/217heidai/adblockfilters/issues/10
+# https://github.com/217heidai/adblockfilters/issues/8
+# https://github.com/217heidai/adblockfilters/issues/3
+
+# Local additions
+
+*/ad_
+*/ad.
+17u.cn
+360.cn
+alimama.com
+biligame.com
+dui88.com
+json.cn
+kuiniuca.com
+natfrp.cloud
+onethingpcs.com
+online-metrix.net
+paypalobjects.com
+pkoplink.com
+resellerclub.com
+revanced.net
+sentry.io
+shayujizhang.com
+tantanapp.com
+tanx.com
+v6lvs.com
+vk.com
+yhd.com
+ztgame.com
+||ad.
+||nimiq.com^$third-party
+ads.heytapmobi.com
+aem.playstation.com
+aider-res.meizu.com
+analytics-api.smzdm.com
+api-shoulei-ssl.xunlei.com
+appdownload.alicdn.com
+apps.coloros.com
+bce.baidu.com
+campaign.adobe.com
+castatic.fengkongcloud.com
+ccc-x.jd.com
+cdn.branch.io
+chat.bilibili.com
+click.discord.com
+client-uc.heytapmobi.com
+cmts.iqiyi.com
+conn-service-cn-03.allawntech.com
+conn-service-cn-04.allawntech.com
+conn-service-cn-05.allawntech.com
 conn1.coloros.com
 conn2.coloros.com
 conn3.coloros.com
 conn4.coloros.com
 conn5.coloros.com
-# https://github.com/217heidai/adblockfilters/issues/136
-revanced.net
-# https://github.com/217heidai/adblockfilters/issues/135
-push2.eastmoney.com
-# https://github.com/217heidai/adblockfilters/issues/134
-testit.miui.com
-# https://github.com/217heidai/adblockfilters/issues/132
-lf3-data.volccdn.com
-# https://github.com/217heidai/adblockfilters/issues/131
-*/ad_
-# https://github.com/217heidai/adblockfilters/issues/130
-rlogs.youdao.com
-# https://github.com/217heidai/adblockfilters/issues/129
-ztgame.com
-beacon.ztgame.com
-beacon.ztgame.ztinfoga.com
-# https://github.com/217heidai/adblockfilters/issues/127
-chat.bilibili.com
-# https://github.com/217heidai/adblockfilters/issues/126
-testingcf.jsdelivr.net
-testingcf.jsdelivr.net.cdn.cloudflare.net
-# https://github.com/217heidai/adblockfilters/issues/125
-nisportal.10010.com
-# https://github.com/217heidai/adblockfilters/issues/124
-nstool.netease.com
-# https://github.com/217heidai/adblockfilters/issues/123
-s2.kskwai.com
-# https://github.com/217heidai/adblockfilters/issues/122
-v6lvs.com
-# https://github.com/217heidai/adblockfilters/issues/120
-gia.jd.com
-# https://github.com/217heidai/adblockfilters/issues/119
-duiba.com.cn
-dui88.com
-# https://github.com/217heidai/adblockfilters/issues/118
-biligame.com
-# https://github.com/217heidai/adblockfilters/issues/117
-17u.cn
-# https://github.com/217heidai/adblockfilters/issues/116
-alimama.com
-# https://github.com/217heidai/adblockfilters/issues/114
-pt.5211game.com
-# https://github.com/217heidai/adblockfilters/issues/113
-app.chat.xiaomi.net
-cn.app.chat.xiaomi.net
-# https://github.com/217heidai/adblockfilters/issues/112
-kuiniuca.com
-# https://github.com/217heidai/adblockfilters/issues/111
-vk.com
-# https://github.com/hagezi/dns-blocklists/issues/4820
-g.lazcdn.com
-# https://github.com/217heidai/adblockfilters/issues/108
-wtradv.market.xiaomi.com
-api.comm.miui.com
-statusapi.micloud.xiaomi.net
-i.xiaomi.com
-api.developer.xiaomi.com
-galleryapi.micloud.xiaomi.net
-cnbj1.fds.api.xiaomi.com
-# https://github.com/217heidai/adblockfilters/issues/105
-api.vip.miui.com
-# https://github.com/217heidai/adblockfilters/issues/92
-a0.app.xiaomi.com
-# https://github.com/217heidai/adblockfilters/issues/88
-nsclick.baidu.com
-# https://github.com/217heidai/adblockfilters/issues/87
-oauth-login-drcn.platform.dbankcloud.com
-# https://github.com/217heidai/adblockfilters/issues/84
-jnn-pa.googleapis.com
-# https://github.com/217heidai/adblockfilters/issues/82
-staticsns.cdn.bcebos.com
-# https://github.com/217heidai/adblockfilters/issues/81
-c.pc.qq.com
-# https://github.com/217heidai/adblockfilters/issues/79
-cgi.connect.qq.com
-# https://github.com/217heidai/adblockfilters/issues/69
-conn-service-cn-03.allawntech.com
-conn-service-cn-04.allawntech.com
-conn-service-cn-05.allawntech.com
-# https://github.com/217heidai/adblockfilters/issues/68
-natfrp.cloud
-# https://github.com/217heidai/adblockfilters/issues/66
-tracker.ai.xiaomi.com
-# 影响魅族手机天气中实时台风路径
-aider-res.meizu.com
-# https://github.com/217heidai/adblockfilters/issues/60
-json.cn
-# https://github.com/217heidai/adblockfilters/issues/59
-vv.video.qq.com
-# https://github.com/217heidai/adblockfilters/issues/58
-tantanapp.com
-# https://github.com/217heidai/adblockfilters/issues/57
-down.sandai.net
-# https://github.com/217heidai/adblockfilters/issues/56
-www.haier.com
-net.haier.com
-# https://github.com/217heidai/adblockfilters/issues/53
-files2.freedownloadmanager.org
-# https://github.com/217heidai/adblockfilters/issues/51
-campaign.adobe.com
-# https://github.com/217heidai/adblockfilters/issues/50
-ynuf.aliapp.org
-# 影响 deepin 登陆，https://login.deepin.org
-ac.dun.163.com
-# https://github.com/217heidai/adblockfilters/issues/48
-tanx.com
-# https://github.com/217heidai/adblockfilters/issues/46
-sentry.io
-# https://github.com/217heidai/adblockfilters/issues/44
-||ad.
-*/ad.
-# https://github.com/217heidai/adblockfilters/issues/39
-go.sohu.com
-txt.go.sohu.com
-# https://uprising.kip.pro/join?ref=6Q4ARF 
-uprising.kip.pro
-# https://github.com/217heidai/adblockfilters/issues/38
-castatic.fengkongcloud.com
-# https://github.com/217heidai/adblockfilters/issues/37
-nj.t.bcsp2p.baidu.com
-# https://github.com/217heidai/adblockfilters/issues/35
-statics.123pan.com
-# https://github.com/217heidai/adblockfilters/issues/34
-click.discord.com
-# https://github.com/217heidai/adblockfilters/issues/32
-paypalobjects.com
-www.paypalobjects.com
-# https://github.com/217heidai/adblockfilters/issues/29
-cmts.iqiyi.com
-# https://github.com/217heidai/adblockfilters/issues/26
-get.sogou.com
-shouji.sogou.com
-# https://github.com/217heidai/adblockfilters/issues/25
-knicks.jd.com
-# https://github.com/217heidai/adblockfilters/issues/22
-frog.yuanfudao.com
-# https://github.com/217heidai/adblockfilters/issues/19
-yhd.com
-www.yhd.com
-click.yhd.com
-tracker.yhd.com
-api.dsp.yhd.com
-# https://github.com/217heidai/adblockfilters/issues/17
-img-nos.yiyouliao.com
-# https://github.com/217heidai/adblockfilters/issues/16
-get.sougou.com
-api-shoulei-ssl.xunlei.com
-# https://github.com/217heidai/adblockfilters/issues/10
-shayujizhang.com
-api.shayujizhang.com
-# https://github.com/217heidai/adblockfilters/issues/8
+dfmc.com.cn
 dig.bdurl.net
-# https://github.com/217heidai/adblockfilters/issues/3
-360.cn
-www.360.cn
-bce.baidu.com
+down.sandai.net
+duiba.com.cn
+edith.xiaohongshu.com
+erebor.douban.com
+files2.freedownloadmanager.org
+frog.yuanfudao.com
+fs-im-kefu.7moor-fs1.com
+g.lazcdn.com
+get.sogou.com
+get.sougou.com
+gia.jd.com
+go.sohu.com
+i.xiaomi.com
+img-nos.yiyouliao.com
+jf365.boc.cn
+jnn-pa.googleapis.com
+knicks.jd.com
+lf3-data.volccdn.com
+lf6-cdn-tos.bytecdntp.com
+mdt.qq.com
+mime.baidu.com
+ms.bdstatic.com
+msdk.qq.com
+net.haier.com
+nisportal.10010.com
+nsclick.baidu.com
+nstool.netease.com
+pt.5211game.com
+push2.eastmoney.com
+q2.qlogo.cn
+rdelivery.qq.com
+rlogs.youdao.com
+s.youtube.com
+s2.kskwai.com
+shouji.sogou.com
+simg.sinajs.cn
+statics.123pan.com
+testingcf.jsdelivr.net
+testit.miui.com
+tnc3-alisc1.bytedance.com
+tongji.baidu.com
+uprising.kip.pro
+vmat.gtimg.com
+wl.jd.com
+www.haier.com
+ynuf.aliapp.org
+||pool.nimiq.watch^$third-party
+a.market.xiaomi.com
+a0.app.xiaomi.com
+ac.dun.163.com
+ads.privacy.qq.com
+amdc.m.taobao.com
+api.comm.miui.com
+api.developer.xiaomi.com
+api.vip.miui.com
+app.chat.xiaomi.net
+beacon.ztgame.ztinfoga.com
+c.pc.qq.com
+cgi.connect.qq.com
+galleryapi.micloud.xiaomi.net
+i6.weather.oppomobile.com
+oauth-login-drcn.platform.dbankcloud.com
+staticsns.cdn.bcebos.com
+statusapi.micloud.xiaomi.net
+t1.market.xiaomi.com
+t2.market.xiaomi.com
+t3.market.xiaomi.com
+t4.market.xiaomi.com
+t5.market.xiaomi.com
+thm.market.xiaomi.com
+tracker.ai.xiaomi.com
+vv.video.qq.com
+wtradv.market.xiaomi.com
+wximg.wxs.qq.com
+cnbj1.fds.api.xiaomi.com
+nj.t.bcsp2p.baidu.com
+youtube.com#%#//scriptlet('json-prune-fetch-response', 'playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots', '', '/playlist\?list=|player\?|watch\?[tv]=/')
+testingcf.jsdelivr.net.cdn.cloudflare.net
