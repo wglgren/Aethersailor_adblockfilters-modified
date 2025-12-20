@@ -13,11 +13,16 @@ jobs:
     
     steps:
       - name: Delete Failed and Cancelled Workflow Runs
-        uses: Mattraks/delete-workflow-runs@v2
-        with:
-          token: ${{ github.token }}
-          repository: ${{ github.repository }}
-          retain_days: 0
-          keep_minimum_runs: 0
-          delete_workflow_pattern: 'all'
-          delete_run_by_conclusion_pattern: 'failure,cancelled'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Get all workflow runs with failure or cancelled status
+          gh api repos/${{ github.repository }}/actions/runs \
+            --paginate \
+            -q '.workflow_runs[] | select(.conclusion=="failure" or .conclusion=="cancelled") | .id' \
+            | while read run_id; do
+              echo "Deleting run ID: $run_id"
+              gh api repos/${{ github.repository }}/actions/runs/$run_id -X DELETE
+            done
+          
+          echo "✅ Cleanup completed!"
