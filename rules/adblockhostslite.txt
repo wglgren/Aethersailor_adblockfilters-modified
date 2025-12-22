@@ -3,9 +3,9 @@
 # Description: 适用于 hosts 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockhostslite.txt
-# Version: 20251222003407
-# Last modified: 2025/12/22 00:34:07
-# Blocked domains: 9956
+# Version: 20251222102545
+# Last modified: 2025/12/22 10:25:45
+# Blocked domains: 9954
 #
 127.0.0.1	localhost
 127.0.0.1	localhost.localdomain
@@ -102,6 +102,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	103.205.253.251
 0.0.0.0	103.28.204.208
 0.0.0.0	103.40.13.122
+0.0.0.0	106.13.29.104
 0.0.0.0	106.14.68.26
 0.0.0.0	106.52.185.141
 0.0.0.0	106.52.208.143
@@ -111,6 +112,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	adm.10jqka.com.cn
 0.0.0.0	stat.10jqka.com.cn
 0.0.0.0	10raw.com
+0.0.0.0	110.40.199.21
 0.0.0.0	v.110route.cn
 0.0.0.0	ytx-file.110route.cn
 0.0.0.0	soft.110route.com
@@ -119,10 +121,8 @@ ff02::3	ip6-allhosts
 0.0.0.0	112.18.10.80
 0.0.0.0	oss-asq-static.11222.cn
 0.0.0.0	113.31.111.76
-0.0.0.0	113.98.201.248
 0.0.0.0	1133.cc
 0.0.0.0	114.132.150.96
-0.0.0.0	114.242.100.72
 0.0.0.0	114.55.106.136
 0.0.0.0	114.fm
 0.0.0.0	1.11467.com
@@ -164,7 +164,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	bdwmhz.120askimages.com
 0.0.0.0	120soft.cn
 0.0.0.0	121.40.18.128
-0.0.0.0	121.41.18.122
 0.0.0.0	122.51.46.102
 0.0.0.0	122.51.93.94
 0.0.0.0	12291.com
@@ -574,6 +573,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	420909.cn
 0.0.0.0	426g.com
 0.0.0.0	43.138.28.205
+0.0.0.0	43.139.169.60
 0.0.0.0	43.139.50.42
 0.0.0.0	43.226.39.44
 0.0.0.0	43.249.192.196
@@ -947,7 +947,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	9377.com
 0.0.0.0	937791.com
 0.0.0.0	9377os.com
-0.0.0.0	gebl.939319.xyz
 0.0.0.0	93ta.cn
 0.0.0.0	photo.941ziyuan.cn
 0.0.0.0	94ab.com
@@ -2617,6 +2616,7 @@ ff02::3	ip6-allhosts
 0.0.0.0	darm.cn
 0.0.0.0	sgtm.darryring.com
 0.0.0.0	dartsearch-cn.net
+0.0.0.0	clickserve.dartsearch.net
 0.0.0.0	dashet.com
 0.0.0.0	datacaciques.com
 0.0.0.0	datamaster.com.cn
@@ -6651,8 +6651,6 @@ ff02::3	ip6-allhosts
 0.0.0.0	omgmta1.qq.com
 0.0.0.0	openapi.guanjia.qq.com
 0.0.0.0	openmsf.3g.qq.com
-0.0.0.0	oth.eve.mdt.qq.com
-0.0.0.0	oth.str.mdt.qq.com
 0.0.0.0	p.store.qq.com
 0.0.0.0	p2p.qq.com
 0.0.0.0	p2pupdate.gamedl.qq.com
