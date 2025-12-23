@@ -3,9 +3,9 @@
 ! Description: 适用于 AdGuard、AdGuardHome 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 ! Homepage: https://github.com/217heidai/adblockfilters
 ! Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt
-! Version: 20251223164043
-! Last modified: 2025/12/23 16:40:43
-! Blocked domains: 9950
+! Version: 20251224003851
+! Last modified: 2025/12/24 00:38:51
+! Blocked domains: 9929
 ! unBlocked domains: 46
 !
 ||395131115419474531.002.sh.cn^
@@ -74,7 +74,6 @@
 ||100tone.com^
 ||101.126.11.168^
 ||101.132.131.225^
-||101.34.66.77^
 ||101.35.56.7^
 ||101.43.166.60^
 ||101.43.49.183^
@@ -104,7 +103,6 @@
 ||113.98.201.248^
 ||1133.cc^
 ||114.132.150.96^
-||114.242.100.72^
 ||114.55.106.136^
 ||114.fm^
 ||1.11467.com^
@@ -112,7 +110,6 @@
 ||115.190.235.92^
 ||appversion.115.com^
 ||115fx.com^
-||116.62.226.163^
 ||117.50.194.20^
 ||117.72.102.110^
 ||117.72.206.39^
@@ -551,17 +548,14 @@
 ||7zva1jn.44j4oo2a.cn^
 ||8k64sz0.44j4oo2a.cn^
 ||46676.cn^
-||47.104.169.91^
 ||47.104.173.216^
 ||47.104.31.7^
 ||47.104.96.89^
 ||47.107.136.106^
 ||47.108.63.64^
 ||47.109.145.121^
-||47.109.201.173^
 ||47.109.48.57^
 ||47.109.77.84^
-||47.113.186.138^
 ||47.116.208.81^
 ||47.120.70.161^
 ||47.121.137.8^
@@ -1091,7 +1085,6 @@
 ||analytics.afirstsoft.cn^
 ||app.aflink.com^
 ||cross-ad-api.afunapp.com^
-||ad.aginomoto.com^
 ||data-reporting.agora.io^
 ||logservice.agora.io^
 ||logservice-north-america.agora.io^
@@ -1293,7 +1286,6 @@
 ||dressimage.img-cn-beijing.aliyuncs.com^
 ||ep2x3kiawg-sdk.rum.aliyuncs.com^
 ||f7vkagmqwq-sdk.rum.aliyuncs.com^
-||f8ds5tkidk-sdk.rum.aliyuncs.com^
 ||facai383.oss-cn-guangzhou.aliyuncs.com^
 ||first-hufu.oss-cn-shanghai.aliyuncs.com^
 ||free-cdn.oss-cn-shanghai.aliyuncs.com^
@@ -1305,7 +1297,6 @@
 ||hkuu.oss-cn-hongkong.aliyuncs.com^
 ||httpdns-api.aliyuncs.com^
 ||httpdns-sc.aliyuncs.com^
-||hwztx6svg3-default-cn.rum.aliyuncs.com^
 ||hxyhxsq4jc-sdk.rum.aliyuncs.com^
 ||img-dsp.oss-cn-beijing.aliyuncs.com^
 ||imgggadpic.oss-cn-shenzhen.aliyuncs.com^
@@ -2112,7 +2103,6 @@
 ||api-access.pangolin-sdk-toutiao-b.com.w.cdngslb.com^
 ||api-access.pangolin-sdk-toutiao.com.w.cdngslb.com^
 ||api-access.pangolin-sdk-toutiao1.com.w.cdngslb.com^
-||app-posthog.bi-sage.site.w.cdngslb.com^
 ||log-api.pangolin-sdk-toutiao.com.w.cdngslb.com^
 ||m1.ad.10010.com.w.cdngslb.com^
 ||sentry-eu.ecoflow.com.w.cdngslb.com^
@@ -2762,7 +2752,6 @@
 ||dhlgd.cn^
 ||dhlglobal.cn^
 ||dhlhy.cn^
-||dhlxy.cm^
 ||ssl.di9qu.com.cn^
 ||diamonstar.cn^
 ||m.dian6.cn^
@@ -3166,7 +3155,6 @@
 ||falgin.cn^
 ||faloge.com^
 ||flux.faloo.com^
-||s.faloo.com^
 ||bdlmggcs1.familydoctor.com.cn^
 ||fanche.top^
 ||fancyapi.com^
@@ -4007,7 +3995,6 @@
 ||analytics.shop.hisense.com^
 ||api-4know-em.hismarttv.com^
 ||api-4know-eu.hismarttv.com^
-||api-cloudfalcon.hismarttv.com^
 ||api-gps.hismarttv.com^
 ||api-gps-em.hismarttv.com^
 ||api-gps-eu.hismarttv.com^
@@ -4356,7 +4343,6 @@
 ||y3.ifengimg.com^
 ||log.iflytek.com^
 ||logconf.iflytek.com^
-||log.igamecj.com^
 ||igehuo.com^
 ||entree.igetget.com^
 ||piccdn.igetget.com^
@@ -4942,7 +4928,6 @@
 ||marketing.krones.com^
 ||slb-p2p.vcloud.ks-live.com^
 ||ks-vbc-whatsapp.com.cn^
-||gzone.ksapisrv.com^
 ||log-sdk.ksapisrv.com^
 ||multi-az-ulog.ksapisrv.com^
 ||ulog.ksapisrv.com^
@@ -5426,10 +5411,6 @@
 ||mepodownload.mediatek.com^
 ||mgepodownload.mediatek.com^
 ||mediav.com^
-||adtracker.medproad.com^
-||creative.medproad.com^
-||os-adtracking.medproad.com^
-||tracker.medproad.com^
 ||meiduly.cn^
 ||meindl.cn^
 ||meiqia.com^
@@ -5736,7 +5717,6 @@
 ||msltzer.cn^
 ||srtb.msn.cn^
 ||c.msn.com.cn^
-||mssaifbd.com^
 ||livewebbs2pcdn.msstatic.com^
 ||pp-cdnfile1pcdn.msstatic.com^
 ||qn-cdnfile1pcdn.msstatic.com^
@@ -8609,7 +8589,6 @@
 ||royalbankofca5.wecom.work^
 ||royalbankofca6.wecom.work^
 ||weddingeeos.com^
-||event.wedobest.com.cn^
 ||event.stat.wedobest.com.cn^
 ||dns.weibo.cn^
 ||dp.im.weibo.cn^
