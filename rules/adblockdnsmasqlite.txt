@@ -3,9 +3,9 @@
 # Description: 适用于 DNSMasq 的去广告合并规则，每 8 个小时更新一次。规则源：AdGuard Base filter、AdGuard Chinese filter、AdGuard Mobile Ads filter、AdGuard DNS filter、AdRules DNS List、CJX's Annoyance List、EasyList、EasyList China、EasyPrivacy、xinggsf mv、jiekouAD、AWAvenue Ads Rule、DNS-Blocklists Light、Hblock、OISD Basic、StevenBlack hosts、Pollock hosts、anti-AD、Phishing URL Blocklist、Online Malicious URL Blocklist、PeterLowe、DanPollock、SmartTV、HageziMultiPro、uBlock Badware risks、OISD Big、Stalkerware、Scam Blocklist。Lite 版仅针对国内域名拦截。
 # Homepage: https://github.com/217heidai/adblockfilters
 # Source: https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnsmasqlite.txt
-# Version: 20251224003851
-# Last modified: 2025/12/24 00:38:51
-# Blocked domains: 9929
+# Version: 20251224101249
+# Last modified: 2025/12/24 10:12:49
+# Blocked domains: 9927
 #
 local=/395131115419474531.002.sh.cn/
 local=/006j.com/
@@ -109,6 +109,7 @@ local=/115.159.149.113/
 local=/115.190.235.92/
 local=/appversion.115.com/
 local=/115fx.com/
+local=/116.62.226.163/
 local=/117.50.194.20/
 local=/117.72.102.110/
 local=/117.72.206.39/
@@ -547,6 +548,7 @@ local=/44629.com/
 local=/7zva1jn.44j4oo2a.cn/
 local=/8k64sz0.44j4oo2a.cn/
 local=/46676.cn/
+local=/47.104.169.91/
 local=/47.104.173.216/
 local=/47.104.31.7/
 local=/47.104.96.89/
@@ -2761,7 +2763,6 @@ local=/dianxin.com/
 local=/a.diaoyu.cn/
 local=/diaque.cn/
 local=/codeym.dictall.com/
-local=/payrisk-tmx.didiglobal.com/
 local=/static.diditaxi.com.cn/
 local=/diettopseek.cn/
 local=/digital-control.com.cn/
@@ -3561,7 +3562,6 @@ local=/premierbuyer.edm.globalsources.com/
 local=/smkt.edm.globalsources.com/
 local=/summit.edm.globalsources.com/
 local=/techgifts.tradeshow.globalsources.com/
-local=/tmxapi.globalsources.com/
 local=/globeerp.com/
 local=/hnjgdl.geps.glodon.com/
 local=/1.glook.cn/
@@ -4082,7 +4082,6 @@ local=/minor-api-os.hoyoverse.com/
 local=/sdk-log-upload-os.hoyoverse.com/
 local=/sdk-os-static.hoyoverse.com/
 local=/sentry.eks.hoyoverse.com/
-local=/sg-payment.cydf.hoyoverse.com/
 local=/sg-public-data-api.hoyoverse.com/
 local=/ys-log-upload-os.hoyoverse.com/
 local=/zzz-log-upload-os.hoyoverse.com/
@@ -5395,7 +5394,6 @@ local=/ad.mazc.org/
 local=/mb33g.com/
 local=/mbai.cn/
 local=/mbaobao.com/
-local=/midasbuy-datagokjp.mc.hi.cn/
 local=/mconedh.cn/
 local=/up.mcprotocol.cn/
 local=/mcsafebox.com/

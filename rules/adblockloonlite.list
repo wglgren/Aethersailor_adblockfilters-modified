@@ -7,8 +7,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025/12/24 00:38:51
-#!support=9929
+#!date=2025/12/24 10:12:49
+#!support=9927
 #!proxy-select=REJECT
 #
 DOMAIN-SUFFIX,395131115419474531.002.sh.cn
@@ -113,6 +113,7 @@ DOMAIN-SUFFIX,115.159.149.113
 DOMAIN-SUFFIX,115.190.235.92
 DOMAIN-SUFFIX,appversion.115.com
 DOMAIN-SUFFIX,115fx.com
+DOMAIN-SUFFIX,116.62.226.163
 DOMAIN-SUFFIX,117.50.194.20
 DOMAIN-SUFFIX,117.72.102.110
 DOMAIN-SUFFIX,117.72.206.39
@@ -551,6 +552,7 @@ DOMAIN-SUFFIX,44629.com
 DOMAIN-SUFFIX,7zva1jn.44j4oo2a.cn
 DOMAIN-SUFFIX,8k64sz0.44j4oo2a.cn
 DOMAIN-SUFFIX,46676.cn
+DOMAIN-SUFFIX,47.104.169.91
 DOMAIN-SUFFIX,47.104.173.216
 DOMAIN-SUFFIX,47.104.31.7
 DOMAIN-SUFFIX,47.104.96.89
@@ -2765,7 +2767,6 @@ DOMAIN-SUFFIX,dianxin.com
 DOMAIN-SUFFIX,a.diaoyu.cn
 DOMAIN-SUFFIX,diaque.cn
 DOMAIN-SUFFIX,codeym.dictall.com
-DOMAIN-SUFFIX,payrisk-tmx.didiglobal.com
 DOMAIN-SUFFIX,static.diditaxi.com.cn
 DOMAIN-SUFFIX,diettopseek.cn
 DOMAIN-SUFFIX,digital-control.com.cn
@@ -3565,7 +3566,6 @@ DOMAIN-SUFFIX,premierbuyer.edm.globalsources.com
 DOMAIN-SUFFIX,smkt.edm.globalsources.com
 DOMAIN-SUFFIX,summit.edm.globalsources.com
 DOMAIN-SUFFIX,techgifts.tradeshow.globalsources.com
-DOMAIN-SUFFIX,tmxapi.globalsources.com
 DOMAIN-SUFFIX,globeerp.com
 DOMAIN-SUFFIX,hnjgdl.geps.glodon.com
 DOMAIN-SUFFIX,1.glook.cn
@@ -4086,7 +4086,6 @@ DOMAIN-SUFFIX,minor-api-os.hoyoverse.com
 DOMAIN-SUFFIX,sdk-log-upload-os.hoyoverse.com
 DOMAIN-SUFFIX,sdk-os-static.hoyoverse.com
 DOMAIN-SUFFIX,sentry.eks.hoyoverse.com
-DOMAIN-SUFFIX,sg-payment.cydf.hoyoverse.com
 DOMAIN-SUFFIX,sg-public-data-api.hoyoverse.com
 DOMAIN-SUFFIX,ys-log-upload-os.hoyoverse.com
 DOMAIN-SUFFIX,zzz-log-upload-os.hoyoverse.com
@@ -5399,7 +5398,6 @@ DOMAIN-SUFFIX,ad.mazc.org
 DOMAIN-SUFFIX,mb33g.com
 DOMAIN-SUFFIX,mbai.cn
 DOMAIN-SUFFIX,mbaobao.com
-DOMAIN-SUFFIX,midasbuy-datagokjp.mc.hi.cn
 DOMAIN-SUFFIX,mconedh.cn
 DOMAIN-SUFFIX,up.mcprotocol.cn
 DOMAIN-SUFFIX,mcsafebox.com

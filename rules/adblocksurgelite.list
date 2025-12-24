@@ -10,8 +10,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025/12/24 00:38:51
-#!support=9929
+#!date=2025/12/24 10:12:50
+#!support=9927
 #!proxy-select=REJECT-DROP
 #
 .395131115419474531.002.sh.cn
@@ -116,6 +116,7 @@
 .115.190.235.92
 .appversion.115.com
 .115fx.com
+.116.62.226.163
 .117.50.194.20
 .117.72.102.110
 .117.72.206.39
@@ -554,6 +555,7 @@
 .7zva1jn.44j4oo2a.cn
 .8k64sz0.44j4oo2a.cn
 .46676.cn
+.47.104.169.91
 .47.104.173.216
 .47.104.31.7
 .47.104.96.89
@@ -2768,7 +2770,6 @@
 .a.diaoyu.cn
 .diaque.cn
 .codeym.dictall.com
-.payrisk-tmx.didiglobal.com
 .static.diditaxi.com.cn
 .diettopseek.cn
 .digital-control.com.cn
@@ -3568,7 +3569,6 @@
 .smkt.edm.globalsources.com
 .summit.edm.globalsources.com
 .techgifts.tradeshow.globalsources.com
-.tmxapi.globalsources.com
 .globeerp.com
 .hnjgdl.geps.glodon.com
 .1.glook.cn
@@ -4089,7 +4089,6 @@
 .sdk-log-upload-os.hoyoverse.com
 .sdk-os-static.hoyoverse.com
 .sentry.eks.hoyoverse.com
-.sg-payment.cydf.hoyoverse.com
 .sg-public-data-api.hoyoverse.com
 .ys-log-upload-os.hoyoverse.com
 .zzz-log-upload-os.hoyoverse.com
@@ -5402,7 +5401,6 @@
 .mb33g.com
 .mbai.cn
 .mbaobao.com
-.midasbuy-datagokjp.mc.hi.cn
 .mconedh.cn
 .up.mcprotocol.cn
 .mcsafebox.com
