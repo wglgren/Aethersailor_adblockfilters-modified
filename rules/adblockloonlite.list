@@ -7,8 +7,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2025/12/27 16:37:16
-#!support=10014
+#!date=2025/12/28 00:35:07
+#!support=10007
 #!proxy-select=REJECT
 #
 DOMAIN-SUFFIX,395131115419474531.002.sh.cn
@@ -133,7 +133,6 @@ DOMAIN-SUFFIX,118678.com
 DOMAIN-SUFFIX,1188.com
 DOMAIN-SUFFIX,bj1.118pan.com
 DOMAIN-SUFFIX,119.91.141.214
-DOMAIN-SUFFIX,120.24.64.74
 DOMAIN-SUFFIX,120.25.163.165
 DOMAIN-SUFFIX,120.46.212.33
 DOMAIN-SUFFIX,120.48.50.33
@@ -855,7 +854,6 @@ DOMAIN-SUFFIX,8.137.114.210
 DOMAIN-SUFFIX,8.137.149.67
 DOMAIN-SUFFIX,8.138.182.17
 DOMAIN-SUFFIX,8.148.237.33
-DOMAIN-SUFFIX,8.153.205.30
 DOMAIN-SUFFIX,8.153.97.202
 DOMAIN-SUFFIX,8020home.com.cn
 DOMAIN-SUFFIX,80vn.cn
@@ -995,7 +993,6 @@ DOMAIN-SUFFIX,a0c77.com
 DOMAIN-SUFFIX,jasccservice.a179tng.cn
 DOMAIN-SUFFIX,tgd.a1eg07.cn
 DOMAIN-SUFFIX,a2m.cn
-DOMAIN-SUFFIX,telemetry.cell-0.cn-north-1.prod.tangerinebox.console.aws.a2z.org.cn
 DOMAIN-SUFFIX,a32a.com.cn
 DOMAIN-SUFFIX,a395813236.cn
 DOMAIN-SUFFIX,a3h.de
@@ -2120,7 +2117,6 @@ DOMAIN-SUFFIX,tracking.cat898.com
 DOMAIN-SUFFIX,vip.catcs.cn
 DOMAIN-SUFFIX,c.caxxetj.cn
 DOMAIN-SUFFIX,v.caxxetj.cn
-DOMAIN-SUFFIX,cb561fb5df.icu
 DOMAIN-SUFFIX,cbgolf.cn
 DOMAIN-SUFFIX,cbplaw.cn
 DOMAIN-SUFFIX,adv.ccb.com
@@ -4395,7 +4391,6 @@ DOMAIN-SUFFIX,c1.ifengimg.com
 DOMAIN-SUFFIX,y3.ifengimg.com
 DOMAIN-SUFFIX,log.iflytek.com
 DOMAIN-SUFFIX,logconf.iflytek.com
-DOMAIN-SUFFIX,log.igamecj.com
 DOMAIN-SUFFIX,igehuo.com
 DOMAIN-SUFFIX,entree.igetget.com
 DOMAIN-SUFFIX,piccdn.igetget.com
@@ -6878,8 +6873,6 @@ DOMAIN-SUFFIX,redmx.cn
 DOMAIN-SUFFIX,a8cv.jp.redodopower.com
 DOMAIN-SUFFIX,news.reedexpo.com.cn
 DOMAIN-SUFFIX,solutions.refinitiv.cn
-DOMAIN-SUFFIX,reg08-office.com
-DOMAIN-SUFFIX,reg08-office.net
 DOMAIN-SUFFIX,wyzq.rehuwang.com
 DOMAIN-SUFFIX,relish.com.cn
 DOMAIN-SUFFIX,remotedu.cn
