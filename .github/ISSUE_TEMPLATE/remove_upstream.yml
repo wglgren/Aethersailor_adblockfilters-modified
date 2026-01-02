@@ -1,0 +1,27 @@
+name: "➖ 建议删除上游规则"
+description: "某个上游规则已停止维护或质量下降？建议移除。"
+title: "[移除]: <规则名称>"
+labels: ["rule-removal", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        移除规则是一个重大的决定，我们需要确凿的理由。
+
+  - type: input
+    id: rule_name
+    attributes:
+      label: 规则名称
+      placeholder: 请填写 README 中列出的准确规则名称
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 移除理由
+      description: 请详细说明移除原因（例如：项目已归档、误杀率过高且无法联系维护者、域名失效等）。如果有相关 Issue 链接请一并附上。
+      placeholder: 该项目已于2024年停止更新，且近期出现大量误杀...
+    validations:
+      required: true

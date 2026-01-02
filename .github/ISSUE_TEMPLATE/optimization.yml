@@ -1,0 +1,37 @@
+name: "💡 项目优化建议"
+description: "对项目架构、代码逻辑或工作流有更好的想法？欢迎提出。"
+title: "[优化]: <简述优化方向>"
+labels: ["enhancement", "discussion"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        本项目的持续发展离不开社区的智慧。无论是代码重构、架构调整还是 CI/CD 流程优化，我们都乐于倾听。
+
+  - type: textarea
+    id: current_situation
+    attributes:
+      label: 现状描述
+      description: 目前的实现方式存在什么问题？或者有哪些痛点？
+      placeholder: 当前的去重逻辑在处理大量规则时内存占用过高...
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 优化建议
+      description: 您期望如何改进？如果有具体的实现思路或参考文章，请详细描述。
+      placeholder: 建议引入...算法优化匹配效率，或者是重构...模块...
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: 预期收益
+      description: 这个改变会带来什么好处？（例如：提升性能、降低维护成本、增强兼容性等）
+      placeholder: 预计能减少...构建时间，提升...体验...
+    validations:
+      required: true

@@ -1,0 +1,47 @@
+name: "🐛 误杀上报"
+description: "正常访问的网站或应用被错误拦截？请在这里反馈。"
+title: "[误杀]: <请填写受影响的域名或应用名称>"
+labels: ["false-positive", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您反馈误杀问题！这有助于提升规则的准确性。
+        请尽量提供详细信息，以便我们快速验证和修复。
+
+  - type: input
+    id: domain
+    attributes:
+      label: 受影响的域名/应用
+      description: 请填写被错误拦截的具体域名或应用名称。
+      placeholder: example.com 或 某某APP
+    validations:
+      required: true
+
+  - type: textarea
+    id: rule
+    attributes:
+      label: 拦截规则 (可选)
+      description: 如果您知道是哪条规则导致了误杀，请粘贴在这里。您可以在 AdGuard/Clash 等软件的拦截日志中找到。
+      placeholder: ||example.com^
+      render: ipfilter
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 复现步骤与描述
+      description: 请描述在什么情况下会出现问题（例如：点击登录按钮时无反应）。
+      placeholder: |
+        1. 打开 https://example.com
+        2. 点击...
+        3. 页面提示...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或日志
+      description: 请上传拦截界面截图或相关日志（请注意遮挡个人隐私信息）。
+      placeholder: 拖拽图片到这里上传

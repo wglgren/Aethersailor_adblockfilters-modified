@@ -1,0 +1,36 @@
+name: "➕ 建议增加上游规则"
+description: "发现了优质的广告过滤规则？推荐给我们。"
+title: "[新增]: <规则名称>"
+labels: ["rule-request", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        推荐新规则时，请优先考虑规则的维护活跃度和误杀控制水平。
+
+  - type: input
+    id: rule_name
+    attributes:
+      label: 规则名称
+      placeholder: 例如：Hagezi's Pro Blocklist
+    validations:
+      required: true
+
+  - type: input
+    id: rule_url
+    attributes:
+      label: 规则链接
+      description: 请提供规则文件的原始下载链接或项目主页。
+      placeholder: https://raw.githubusercontent.com/.../rule.txt
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 推荐理由
+      description: 请简述为什么推荐这个规则？（例如：针对特定地区优化、更新频率高、误杀极低等）
+      placeholder: 该规则专为...设计，且维护者更新非常勤快...
+    validations:
+      required: true

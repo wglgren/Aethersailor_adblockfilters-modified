@@ -1,0 +1,49 @@
+name: "🎯 提交广告域名"
+description: "发现了未被拦截的广告？请提交其域名以便加入黑名单。"
+title: "[广告]: <请填写广告域名或来源>"
+labels: ["ad-submission", "triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您为净化网络环境做出贡献！
+        提交前请确保已更新至最新规则，并排除缓存原因。
+
+  - type: input
+    id: domain
+    attributes:
+      label: 广告域名/APP名称
+      description: 请填写承载广告的域名（如 ad.example.com）或 APP 名称。
+      placeholder: ad.example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ad_type
+    attributes:
+      label: 广告类型
+      description: 请选择广告展现的形式。
+      options:
+        - 网页横幅/弹窗
+        - APP 开屏广告
+        - 视频贴片广告
+        - 信息流广告
+        - 跟踪器/分析代码
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 详细描述
+      description: 请描述广告出现的位置和频率。如果是 APP，请注明版本号。
+      placeholder: 打开 APP 后首页顶部出现...
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 截图或抓包证据
+      description: 请上传广告截图。如果可能，提供抓包日志能大幅提高处理效率。
+      placeholder: 拖拽图片或粘贴日志文本到这里
