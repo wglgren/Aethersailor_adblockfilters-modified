@@ -250,3 +250,4 @@ bce.baidu.com
 # Custom whitelist entries
 dns.weixin.qq.com
 dns.weixin.qq.com.cn
+t.co
