@@ -8,3 +8,4 @@
 # api.example.com
 dns.weixin.qq.com.cn
 dns.weixin.qq.com
+t.co
