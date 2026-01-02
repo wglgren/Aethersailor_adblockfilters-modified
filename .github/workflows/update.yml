@@ -36,7 +36,7 @@ jobs:
           python adblock.py
           rm -rf __pycache__
           rm -rf app/__pycache__
-          echo "message=$(date)" >> $GITHUB_OUTPUT
+          echo "message=chore(filters): update adblock rules [$(TZ='Asia/Shanghai' date +'%F %T%:z')]" >> $GITHUB_OUTPUT
 
       - name: Compile Sing-Box filters
         run: |
