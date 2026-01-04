@@ -7,8 +7,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2026/01/04 00:35:21
-#!support=9031
+#!date=2026/01/04 10:35:23
+#!support=9028
 #!proxy-select=REJECT
 #
 DOMAIN-SUFFIX,395131115419474531.002.sh.cn
@@ -173,7 +173,6 @@ DOMAIN-SUFFIX,123cha.com
 DOMAIN-SUFFIX,123ko.cn
 DOMAIN-SUFFIX,123movies.love
 DOMAIN-SUFFIX,124.230.216.19
-DOMAIN-SUFFIX,124.248.66.227
 DOMAIN-SUFFIX,ent1.12584.cn
 DOMAIN-SUFFIX,health1.12584.cn
 DOMAIN-SUFFIX,img.12584.cn
@@ -5491,7 +5490,6 @@ DOMAIN-SUFFIX,m.nimenzaina.cn
 DOMAIN-SUFFIX,down.nishuoa.com
 DOMAIN-SUFFIX,nisihu.com.cn
 DOMAIN-SUFFIX,taobao.niucha.ren
-DOMAIN-SUFFIX,nje1.cn
 DOMAIN-SUFFIX,ehdj.njguluyu.cn
 DOMAIN-SUFFIX,photo.njlymyd.cn
 DOMAIN-SUFFIX,njob.com.cn
@@ -6901,7 +6899,6 @@ DOMAIN-SUFFIX,lcs.dev.surepush.cn
 DOMAIN-SUFFIX,susapi.dev.surepush.cn
 DOMAIN-SUFFIX,test.surepush.cn
 DOMAIN-SUFFIX,surinam.com.cn
-DOMAIN-SUFFIX,sushi-swap.biz
 DOMAIN-SUFFIX,suu7b.com
 DOMAIN-SUFFIX,suyashop.cn
 DOMAIN-SUFFIX,svdpgmt.cn
