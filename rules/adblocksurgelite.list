@@ -10,8 +10,8 @@
 #!system=iOS, iPadOS
 #!system_version=
 #!loon_version=
-#!date=2026/01/05 00:35:05
-#!support=1986
+#!date=2026/01/05 10:34:46
+#!support=1981
 #!proxy-select=REJECT-DROP
 #
 .395131115419474531.002.sh.cn
@@ -111,7 +111,6 @@
 .115.190.235.92
 .appversion.115.com
 .115fx.com
-.116.198.233.179
 .116.62.226.163
 .117.157.17.194
 .117.50.194.20
@@ -124,11 +123,10 @@
 .119.28.140.233
 .119.91.141.214
 .120.25.163.165
-.120.46.212.33
 .120.48.25.153
 .120.48.50.33
 .120.79.192.88
-.120.79.64.164
+.120.79.255.238
 .analysis.120ask.com
 .ax.120ask.com
 .bdjs.120askimages.com
@@ -354,8 +352,6 @@
 .426g.com
 .43.138.28.205
 .43.139.50.42
-.43.226.39.44
-.43.249.192.196
 .43366.cn
 .4390e036f6b5d8c9.com
 .443c25e247141fc4.com
@@ -1017,7 +1013,6 @@
 .bootcdn.cn
 .bootcss.com
 .bosiwangzi.cn
-.bot-whatsapp.com.cn
 .boyidianqi.com.cn
 .boyxu.cn
 .bozhihua.com
