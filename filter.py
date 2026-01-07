@@ -1,5 +1,5 @@
 import os
-import re
+import ipaddress
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from typing import List,Dict,Set,Tuple
 
@@ -8,21 +8,44 @@ from tld import get_tld
 
 from app import APPBase, AdGuard, AdGuardHome, DNSMasq, Hosts, InviZible, Loon, Mihomo, QuantumultX, Shadowrocket, SingBox, SmartDNS, Surge
 from readme import Rule
-from resolver import Resolver
+from resolver import Resolver, FilterDomainInfo
 
 class Filter(object):
     def __init__(self, ruleList:List[Rule], path:str):
         self.ruleList = ruleList
         self.path = path
+
+    def __normalize_domain(self, domain: str) -> str:
+        domain = domain.strip().lower()
+        if domain.endswith('.'):
+            domain = domain[:-1]
+        try:
+            domain = domain.encode("idna").decode("ascii")
+        except Exception:
+            pass
+        return domain
     
     # 获取拦截规则
-    def __getFilters(self) -> Tuple[Dict[str, Set[str]], Dict[str, Set[str]], Dict[str, str]]:
+    def __getFilters(self) -> Tuple[Dict[str, Set[str]], Dict[str, Set[str]], Dict[str, FilterDomainInfo]]:
         def dictadd(d1:Dict[str,Set], d2:Dict[str,Set]) -> Dict[str,Set]:
             d3 = dict()
             s = set.union(set(d1), set(d2))
             for item in s:
                 d3[item] = set.union(d1.get(item, set()), d2.get(item, set()))
             return d3
+        def merge_filter_info(old: FilterDomainInfo, new: FilterDomainInfo) -> FilterDomainInfo:
+            if not old:
+                return new
+            if not new:
+                return old
+            domains = old.domains | new.domains
+            if old.source == "target" or new.source == "target":
+                source = "target"
+            elif old.source == "context" or new.source == "context":
+                source = "context"
+            else:
+                source = "none"
+            return FilterDomainInfo(domains, source)
 
         thread_pool = ThreadPoolExecutor(max_workers=os.cpu_count() if os.cpu_count() > 4 else 4)
         resolver = Resolver(self.path)
@@ -43,13 +66,19 @@ class Filter(object):
         # 获取解析结果
         blockDict:Dict[str,Set[str]] = dict()
         unblockDict:Dict[str,Set[str]] = dict()
-        filterDict:Dict[str,str] = dict()
+        filterDict:Dict[str,FilterDomainInfo] = dict()
         for future in as_completed(taskList):
-            __blockDict,__unblockDict,__filterDict = future.result()
-            blockDict = dictadd(blockDict, __blockDict)
-            unblockDict = dictadd(unblockDict, __unblockDict)
-            for filter,domain in __filterDict.items():
-                filterDict[filter] = domain
+            try:
+                __blockDict,__unblockDict,__filterDict = future.result()
+                blockDict = dictadd(blockDict, __blockDict)
+                unblockDict = dictadd(unblockDict, __unblockDict)
+                for filter,domain_info in __filterDict.items():
+                    if filter in filterDict:
+                        filterDict[filter] = merge_filter_info(filterDict[filter], domain_info)
+                    else:
+                        filterDict[filter] = domain_info
+            except Exception as e:
+                logger.error("%s"%(e))
 
         return blockDict,unblockDict,filterDict
     
@@ -71,8 +100,21 @@ class Filter(object):
         if os.path.exists(fileName):
             with open(fileName, 'r') as f:
                 for line in f.readlines():
-                    if not line.startswith("#") and len(line.replace("\n", "")) > 4:
-                        whiteSet.add(line.replace("\n", ""))
+                    line = line.replace("\n", "").strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    try:
+                        ipaddress.ip_address(line)
+                        whiteSet.add(line)
+                        continue
+                    except Exception:
+                        pass
+                    try:
+                        res = get_tld(line, fix_protocol=True, as_object=True)
+                        if res.fld:
+                            whiteSet.add(self.__normalize_domain(line))
+                    except Exception:
+                        pass
         logger.info("white list: %d"%(len(whiteSet)))
         return whiteSet
     
@@ -115,7 +157,7 @@ class Filter(object):
             tmp = set()
             for i in range(len(l) - 1):
                 for j in range(i+1, len(l)):
-                    if re.match('.*\.%s$'%(l[i]), l[j]):
+                    if l[j].endswith("." + l[i]):
                         tmp.add(l[j])
             l = list(set(l)-tmp)
             l.sort()
@@ -138,7 +180,7 @@ class Filter(object):
                 subdomain_not_black = False
                 for _subdomain in list(set(subdomainList_origin) - set(subdomainList)):
                     if len(subdomain) > 0:
-                        if re.match('.*\.%s$'%(subdomain), _subdomain):
+                        if _subdomain.endswith("." + subdomain):
                             _domain = get_domain(fld, _subdomain)
                             if _domain not in blackSet:
                                 subdomain_not_black = True
@@ -163,7 +205,16 @@ class Filter(object):
             
         return domanList,domanSet_all
 
-    def __filterSort(self, filterDict:Dict[str,str], blockSet:Set[str], unblockSet:Set[str], blackSet:Set[str], whiteSet:Set[str]) -> Tuple[list[str], Set[str]]:
+    def __filterSort(self, filterDict:Dict[str,FilterDomainInfo], blockSet:Set[str], unblockSet:Set[str], blackSet:Set[str], whiteSet:Set[str]) -> Tuple[List[str], List[str], Set[str]]:
+        def in_domain_set(domain: str, domain_set: Set[str]) -> bool:
+            if domain in domain_set:
+                return True
+            try:
+                res = get_tld(domain, fix_protocol=True, as_object=True)
+                fld = res.fld
+            except Exception:
+                fld = ''
+            return bool(fld and fld in domain_set)
         filterList = list(set(filterDict) - whiteSet) # 剔除白名单
         filterList.sort() # 排序
         # 与 adblockdns 去重
@@ -175,22 +226,19 @@ class Filter(object):
                 filterList_var.append(filter)
                 continue
             
-            domain = filterDict[filter]
-            if domain:
-                if domain in blackSet: # 剔除黑名单
+            domain_info = filterDict[filter]
+            domains = domain_info.domains if domain_info and domain_info.source in {"target", "context"} else set()
+            if domains:
+                if all(in_domain_set(domain, blackSet) for domain in domains): # 剔除黑名单
                     continue
-                try:
-                    res = get_tld(domain, fix_protocol=True, as_object=True)
-                    fld = res.fld
-                except Exception as e:
-                    fld = ''
                 if filter.startswith('@@'):
-                    if domain in unblockSet or fld in unblockSet: # 剔除 adblockdns 已放行
+                    if all(in_domain_set(domain, unblockSet) for domain in domains): # 剔除 adblockdns 已放行
                         continue
                 else:
-                    if domain in blockSet or fld in blockSet: # 剔除 adblockdns 已拦截
+                    if all(in_domain_set(domain, blockSet) for domain in domains): # 剔除 adblockdns 已拦截
                         continue
-                domainSet_all.add(domain)
+                for domain in domains:
+                    domainSet_all.add(domain)
             
             filterList_final.append(filter)
         
@@ -225,6 +273,31 @@ class Filter(object):
         blockList, blockSet_block = self.__domainSort(blockDict, blackSet, whiteDict)
         unblockList, unblockSet_unblock = self.__domainSort(unblockDict, blackSet, whiteDict)
         filterList_var, filterList, domainSet_filter = self.__filterSort(filterDict, set(blockList), set(unblockList), blackSet, whiteSet)
+
+        lite_candidates = []
+        lite_unknown = 0
+        lite_non_china = 0
+        for f in filterList:
+            info = filterDict[f]
+            domains = info.domains if info else set()
+            source = info.source if info else "none"
+            if not domains or source == "none":
+                lite_unknown += 1
+                continue
+            if source in {"target", "context"} and all(domain in ChinaSet for domain in domains):
+                lite_candidates.append(f)
+            else:
+                lite_non_china += 1
+        sample_size = min(20, len(lite_candidates))
+        sample_mismatch = 0
+        for f in lite_candidates[:sample_size]:
+            domains = filterDict[f].domains
+            if any(domain not in ChinaSet for domain in domains):
+                sample_mismatch += 1
+        logger.info(
+            "lite filters: candidates=%d, unknown=%d, non_china=%d, sample=%d, sample_mismatch=%d"
+            % (len(lite_candidates), lite_unknown, lite_non_china, sample_size, sample_mismatch)
+        )
 
         # 生成合并规则 AdGuard, AdGuardHome, DNSMasq, InviZible, SmartDNS等
         generaterList:List[APPBase] = [

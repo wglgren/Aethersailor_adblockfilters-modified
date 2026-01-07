@@ -38,6 +38,10 @@ jobs:
           rm -rf app/__pycache__
           echo "message=chore(filters): update adblock rules [$(TZ='Asia/Shanghai' date +'%F %T%:z')]" >> $GITHUB_OUTPUT
 
+      - name: Validate rule counts
+        run: |
+          python scripts/validate_rule_counts.py
+
       - name: Compile Sing-Box filters
         run: |
           wget https://github.com/SagerNet/sing-box/releases/download/v${{env.SINGBOX_VERSION}}/sing-box-${{env.SINGBOX_VERSION}}-linux-amd64.tar.gz

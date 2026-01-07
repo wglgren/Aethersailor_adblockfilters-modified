@@ -1,13 +1,17 @@
 import os
 import sys
 import re
-from typing import Tuple,Dict,Set,List
+from typing import Tuple, Dict, Set, List, NamedTuple, Optional
 
 from tld import get_tld
 import IPy
 from loguru import logger
 
 from readme import Rule
+
+class FilterDomainInfo(NamedTuple):
+    domains: Set[str]
+    source: str  # target|context|none
 
 class Resolver(object):
     def __init__(self, path:str):
@@ -38,12 +42,36 @@ class Resolver(object):
                         'domain'
                     }
     
+    def __normalize_domain(self, domain: str) -> str:
+        domain = domain.strip().lower()
+        if domain.endswith('.'):
+            domain = domain[:-1]
+        try:
+            domain = domain.encode("idna").decode("ascii")
+        except Exception:
+            pass
+        return domain
+
+    def __split_host_port(self, address: str) -> Tuple[str, Optional[str]]:
+        address = address.strip()
+        if address.startswith('[') and ']' in address:
+            host = address[1:address.find(']')]
+            port_part = address[address.find(']') + 1:]
+            port = port_part[1:] if port_part.startswith(':') else None
+            return host, port
+        if address.count(':') == 1 and address.rfind(':') > 0:
+            host, port = address.rsplit(':', 1)
+            if port.isdigit():
+                return host, port
+        return address, None
+
     def __ip_or_domain(self, address:str) -> Tuple[str]: # ip, fld, subdomain
         ip, fld, subdomain = None, None, None
         try:
+            address = self.__normalize_domain(address)
             res = get_tld(address, fix_protocol=True, as_object=True)
-            fld = res.fld
-            subdomain = res.subdomain
+            fld = self.__normalize_domain(res.fld)
+            subdomain = self.__normalize_domain(res.subdomain) if res.subdomain else ''
         except Exception as e:
             try:
                 ip_address = IPy.IP(address)
@@ -55,15 +83,58 @@ class Resolver(object):
             return ip, fld, subdomain
     
     def __analysis(self, address:str) -> Tuple[str]:
-        address_tmp = address
-        if address.rfind(":") > 0:
-            address_tmp = address[ : address.rfind(":")]
+        address_tmp, _ = self.__split_host_port(address)
         ip, fld, subdomain = self.__ip_or_domain(address_tmp)
         if ip:
             return address, "" # 可能包含port，因此直接return address
         if fld:
             return fld, subdomain
         raise Exception('"%s": not domain or public ip'%(address))
+
+    def __normalize_domain_candidate(self, domain: str) -> Optional[str]:
+        domain = domain.strip()
+        if not domain or domain.startswith('~'):
+            return None
+        if ',' in domain or '|' in domain:
+            return None
+        if domain.startswith('*.'):
+            domain = domain[2:]
+        if domain.startswith('.') or domain.startswith('/'):
+            domain = domain[1:]
+        if '"' in domain:
+            domain = domain[:domain.find('"')]
+        if '^' in domain:
+            domain = domain[:domain.find('^')]
+        if '/' in domain:
+            domain = domain[:domain.find('/')]
+        if '*' in domain or domain.endswith('.') or domain.startswith('-'):
+            return None
+        return domain
+
+    def __parse_domain_list(self, domain_list: str, separator: str) -> Set[str]:
+        domains = set()
+        for item in domain_list.split(separator):
+            candidate = self.__normalize_domain_candidate(item)
+            if not candidate:
+                continue
+            try:
+                fld, subdomain = self.__analysis(candidate)
+                domain = "%s.%s" % (subdomain, fld) if subdomain else "%s" % (fld)
+                domains.add(domain)
+            except Exception:
+                continue
+        return domains
+
+    def __parse_domain_option(self, filter: str) -> Set[str]:
+        if '$' not in filter:
+            return set()
+        options = filter.split('$', 1)[1]
+        for part in options.split(','):
+            part = part.strip()
+            if part.startswith('domain='):
+                domain_value = part[len('domain='):]
+                return self.__parse_domain_list(domain_value, '|')
+        return set()
 
     # host 模式
     def __resolveHost(self, line) -> Tuple[str]:
@@ -94,10 +165,12 @@ class Resolver(object):
             return block
 
     # 从 filter 规则中找出包含的域名
-    def __resolveFilterDomain(self, filter) -> Tuple[str, str]:
+    def __resolveFilterDomain(self, filter) -> Tuple[str, FilterDomainInfo]:
         def match(pattern, string) -> bool:
             return True if re.match(pattern, string) else False
         domain = None
+        domain_set = set()
+        source = "none"
         try:
             domain_tmp = None
             while True:
@@ -177,8 +250,10 @@ class Resolver(object):
                 connector = '##'
                 if match('.*%s.*'%(connector), filter) and not filter.startswith(connector) and not filter.endswith(connector):
                     domain_tmp = filter[ : filter.find(connector)]
-                    if domain_tmp.find(',') > 0:
-                        domain_tmp = None
+                    domain_set = self.__parse_domain_list(domain_tmp, ',')
+                    if domain_set:
+                        source = "context"
+                    domain_tmp = None
                     break
                 # #?#
                 # example.com#?#selector
@@ -188,8 +263,10 @@ class Resolver(object):
                 connector = '#\?#'
                 if match('.*%s.*'%(connector), filter) and not filter.startswith(connector) and not filter.endswith(connector):
                     domain_tmp = filter[ : filter.find('#?#')] # 需去掉转义符'#\?#' -> '#?#'
-                    if domain_tmp.find(',') > 0:
-                        domain_tmp = None
+                    domain_set = self.__parse_domain_list(domain_tmp, ',')
+                    if domain_set:
+                        source = "context"
+                    domain_tmp = None
                     break
                 # #@#
                 # example.com#@#selector
@@ -199,8 +276,10 @@ class Resolver(object):
                 connector = '#@#'
                 if match('.*%s.*'%(connector), filter) and not filter.startswith(connector) and not filter.endswith(connector):
                     domain_tmp = filter[ : filter.find(connector)]
-                    if domain_tmp.find(',') > 0:
-                        domain_tmp = None
+                    domain_set = self.__parse_domain_list(domain_tmp, ',')
+                    if domain_set:
+                        source = "context"
+                    domain_tmp = None
                     break
                 # #$#
                 # example.com#$#selector
@@ -210,8 +289,10 @@ class Resolver(object):
                 connector = '#\$#'
                 if match('.*%s.*'%(connector), filter) and not filter.startswith(connector) and not filter.endswith(connector):
                     domain_tmp = filter[ : filter.find('#$#')] # 需去掉转义符'#\$#' -> '#$#'
-                    if domain_tmp.find(',') > 0:
-                        domain_tmp = None
+                    domain_set = self.__parse_domain_list(domain_tmp, ',')
+                    if domain_set:
+                        source = "context"
+                    domain_tmp = None
                     break
                 # #%#
                 # example.com#%#selector
@@ -221,8 +302,10 @@ class Resolver(object):
                 connector = '#%#'
                 if match('.*%s.*'%(connector), filter) and not filter.startswith(connector) and not filter.endswith(connector):
                     domain_tmp = filter[ : filter.find(connector)]
-                    if domain_tmp.find(',') > 0:
-                        domain_tmp = None
+                    domain_set = self.__parse_domain_list(domain_tmp, ',')
+                    if domain_set:
+                        source = "context"
+                    domain_tmp = None
                     break
                 
                 # a[href^="http://sarcasmadvisor.com/"]
@@ -251,41 +334,34 @@ class Resolver(object):
                         domain_tmp = domain_tmp[:domain_tmp.find("^")]
                     if domain_tmp.find('$') > 0:
                         domain_tmp = domain_tmp[:domain_tmp.find('$')]
-                    if domain_tmp.find(',') > 0:
-                        domain_tmp = None
                     break
                 
                 # 其它规则
                 raise Exception('"%s": can not resolve domain or ip'%(filter))
             
-            if domain_tmp:
-                if domain_tmp.find('"') > 0:
-                    domain_tmp = domain_tmp[:domain_tmp.find('"')]
-                if domain_tmp.find('^') > 0:
-                    domain_tmp = domain_tmp[:domain_tmp.find('^')]
-                if domain_tmp.startswith('*.') > 0:
-                    domain_tmp = domain_tmp[len('*.'):]
-                if domain_tmp.startswith('~') or domain_tmp.startswith('/') or domain_tmp.startswith('.'):
-                    domain_tmp = domain_tmp[1:]
-                if domain_tmp.find('/') > 0:
-                    domain_tmp = domain_tmp[:domain_tmp.find('/')]
-                if len(domain_tmp) < 4 or domain_tmp.find('.') < 0 or domain_tmp.find('*') >= 0 or domain_tmp[-1]=='.' or domain_tmp.startswith('-'):
+            if domain_tmp and not domain_set:
+                candidate = self.__normalize_domain_candidate(domain_tmp)
+                if not candidate:
                     raise Exception('"%s": not include domain or ip'%(filter))
                 try:
-                    fld, subdomain = self.__analysis(domain_tmp)
-                    if len(subdomain) > 0:
-                        domain = "%s.%s"%(subdomain,fld)
-                    else:
-                        domain = "%s"%(fld)
-                except Exception as e:
+                    fld, subdomain = self.__analysis(candidate)
+                    domain = "%s.%s"%(subdomain,fld) if len(subdomain) > 0 else "%s"%(fld)
+                    domain_set = {domain}
+                    source = "target"
+                except Exception:
                     raise Exception('"%s": not include domain or ip'%(filter))
+
+            if not domain_set:
+                domain_set = self.__parse_domain_option(filter)
+                if domain_set:
+                    source = "context"
         except Exception as e:
             logger.error("%s"%(e))
         finally:
-            return filter,domain
+            return filter, FilterDomainInfo(domain_set, source)
 
     # dns 模式
-    def __resolveDNS(self, line) -> Tuple[Tuple[str],Tuple[str],Tuple[str]]:
+    def __resolveDNS(self, line) -> Tuple[Tuple[str],Tuple[str],Tuple[str, FilterDomainInfo]]:
         def match(pattern, string):
             return True if re.match(pattern, string) else False
         try:
@@ -348,7 +424,7 @@ class Resolver(object):
             return block,unblock,filter
 
     # filter 模式
-    def __resolveFilter(self, line) -> Tuple[Tuple[str],Tuple[str],Tuple[str]]:
+    def __resolveFilter(self, line) -> Tuple[Tuple[str],Tuple[str],Tuple[str, FilterDomainInfo]]:
         def match(pattern, string):
             return True if re.match(pattern, string) else False
         try:
@@ -428,10 +504,10 @@ class Resolver(object):
         finally:
             return block,unblock,filter
 
-    def resolveHost(self, rule:Rule) -> Tuple[Dict[str,Set[str]],Dict[str,Set[str]],Dict[str,str]]:
+    def resolveHost(self, rule:Rule) -> Tuple[Dict[str,Set[str]],Dict[str,Set[str]],Dict[str,FilterDomainInfo]]:
         blockDict:Dict[str,Set[str]] = dict()
         unblockDict:Dict[str,Set[str]] = dict()
-        filterDict:Dict[str,str] = dict()
+        filterDict:Dict[str,FilterDomainInfo] = dict()
 
         filename = self.path + '/' + rule.filename
 
@@ -456,10 +532,10 @@ class Resolver(object):
         logger.info("%s: block=%d, unblock=%d, filter=%d"%(rule.name,len(blockDict),len(unblockDict),len(filterDict)))
         return blockDict,unblockDict,filterDict
 
-    def resolveDNS(self, rule:Rule) -> Tuple[Dict[str,Set[str]],Dict[str,Set[str]],Dict[str,str]]:
+    def resolveDNS(self, rule:Rule) -> Tuple[Dict[str,Set[str]],Dict[str,Set[str]],Dict[str,FilterDomainInfo]]:
         blockDict:Dict[str,Set[str]] = dict()
         unblockDict:Dict[str,Set[str]] = dict()
-        filterDict:Dict[str,str] = dict()
+        filterDict:Dict[str,FilterDomainInfo] = dict()
 
         filename = self.path + '/' + rule.filename
 
@@ -491,10 +567,10 @@ class Resolver(object):
         logger.info("%s: block=%d, unblock=%d, filter=%d"%(rule.name,len(blockDict),len(unblockDict),len(filterDict)))
         return blockDict,unblockDict,filterDict
     
-    def resolveFilter(self, rule:Rule) -> Tuple[Dict[str,Set[str]],Dict[str,Set[str]],Dict[str,str]]:
+    def resolveFilter(self, rule:Rule) -> Tuple[Dict[str,Set[str]],Dict[str,Set[str]],Dict[str,FilterDomainInfo]]:
         blockDict:Dict[str,Set[str]] = dict()
         unblockDict:Dict[str,Set[str]] = dict()
-        filterDict:Dict[str,str] = dict()
+        filterDict:Dict[str,FilterDomainInfo] = dict()
 
         filename = self.path + '/' + rule.filename
 

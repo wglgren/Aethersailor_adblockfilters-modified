@@ -1,6 +1,9 @@
 import os
 import asyncio
 import re
+import socket
+import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import httpx
@@ -8,6 +11,8 @@ import pytricia
 from tld import get_tld
 from loguru import logger
 from dns.asyncresolver import Resolver as DNSResolver
+from dns.resolver import NXDOMAIN, NoAnswer, NoNameservers
+from dns.exception import Timeout
 from dns.rdatatype import RdataType as DNSRdataType
 
 
@@ -22,16 +27,31 @@ class ChinaDomian(object):
         self.__update()
         self.__resolve()
 
+    def __normalize_domain(self, domain: str) -> str:
+        domain = domain.strip().lower()
+        if domain.endswith('.'):
+            domain = domain[:-1]
+        try:
+            domain = domain.encode("idna").decode("ascii")
+        except Exception:
+            pass
+        return domain
+
     def __update(self):
         try:
-            if os.path.exists(self.__fileName):
-                os.remove(self.__fileName)
+            file_download = self.__fileName + ".download"
+            if os.path.exists(file_download):
+                os.remove(file_download)
             
             with httpx.Client() as client:
                 response = client.get(self.__url)
                 response.raise_for_status()
-                with open(self.__fileName,'wb') as f:
+                with open(file_download,'wb') as f:
                     f.write(response.content)
+            if os.path.exists(file_download):
+                if os.path.exists(self.__fileName):
+                    os.remove(self.__fileName)
+                os.rename(file_download, self.__fileName)
         except Exception as e:
             logger.error("%s"%(e))
     
@@ -74,6 +94,7 @@ class ChinaDomian(object):
                         domain = line[7:]
                     else:
                         domain = line
+                    domain = self.__normalize_domain(domain)
                     fld, subdomian = self.__isDomain(domain)
                     if fld:
                         if subdomian:
@@ -98,6 +119,96 @@ class BlackList(object):
         self.__iplistFile_CN = os.getcwd() + "/rules/CN-ip-cidr.txt"
         self.__iplistUrl_CN = "https://raw.githubusercontent.com/Aethersailor/geoip/refs/heads/release/text/cn-ipv4.txt"
         self.__maxTask = 500  # 控制并发数避免触发公共 DNS 的 QPS 限制
+        self.__dns_stats = Counter()
+        self.__min_change_ratio = 0.7
+        self.__max_change_ratio = 1.5
+        self.__min_change_abs = 50000
+        self.__smartdns_wait_retries = 10
+        self.__smartdns_wait_sleep = 1
+
+    def __normalize_domain(self, domain: str) -> str:
+        domain = domain.strip().lower()
+        if domain.endswith('.'):
+            domain = domain[:-1]
+        try:
+            domain = domain.encode("idna").decode("ascii")
+        except Exception:
+            pass
+        return domain
+
+    def __split_host_port(self, address: str):
+        address = address.strip()
+        if address.startswith('[') and ']' in address:
+            host = address[1:address.find(']')]
+            port_part = address[address.find(']') + 1:]
+            port = int(port_part[1:]) if port_part.startswith(':') and port_part[1:].isdigit() else None
+            return host, port
+        if address.count(':') == 1 and address.rfind(':') > 0:
+            host, port = address.rsplit(':', 1)
+            if port.isdigit():
+                return host, int(port)
+        return address, None
+
+    def __wait_smartdns_ready(self, host="127.0.0.1", port=5053) -> bool:
+        for _ in range(self.__smartdns_wait_retries):
+            try:
+                with socket.create_connection((host, port), timeout=2):
+                    return True
+            except Exception:
+                time.sleep(self.__smartdns_wait_sleep)
+        return False
+
+    def __count_lines(self, filename: str) -> int:
+        if not os.path.exists(filename):
+            return 0
+        try:
+            with open(filename, "r") as f:
+                return sum(1 for line in f if line.strip())
+        except Exception:
+            return 0
+
+    def __is_anomalous_change(self, new_count: int, old_count: int) -> bool:
+        if old_count < 1:
+            return False
+        diff = abs(new_count - old_count)
+        if diff < self.__min_change_abs:
+            return False
+        ratio = new_count / old_count if old_count else 1
+        return ratio < self.__min_change_ratio or ratio > self.__max_change_ratio
+
+    def __safe_write_list(self, fileName: str, items: list, label: str) -> bool:
+        old_count = self.__count_lines(fileName)
+        new_count = len(items)
+        if self.__is_anomalous_change(new_count, old_count):
+            logger.warning("%s list anomaly: old=%d, new=%d. Continue writing." % (label, old_count, new_count))
+        if os.path.exists(fileName):
+            os.remove(fileName)
+        with open(fileName, "w") as f:
+            f.write('\n'.join(items) + '\n')
+        return True
+
+    def __log_dns_stats(self):
+        if not self.__dns_stats:
+            return
+        primary_queries = self.__dns_stats.get("primary_queries", 0)
+        primary_success = self.__dns_stats.get("primary_success", 0)
+        details = []
+        for key in [
+            "primary_nxdomain",
+            "primary_noanswer",
+            "primary_no_a_record",
+            "primary_nonameservers",
+            "primary_timeout",
+            "primary_error",
+        ]:
+            value = self.__dns_stats.get(key, 0)
+            if value:
+                details.append("%s=%d" % (key, value))
+        detail_text = ", ".join(details) if details else "none"
+        logger.info(
+            "dns stats: primary=%d/%d, failures=%s"
+            % (primary_success, primary_queries, detail_text)
+        )
 
     def __getDomainList(self):
         logger.info("resolve adblock dns backup...")
@@ -105,7 +216,14 @@ class BlackList(object):
         try:
             if os.path.exists(self.__domainlistFile):
                 with open(self.__domainlistFile, 'r') as f:
-                    domainList = [line.strip() for line in f if line.strip()]
+                    for line in f:
+                        line = line.strip()
+                        if not line:
+                            continue
+                        host, port = self.__split_host_port(line)
+                        host = self.__normalize_domain(host)
+                        domain = "%s:%d" % (host, port) if port else host
+                        domainList.append(domain)
         except Exception as e:
             logger.error("%s"%(e))
         finally:
@@ -135,14 +253,20 @@ class BlackList(object):
         logger.info("resolve China IP list...")
         pyt = pytricia.PyTricia()
         try:
-            if os.path.exists(self.__iplistFile_CN):
-                os.remove(self.__iplistFile_CN)
+            file_download = self.__iplistFile_CN + ".download"
+            if os.path.exists(file_download):
+                os.remove(file_download)
             
             with httpx.Client() as client:
                 response = client.get(self.__iplistUrl_CN)
                 response.raise_for_status()
-                with open(self.__iplistFile_CN,'wb') as f:
+                with open(file_download,'wb') as f:
                     f.write(response.content)
+            
+            if os.path.exists(file_download):
+                if os.path.exists(self.__iplistFile_CN):
+                    os.remove(self.__iplistFile_CN)
+                os.rename(file_download, self.__iplistFile_CN)
             
             if os.path.exists(self.__iplistFile_CN):
                 with open(self.__iplistFile_CN, 'r') as f:
@@ -156,8 +280,10 @@ class BlackList(object):
             logger.info("China IP Trie entries: %d"%(len(pyt)))
             return pyt
     
-    async def __resolve(self, dnsresolver, domain):
+    async def __resolve(self, dnsresolver, domain, source="primary"):
         ipList = []
+        stat_prefix = "%s_" % source
+        self.__dns_stats[stat_prefix + "queries"] += 1
         try:
             query_object = await dnsresolver.resolve(qname=domain, rdtype="A")
             query_item = None
@@ -166,25 +292,34 @@ class BlackList(object):
                     query_item = item
                     break
             if query_item is None:
-                raise Exception("not A type")
+                self.__dns_stats[stat_prefix + "no_a_record"] += 1
+                return ipList
             for item in query_item:
                 ip = '{}'.format(item)
                 if ip != "0.0.0.0":
                     ipList.append(ip)
+            if ipList:
+                self.__dns_stats[stat_prefix + "success"] += 1
+        except NXDOMAIN:
+            self.__dns_stats[stat_prefix + "nxdomain"] += 1
+        except NoAnswer:
+            self.__dns_stats[stat_prefix + "noanswer"] += 1
+        except NoNameservers:
+            self.__dns_stats[stat_prefix + "nonameservers"] += 1
+        except Timeout:
+            self.__dns_stats[stat_prefix + "timeout"] += 1
         except Exception:
-            pass  # 静默处理 DNS 解析失败，避免大量错误日志
+            self.__dns_stats[stat_prefix + "error"] += 1
         finally:
+            if not ipList:
+                self.__dns_stats[stat_prefix + "empty"] += 1
             return ipList
 
     async def __pingx(self, dnsresolver, domain, semaphore):
         async with semaphore:
-            host = domain
-            port = None
+            host, port = self.__split_host_port(domain)
+            host = self.__normalize_domain(host)
             ipList = []
-            if domain.rfind(":") > 0:
-                offset = domain.rfind(":")
-                host = domain[ : offset]
-                port = int(domain[offset + 1 : ])
             try:
                 get_tld(host, fix_protocol=True, as_object=True)
             except Exception:
@@ -205,35 +340,26 @@ class BlackList(object):
                             ipList.append(host)
                         except Exception:
                             pass  # 静默处理连接失败
-            else:
+            if not ipList:
                 count = 3
                 while len(ipList) < 1 and count > 0:
-                    ipList = await self.__resolve(dnsresolver, host)
+                    ipList = await self.__resolve(dnsresolver, host, source="primary")
                     count -= 1
-
             return domain, ipList
 
     def __generateBlackList(self, blackList):
         logger.info("generate black list...")
         try:
-            if os.path.exists(self.__blacklistFile):
-                os.remove(self.__blacklistFile)
-            
-            with open(self.__blacklistFile, "w") as f:
-                f.write('\n'.join(blackList) + '\n')
-            logger.info("block domain: %d"%(len(blackList)))
+            if self.__safe_write_list(self.__blacklistFile, blackList, "black"):
+                logger.info("block domain: %d"%(len(blackList)))
         except Exception as e:
             logger.error("%s"%(e))
     
     def __generateChinaList(self, ChinaList):
         logger.info("generate China list...")
         try:
-            if os.path.exists(self.__ChinalistFile):
-                os.remove(self.__ChinalistFile)
-            
-            with open(self.__ChinalistFile, "w") as f:
-                f.write('\n'.join(ChinaList) + '\n')
-            logger.info("China domain: %d"%(len(ChinaList)))
+            if self.__safe_write_list(self.__ChinalistFile, ChinaList, "china"):
+                logger.info("China domain: %d"%(len(ChinaList)))
         except Exception as e:
             logger.error("%s"%(e))
 
@@ -267,7 +393,8 @@ class BlackList(object):
                 pass
         
         loop.close()
-        logger.info("resolve domain: %d"%(len(domainDict)))
+        resolved = sum(1 for _, ipList in domainDict.items() if ipList)
+        logger.info("resolve domain: %d, success: %d, fail: %d"%(len(domainDict), resolved, len(domainDict) - resolved))
         return domainDict
 
     def __isChinaDomain(self, domain, ipList, fullSet_CN, domainSet_CN, compiled_regexps, keywordSet_CN, IPTrie_CN):
@@ -276,6 +403,7 @@ class BlackList(object):
         try:
             if ':' in domain:
                 domain = domain[:domain.find(':')]
+            domain = self.__normalize_domain(domain)
             
             # .cn 域名直接判定为中国
             if domain.endswith('.cn'):
@@ -315,11 +443,16 @@ class BlackList(object):
 
     def generate(self):
         try:
+            self.__dns_stats = Counter()
             domainList = self.__getDomainList()
             if len(domainList) < 1:
                 return
             
+            if not self.__wait_smartdns_ready():
+                raise RuntimeError("smartdns not ready")
+
             domainDict = self.__testDomain(domainList, ["127.0.0.1"], 5053)
+            self.__log_dns_stats()
 
             fullSet_CN, domainSet_CN, regexpSet_CN, keywordSet_CN = self.__getDomainSet_CN()
             IPTrie_CN = self.__getIPTrie_CN()
@@ -327,44 +460,42 @@ class BlackList(object):
             # 预编译所有正则表达式，避免重复编译
             compiled_regexps = [re.compile(pattern) for pattern in regexpSet_CN]
             logger.info("Compiled %d regexp patterns" % len(compiled_regexps))
+
+            if len(domainSet_CN) <= 100 or len(IPTrie_CN) <= 100:
+                logger.warning("China list or IP list too small, continue blacklist generation")
             
             blackList = []
-            if len(domainSet_CN) > 100 and len(IPTrie_CN) > 100:
-                # 增大线程池规模
-                max_workers = max(os.cpu_count() * 4, 16)
-                thread_pool = ThreadPoolExecutor(max_workers=max_workers)
-                logger.info("Using thread pool with %d workers" % max_workers)
-                
-                taskList = []
-                for domain in domainList:
-                    if domain in domainDict and domainDict[domain]:
-                        taskList.append(thread_pool.submit(
-                            self.__isChinaDomain, domain, domainDict[domain], 
-                            fullSet_CN, domainSet_CN, compiled_regexps, keywordSet_CN, IPTrie_CN
-                        ))
-                    else:
-                        blackList.append(domain)
-                
-                # 获取解析结果
-                ChinaSet_tmp = set()
-                for future in as_completed(taskList):
-                    try:
-                        domain, isChinaDomain = future.result()
-                        if isChinaDomain:
-                            ChinaSet_tmp.add(domain)
-                    except Exception:
-                        pass
-                
-                thread_pool.shutdown(wait=False)
-                
-                # 生成China域名列表
-                ChinaList = [domain for domain in domainList if domain in ChinaSet_tmp]
-                if ChinaList:
-                    self.__generateChinaList(ChinaList)
-            else:
-                for domain in domainList:
-                    if domain not in domainDict or not domainDict[domain]:
-                        blackList.append(domain)
+            # 增大线程池规模
+            max_workers = max(os.cpu_count() * 4, 16)
+            thread_pool = ThreadPoolExecutor(max_workers=max_workers)
+            logger.info("Using thread pool with %d workers" % max_workers)
+            
+            taskList = []
+            for domain in domainList:
+                if domain in domainDict and domainDict[domain]:
+                    taskList.append(thread_pool.submit(
+                        self.__isChinaDomain, domain, domainDict[domain], 
+                        fullSet_CN, domainSet_CN, compiled_regexps, keywordSet_CN, IPTrie_CN
+                    ))
+                else:
+                    blackList.append(domain)
+            
+            # 获取解析结果
+            ChinaSet_tmp = set()
+            for future in as_completed(taskList):
+                try:
+                    domain, isChinaDomain = future.result()
+                    if isChinaDomain:
+                        ChinaSet_tmp.add(domain)
+                except Exception:
+                    pass
+            
+            thread_pool.shutdown(wait=False)
+            
+            # 生成China域名列表
+            ChinaList = [domain for domain in domainList if domain in ChinaSet_tmp]
+            if ChinaList:
+                self.__generateChinaList(ChinaList)
 
             # 生成黑名单
             if blackList:

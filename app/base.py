@@ -6,14 +6,14 @@ from loguru import logger
 
 
 class APPBase(ABC):
-    def __init__(self, blockList:List[str], unblockList:List[str], filterDict:Dict[str,str], filterList:List[str], filterList_var:List[str], ChinaSet:Set[str], fileName:str, sourceRule:str):
+    def __init__(self, blockList:List[str], unblockList:List[str], filterDict:Dict[str,object], filterList:List[str], filterList_var:List[str], ChinaSet:Set[str], fileName:str, sourceRule:str):
         self.homepage:str = "https://github.com/217heidai/adblockfilters"
         self.source:str = "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules"
         self.version:str = "%s"%(time.strftime("%Y%m%d%H%M%S", time.localtime()))
         self.time:str = "%s"%(time.strftime("%Y/%m/%d %H:%M:%S", time.localtime()))
         self.blockList:List[str] = blockList
         self.unblockList:List[str] = unblockList
-        self.filterDict:Dict[str,str] = filterDict
+        self.filterDict:Dict[str,object] = filterDict
         self.filterList:List[str] = filterList
         self.filterList_var:List[str] = filterList_var
         self.ChinaSet:Set[str] = ChinaSet
@@ -35,15 +35,16 @@ class APPBase(ABC):
         finally:
             return liteList
 
-    def __generateFilterLiteList(self, filterDict:Dict[str,str], filterList:List[str], ChinaSet:Set[str]):
+    def __generateFilterLiteList(self, filterDict:Dict[str,object], filterList:List[str], ChinaSet:Set[str]):
         liteList = []
         try:
             for filter in filterList:
-                domain = filterDict[filter]
-                if domain:
-                    if domain in ChinaSet:
-                        liteList.append(filter)
-                else:
+                info = filterDict[filter]
+                domains = getattr(info, "domains", set())
+                source = getattr(info, "source", "none")
+                if not domains:
+                    continue
+                if source in {"target", "context"} and all(domain in ChinaSet for domain in domains):
                     liteList.append(filter)
         except Exception as e:
             logger.error("%s"%(e))
