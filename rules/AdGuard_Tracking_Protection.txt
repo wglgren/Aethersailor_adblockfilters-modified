@@ -68967,6 +68967,7 @@ $cookie=_awl;maxAge=30,domain=nypost.com|al.com|9news.com
 !
 ! NOTE: Specific rules
 !
+||scriber.webflix.ai/beacon
 ||rawpixel.com/external/gtag.js
 moebelix.*#%#//scriptlet('set-local-storage-item', 'coveo_cid', '$remove$')
 ||appmifile.com/i18n/ga*/
@@ -78157,6 +78158,9 @@ d4?appid*type*
 !
 !
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/222263
+!+ PLATFORM(windows, mac, android, cli)
+||awswaf.com/*/telemetry|$redirect=nooptext,domain=discipulusv2.amasystem.net
 ! https://github.com/AdguardTeam/AdguardFilters/issues/221623
 @@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
 ! https://github.com/AdguardTeam/AdguardFilters/issues/222178
@@ -83055,6 +83059,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||brownboxgroup.com^
 ||bruisebaseball.com^
 ||bubblyaction.com^
+||buddycanvas.com^
 ||bugpizza.com^
 ||buildingknife.com^
 ||bulbbait.com^
@@ -84248,6 +84253,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||reconditeprison.com^
 ||reconditerake.com^
 ||reconditerespect.com^
+||recyclehits.com^
 ||redbasketball.com^
 ||redbricksoap.com^
 ||reduceplan.com^
@@ -84293,6 +84299,7 @@ kizi.com#%#window.google_trackConversion = function() {};
 ||ritzyveil.com^
 ||roaddynamics.com^
 ||roadwalks.com^
+||roamhousing.com^
 ||robotgarages.com^
 ||rockagainst.com^
 ||rockstarwriter.com^
