@@ -54,7 +54,9 @@
 ||altruetech.com^
 ||altwi-zgs.com^
 ||amorpulse.com^
+||animeshoppers.com^
 ||anydebrid.com^
+||aoptee.com^
 ||app-uniswapping.org^
 ||appdrive.info^
 ||arduino.uk.eu.org^
@@ -154,6 +156,7 @@
 ||casualdating1.com^
 ||cda-pl.pl^
 ||cda-zalukaj.prv.pl^
+||cdn-defac13.techresource.shop^
 ||chat-o-live.com^
 ||cheat-on.com^
 ||check-update-today.me^
@@ -174,7 +177,6 @@
 ||cnhcomunicado.co^
 ||cnhnotificou.co^
 ||cnhvirtual.co^
-||cnqwli.info^
 ||cofdeal.com^
 ||cognatesyringe.com^
 ||coiincmi.com^
@@ -270,7 +272,6 @@
 ||estiloserena.com.br^
 ||etaindia.org^
 ||etaindiaonline.com^
-||etv-in.com^
 ||eudoraz.com^
 ||eudshop.shop^
 ||eventmusk-x.com^
@@ -306,7 +307,6 @@
 ||faze8.com^
 ||fazpowerdenet.tumblr.com^
 ||fdrc-gov.org^
-||feevefouhe.net^
 ||felara.com.do^
 ||field-garnet-duckling.glitch.me^
 ||filedenzu.com^
@@ -341,7 +341,6 @@
 ||freedom.invoiceid-bill.com^
 ||friday89.com^
 ||friday99.com^
-||fridaylocalmanager.duckdns.org^
 ||fuehrungszeugnis-service.de^
 ||fullview.pl^
 ||fundanemt.org^
@@ -399,7 +398,6 @@
 ||helpnanacenter.helpscoutdocs.com^
 ||helpuspsnow.ru^
 ||hernoclothing.com^
-||heukmsactivator.com^
 ||heyfusio.com^
 ||hfr67jhqrw8.com^
 ||hindustantowergroupltd.com^
@@ -418,7 +416,6 @@
 ||i-visaindia.com^
 ||iagadvanced.com^
 ||iaqorwr.com^
-||iceao.shop^
 ||icelandclothing.myshopify.com^
 ||ikiha.com^
 ||iklrge.com^
@@ -482,6 +479,7 @@
 ||kidsmama.online^
 ||kigurumi-usa.com^
 ||kingcampoutdoors.co.jp^
+||kino-cda.pl^
 ||kinomaniak.cc^
 ||kinonline.pl^
 ||kisserine.com^
@@ -523,6 +521,7 @@
 ||lozly.com^
 ||lucatee.com^
 ||lucidtiger.com^
+||lucysstyle.com^
 ||maebl.com^
 ||magnite.shop^
 ||mail-cytanet.pages.dev^
@@ -855,6 +854,7 @@
 ||telemarktalk.com^
 ||tencheckit.org^
 ||teodoroautopecas.com^
+||teslacase.org^
 ||teslatime.net^
 ||the-north-face.gr^
 ||thebayonline.shop^
@@ -894,7 +894,6 @@
 ||tromselementbygg.no^
 ||trumpsupport.help^
 ||trusltwcllet.com^
-||tsla-stock.com^
 ||turtleclient.xyz^
 ||twiiiter.com^
 ||twinsbio.com^
@@ -913,6 +912,7 @@
 ||unifully.com^
 ||uniswap-airdrops.org^
 ||uniswap-claim-gold.run^
+||uniswap-claim-today.run^
 ||uniswap-claim2024.run^
 ||uniswap-claim24.run^
 ||uniswap-e.com^
@@ -991,7 +991,6 @@
 ||uniswapcriterion.net^
 ||uniswapcriterion.org^
 ||uniswapdefi.xyz^
-||uniswapdex.org^
 ||uniswapetf.xyz^
 ||uniswapfund.xyz^
 ||uniswaphub.xyz^
@@ -1132,7 +1131,6 @@
 ||zerowasteinitiative.com^
 ||zhongda.info^
 ||zlibrary.to^
-||zltst.shop^
 ||zobaczfilm.com^
 ||zolrqw.palatlaldate.com^
 ||zooger.space^
