@@ -106,8 +106,12 @@ jobs:
               try:
                   q = dns.message.make_query("example.com", "A")
                   r = dns.query.udp(q, "127.0.0.1", port=5053, timeout=2)
-                  print("SmartDNS ready: rcode=%s" % dns.rcode.to_text(r.rcode()))
-                  break
+                  rcode = r.rcode()
+                  rcode_text = dns.rcode.to_text(rcode)
+                  if rcode == dns.rcode.NOERROR:
+                      print("SmartDNS ready: rcode=%s" % rcode_text)
+                      break
+                  print("SmartDNS not ready: rcode=%s" % rcode_text)
               except Exception:
                   time.sleep(1)
           else:
