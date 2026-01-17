@@ -76,8 +76,8 @@ class ReadMe(object):
             os.remove(self.filename)
         
         with open(self.filename, 'a') as f:
-            f.write("# AdBlock DNS Filters\n")
-            f.write("去广告合并规则，每天更新一次。  \n")
+            f.write("# AdBlock DNS Filters Modified\n")
+            f.write("adblockfilters 去广告合并规则增强版，每天更新一次。  \n")
             f.write("\n")
 
             f.write("## 说明\n")
@@ -86,11 +86,11 @@ class ReadMe(object):
             f.write("3. 本项目仅对上游规则进行合并、去重、去除无效域名，不做任何修改。如发现误拦截情况，可临时添加放行规则（如 `@@||www.example.com^$important`），并向上游规则反馈。\n")
             f.write("\n")
 
-            f.write("## 相比上游的改进与新增\n")
+            f.write("## 相比原版 adblockfilters 的改进与新增\n")
             f.write("1. 改进了工作流程。\n")
-            f.write("2. 白名单自动同步上游，并支持 `rules/white2.txt` 本地补充合并。\n")
+            f.write("2. 白名单自动同步上游仓库，并支持 `rules/white2.txt` 本地补充合并。\n")
             f.write("3. 域名提取与规则解析更完善，覆盖更多 filter/dns/host 规则格式，减少漏提取。\n")
-            f.write("4. 新增/独有规则源（相对上游，详见下表）：\n")
+            f.write("4. 新增/独有规则源（相对原版，详见下表）：\n")
             f.write("   - AdGuard Annoyances\n")
             f.write("   - AdGuard Tracking Protection\n")
             f.write("   - anti-AD\n")
