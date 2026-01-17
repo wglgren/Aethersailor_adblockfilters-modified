@@ -1,16 +1,16 @@
-# AdBlock DNS Filters
-去广告合并规则，每天更新一次。  
+# AdBlock DNS Filters Modified
+adblockfilters 去广告合并规则增强版，每天更新一次。  
 
 ## 说明
 1. 定时从上游各规则源获取更新，合并去重。
 2. 使用本地 SmartDNS 对上游各规则源拦截的域名进行解析，去除已无法解析的域名。（上游各规则源中存在大量已无法解析的域名，无需加入拦截规则）
 3. 本项目仅对上游规则进行合并、去重、去除无效域名，不做任何修改。如发现误拦截情况，可临时添加放行规则（如 `@@||www.example.com^$important`），并向上游规则反馈。
 
-## 相比上游的改进与新增
+## 相比原版 adblockfilters 的改进与新增
 1. 改进了工作流程。
-2. 白名单自动同步上游，并支持 `rules/white2.txt` 本地补充合并。
+2. 白名单自动同步上游仓库，并支持 `rules/white2.txt` 本地补充合并。
 3. 域名提取与规则解析更完善，覆盖更多 filter/dns/host 规则格式，减少漏提取。
-4. 新增/独有规则源（相对上游，详见下表）：
+4. 新增/独有规则源（相对原版，详见下表）：
    - AdGuard Annoyances
    - AdGuard Tracking Protection
    - anti-AD
