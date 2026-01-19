@@ -87,7 +87,7 @@ class ReadMe(object):
             f.write("\n")
 
             f.write("## 相比原版 adblockfilters 的改进与新增\n")
-            f.write("1. 大幅改进处理逻辑。优化后，处理六十万条上游规则只需要不到一个小时的时间。\n")
+            f.write("1. 改进了处理逻辑，缩短工作流运行时间。\n")
             f.write("2. 改进了中国规则和无效规则的处理流程，现在每次生成规则前均会对这两类规则进行验证，不再使用历史数据。\n")
             f.write("3. 白名单自动同步上游仓库，并支持 `rules/white2.txt` 本地补充合并。\n")
             f.write("4. 域名提取与规则解析更完善，覆盖更多 filter/dns/host 规则格式，减少漏提取。\n")

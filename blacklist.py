@@ -122,8 +122,8 @@ class BlackList(object):
         self.__iplistFile_CN = os.getcwd() + "/rules/CN-ip-cidr.txt"
         self.__iplistUrl_CN = "https://raw.githubusercontent.com/Aethersailor/geoip/refs/heads/release/text/cn-ipv4.txt"
         self.__maxTask = 500  # 控制并发数避免触发公共 DNS 的 QPS 限制
-        self.__dns_timeout = 3.0
-        self.__dns_lifetime = 5.0
+        self.__dns_timeout = 5.0
+        self.__dns_lifetime = 8.0
         self.__connect_timeout = 3.0
         self.__health_check_interval = 30000
         self.__health_check_timeout = 5.0
