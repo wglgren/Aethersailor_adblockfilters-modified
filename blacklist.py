@@ -121,11 +121,11 @@ class BlackList(object):
         self.__domainlistUrl_CN_Google = "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/google-cn.txt"
         self.__iplistFile_CN = os.getcwd() + "/rules/CN-ip-cidr.txt"
         self.__iplistUrl_CN = "https://raw.githubusercontent.com/Aethersailor/geoip/refs/heads/release/text/cn-ipv4.txt"
-        self.__maxTask = 200  # 控制并发数避免触发公共 DNS 的 QPS 限制
+        self.__maxTask = 500  # 控制并发数避免触发公共 DNS 的 QPS 限制
         self.__dns_timeout = 3.0
         self.__dns_lifetime = 5.0
         self.__connect_timeout = 3.0
-        self.__health_check_interval = 10000
+        self.__health_check_interval = 30000
         self.__health_check_timeout = 5.0
         self.__health_check_sleep = 5
         self.__health_check_max_wait = 600
