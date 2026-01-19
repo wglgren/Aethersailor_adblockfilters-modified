@@ -1,12 +1,15 @@
 # AdBlock DNS Filters Modified
+
 adblockfilters 去广告合并规则增强版，每天更新一次。  
 
 ## 说明
+
 1. 定时从上游各规则源获取更新，合并去重。
 2. 使用本地 SmartDNS 对上游各规则源拦截的域名进行解析，去除已无法解析的域名。（上游各规则源中存在大量已无法解析的域名，无需加入拦截规则）
 3. 本项目仅对上游规则进行合并、去重、去除无效域名，不做任何修改。如发现误拦截情况，可临时添加放行规则（如 `@@||www.example.com^$important`），并向上游规则反馈。
 
 ## 相比原版 adblockfilters 的改进与新增
+
 1. 改进了工作流程。
 2. 白名单自动同步上游仓库，并支持 `rules/white2.txt` 本地补充合并。
 3. 域名提取与规则解析更完善，覆盖更多 filter/dns/host 规则格式，减少漏提取。
@@ -14,13 +17,17 @@ adblockfilters 去广告合并规则增强版，每天更新一次。
    - AdGuard Annoyances
    - AdGuard Tracking Protection
    - anti-AD
+   - CERT.PL's Warning List
    - HageziMultiPro
    - HaGeZi's Apple Tracker Blocklist
    - HaGeZi's Badware Hoster Blocklist
+   - HaGeZi's OPPO & Realme Tracker Blocklist
    - HaGeZi's Windows/Office Tracker Blocklist
    - HaGeZi's Xiaomi Tracker Blocklist
    - HaGeZi's Vivo Tracker Blocklist
    - HaGeZi's Samsung Tracker Blocklist
+   - HaGeZi's Gambling Blocklist
+   - HaGeZi's The World's Most Abused TLDs
    - Malicious URL Blocklist
    - OISD Big
    - Online Malicious URL Blocklist
@@ -34,6 +41,7 @@ adblockfilters 去广告合并规则增强版，每天更新一次。
    - uBlock Privacy
 
 ## 订阅链接
+
 1. 规则x’为规则x的 Lite 版，仅针对国内域名拦截，体积较小（如添加完整规则报错数量限制，请尝试 Lite 规则）
 2. 已对 testingcf.jsdelivr.net CDN 缓存进行主动刷新，但仍存在一定刷新延时
 3. AdGuard 等浏览器插件使用规则1 + 规则2（规则2为规则1的补充，仅适用浏览器插件）
@@ -70,6 +78,7 @@ adblockfilters 去广告合并规则增强版，每天更新一次。
 | 规则14' | [原始链接](https://raw.githubusercontent.com/Aethersailor/adblockfilters-modified/main/rules/adblocksurgelite.list) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/adblocksurgelite.list) | Surge |
 
 ## 上游规则源
+
 1. 感谢各位广告过滤规则维护大佬们的辛苦付出。
 
 | 规则 | 类型 | 原始链接 | 加速链接 | 更新日期 |
@@ -104,6 +113,9 @@ adblockfilters 去广告合并规则增强版，每天更新一次。
 | HaGeZi's Xiaomi Tracker Blocklist | filter | [原始链接](https://adguardteam.github.io/HostlistsRegistry/assets/filter_60.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_Xiaomi_Tracker_Blocklist.txt) | 2026/01/12 |
 | HaGeZi's Vivo Tracker Blocklist | filter | [原始链接](https://adguardteam.github.io/HostlistsRegistry/assets/filter_65.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_Vivo_Tracker_Blocklist.txt) | 2026/01/12 |
 | HaGeZi's Samsung Tracker Blocklist | filter | [原始链接](https://adguardteam.github.io/HostlistsRegistry/assets/filter_61.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_Samsung_Tracker_Blocklist.txt) | 2026/01/12 |
+| HaGeZi's OPPO & Realme Tracker Blocklist | filter | [原始链接](https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/refs/heads/main/filters/other/filter_66_HageziOppoRealmeTrackerBlocklist/filter.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_OPPO___Realme_Tracker_Blocklist.txt) | 2026/01/19 |
+| HaGeZi's Gambling Blocklist | filter | [原始链接](https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/refs/heads/main/filters/other/filter_47_HageziGamblingBlocklist/filter.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_Gambling_Blocklist.txt) | 2026/01/19 |
+| HaGeZi's The World's Most Abused TLDs | filter | [原始链接](https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/refs/heads/main/filters/security/filter_56_HageziTheWorldsMostAbusedTLDs/filter.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_The_World's_Most_Abused_TLDs.txt) | 2026/01/19 |
 | uBlock Badware risks | filter | [原始链接](https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/uBlock_Badware_risks.txt) | 2026/01/16 |
 | OISD Big | dns | [原始链接](https://big.oisd.nl) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/OISD_Big.txt) | 2026/01/18 |
 | Stalkerware | host | [原始链接](https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/refs/heads/master/generated/hosts_full) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/Stalkerware.txt) | 2025/11/29 |
@@ -112,6 +124,8 @@ adblockfilters 去广告合并规则增强版，每天更新一次。
 | uBlock Privacy | filter | [原始链接](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/uBlock_Privacy.txt) | 2026/01/18 |
 | AdGuard Tracking Protection | filter | [原始链接](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/AdGuard_Tracking_Protection.txt) | 2026/01/18 |
 | AdGuard Annoyances | filter | [原始链接](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/AdGuard_Annoyances.txt) | 2026/01/18 |
+| CERT.PL's Warning List | host | [原始链接](https://hole.cert.pl/domains/v2/domains_hosts.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/CERT.PL's_Warning_List.txt) | 2026/01/19 |
 
 ## Star History
+
 [![Star History Chart](https://api.star-history.com/svg?repos=Aethersailor/adblockfilters-modified&type=Date)](https://star-history.com/#Aethersailor/adblockfilters-modified&Date)
