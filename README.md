@@ -25,7 +25,6 @@ adblockfilters 去广告合并规则增强版，每天更新一次。
    - HaGeZi's Vivo Tracker Blocklist
    - HaGeZi's Samsung Tracker Blocklist
    - HaGeZi's Gambling Blocklist
-   - HaGeZi's The World's Most Abused TLDs
    - Malicious URL Blocklist
    - OISD Big
    - Online Malicious URL Blocklist
@@ -111,7 +110,6 @@ adblockfilters 去广告合并规则增强版，每天更新一次。
 | HaGeZi's Samsung Tracker Blocklist | filter | [原始链接](https://adguardteam.github.io/HostlistsRegistry/assets/filter_61.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_Samsung_Tracker_Blocklist.txt) | 2026/01/12 |
 | HaGeZi's OPPO & Realme Tracker Blocklist | filter | [原始链接](https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/refs/heads/main/filters/other/filter_66_HageziOppoRealmeTrackerBlocklist/filter.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_OPPO_&_Realme_Tracker_Blocklist.txt) | 2026/01/19 |
 | HaGeZi's Gambling Blocklist | filter | [原始链接](https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/refs/heads/main/filters/other/filter_47_HageziGamblingBlocklist/filter.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_Gambling_Blocklist.txt) | 2026/01/20 |
-| HaGeZi's The World's Most Abused TLDs | filter | [原始链接](https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/refs/heads/main/filters/security/filter_56_HageziTheWorldsMostAbusedTLDs/filter.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/HaGeZi's_The_World's_Most_Abused_TLDs.txt) | 2026/01/20 |
 | uBlock Badware risks | filter | [原始链接](https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/uBlock_Badware_risks.txt) | 2026/01/16 |
 | OISD Big | dns | [原始链接](https://big.oisd.nl) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/OISD_Big.txt) | 2026/01/20 |
 | Stalkerware | host | [原始链接](https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/refs/heads/master/generated/hosts_full) | [加速链接](https://testingcf.jsdelivr.net/gh/Aethersailor/adblockfilters-modified@main/rules/Stalkerware.txt) | 2025/11/29 |
