@@ -126,7 +126,6 @@ class ReadMe(object):
             f.write("   - HaGeZi's Vivo Tracker Blocklist\n")
             f.write("   - HaGeZi's Samsung Tracker Blocklist\n")
             f.write("   - HaGeZi's Gambling Blocklist\n")
-            f.write("   - HaGeZi's The World's Most Abused TLDs\n")
             f.write("   - Malicious URL Blocklist\n")
             f.write("   - OISD Big\n")
             f.write("   - Online Malicious URL Blocklist\n")
