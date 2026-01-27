@@ -9,40 +9,40 @@
     "updated_at": "2026-01-16 10:56:35"
   },
   "AdGuard_Annoyances.txt": {
-    "etag": "W/\"8b2265dd3d69f5224428a5a2e9ce76e7023d5529ca4fb5536f5ddc27d64d4046\"",
+    "etag": "W/\"445232919bbce4985bf3a835fc542732533897cb57029eb0f19bd7ac26d63182\"",
     "filename": "AdGuard_Annoyances.txt",
     "last_modified": "",
-    "lines": 63947,
-    "sha256": "4627a040003dc70e129a251e782219fb402b8d16f4aab63bd69e43dd1cc42160",
+    "lines": 63952,
+    "sha256": "77f494707b54bf2a0d9f431179f39d5298541713c7d0990f646e43a3ebb8fa15",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt",
-    "updated_at": "2026-01-27 11:02:49"
+    "updated_at": "2026-01-27 15:55:03"
   },
   "AdGuard_Base_filter.txt": {
-    "etag": "W/\"243e18d16e598c31fe54a3de7e95125ad5776d2881f6ea9d4e92163ffa364eeb\"",
+    "etag": "W/\"f9d90558ef5aa53de228ba3f9bb3a7817200d1e49dabad588cc10daa1ccbc9e9\"",
     "filename": "AdGuard_Base_filter.txt",
     "last_modified": "",
-    "lines": 160837,
-    "sha256": "d878756f786a5210afb671f0d7279c1c3a55d14eedfe245b519054539ea1d1f5",
+    "lines": 160908,
+    "sha256": "547aa0c756a500374f472c60d07483d0cf2fa8411e5a65954bbbba543cc3f0d4",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt",
-    "updated_at": "2026-01-27 11:02:49"
+    "updated_at": "2026-01-27 15:55:03"
   },
   "AdGuard_Chinese_filter.txt": {
-    "etag": "W/\"ca165e4d4cb90e5ac4e18b38903ec527254f6115dc00069d195b980fd9ce7613\"",
+    "etag": "W/\"a71e57202273e6b919d28de7e52b20c6fd81bbd96b65b17e5ce1eb4c9107d77b\"",
     "filename": "AdGuard_Chinese_filter.txt",
     "last_modified": "",
-    "lines": 23614,
-    "sha256": "1fe63e19649b1b9ba1c028fc6afe29d4bbe8d9577758cdfe479742d30ec5062d",
+    "lines": 23615,
+    "sha256": "32de30ec30ee0e4dd1b8cdab141f78f0a8e7cb026b386f9d1704f312e401b77d",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
-    "updated_at": "2026-01-27 11:02:49"
+    "updated_at": "2026-01-27 15:55:02"
   },
   "AdGuard_DNS_filter.txt": {
-    "etag": "W/\"69782801-332338\"",
+    "etag": "W/\"6978572d-3327e1\"",
     "filename": "AdGuard_DNS_filter.txt",
-    "last_modified": "Tue, 27 Jan 2026 02:50:41 GMT",
-    "lines": 143444,
-    "sha256": "3f9b187d3d5355f25f00a5fd12c3fa0c267c24c9b70b56dd32ce98876166343c",
+    "last_modified": "Tue, 27 Jan 2026 06:11:57 GMT",
+    "lines": 143498,
+    "sha256": "63fa1b9c2b7ed2a67660ae16136721dfc0c05c6aabf4bbc36bc734e51f60c07c",
     "source_url": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
-    "updated_at": "2026-01-27 11:02:49"
+    "updated_at": "2026-01-27 15:55:03"
   },
   "AdGuard_Mobile_Ads_filter.txt": {
     "etag": "W/\"bbdf2a2e4561b9102c2b4574f8c0397a356011ff933ce79c6ce4134ced105ea9\"",
@@ -54,31 +54,31 @@
     "updated_at": "2026-01-22 11:02:09"
   },
   "AdGuard_Tracking_Protection.txt": {
-    "etag": "W/\"6331b7b86698a747cb2d20803a16be9841327aabb066bebc80624568571f6b86\"",
+    "etag": "W/\"5a869c2b6624509e680d7ff3fcdf3309fce781c3c614af5d734ead8350e5cb9d\"",
     "filename": "AdGuard_Tracking_Protection.txt",
     "last_modified": "",
-    "lines": 132273,
-    "sha256": "72c91904a068f4598ff3a6fc70aef907ac0b1e76d2205f3a728abf54283cccc2",
+    "lines": 132275,
+    "sha256": "78c38cc6483b7b92597a39b478ff936badc6324cb883819c4b34942ddf976d3c",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt",
-    "updated_at": "2026-01-27 11:02:49"
+    "updated_at": "2026-01-27 15:55:03"
   },
   "AdRules_DNS_List.txt": {
-    "etag": "W/\"6314b57420cb78042f62793225279a6d7870fd5e668b7ae1b3070edfdd6f469c\"",
+    "etag": "W/\"ddec72b470201960d09026518447731d018e8d98a062bc036e04379da830b813\"",
     "filename": "AdRules_DNS_List.txt",
     "last_modified": "",
-    "lines": 152031,
-    "sha256": "d0bb81e56de389f1d302f99dcf01f6f074629581c8e5c49c9e535482c9b85fa9",
+    "lines": 146550,
+    "sha256": "c12c793dbb1d15d190f8e124191c2fdc8d7354fe9138c6a9eccb5680daa88d6b",
     "source_url": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
-    "updated_at": "2026-01-27 11:02:48"
+    "updated_at": "2026-01-27 15:55:03"
   },
   "CERT.PL's_Warning_List.txt": {
-    "etag": "W/\"69782a44-4d5cf8\"",
+    "etag": "W/\"69786e3c-4d4014\"",
     "filename": "CERT.PL's_Warning_List.txt",
-    "last_modified": "Tue, 27 Jan 2026 03:00:20 GMT",
-    "lines": 147136,
-    "sha256": "90ccde5de2415fe0f2ce06eb82f6db105bf15909d5ab0802002d8289778b5934",
+    "last_modified": "Tue, 27 Jan 2026 07:50:20 GMT",
+    "lines": 146939,
+    "sha256": "450fec76fed220a2eb0cb360bb9bf730abd7add9d51f13dc02be72043c58bd32",
     "source_url": "https://hole.cert.pl/domains/v2/domains_hosts.txt",
-    "updated_at": "2026-01-27 11:02:50"
+    "updated_at": "2026-01-27 15:55:04"
   },
   "DNS-Blocklists_Light.txt": {
     "etag": "W/\"528f34f50b71abbb8bcd5445eb0a0d01b587697be273b1b673cc83df14dd8d24\"",
@@ -90,31 +90,31 @@
     "updated_at": "2026-01-27 11:02:48"
   },
   "EasyList.txt": {
-    "etag": "\"3c00eb97b99aae2225f0371025979d74:1769482704.455085\"",
+    "etag": "\"8ce9ff1c7633dbdc12a234454d9e4d78:1769500106.746684\"",
     "filename": "EasyList.txt",
-    "last_modified": "Tue, 27 Jan 2026 02:55:20 GMT",
-    "lines": 84226,
-    "sha256": "19e797a89c366300e587ced6c8b19139cb45e0fab18de342529a4fc2fe608321",
+    "last_modified": "Tue, 27 Jan 2026 07:45:40 GMT",
+    "lines": 84287,
+    "sha256": "f8b0b59031038dc6277d346aef29af034c288c175e48ed0c607e923c07a3b52c",
     "source_url": "https://easylist-downloads.adblockplus.org/easylist.txt",
-    "updated_at": "2026-01-27 11:02:49"
+    "updated_at": "2026-01-27 15:55:03"
   },
   "EasyList_China.txt": {
-    "etag": "\"c507a467bd194a0573d08c9fca1f87b4:1769482705.291414\"",
+    "etag": "\"40430fa05ff3f2654d7a1cc69874edd7:1769500106.068439\"",
     "filename": "EasyList_China.txt",
-    "last_modified": "Tue, 27 Jan 2026 02:55:20 GMT",
-    "lines": 19004,
-    "sha256": "cdbb06d4e6d3ce0a481ed4392304800087f5766d4d1a2d706bd7fadc76422a2a",
+    "last_modified": "Tue, 27 Jan 2026 07:45:40 GMT",
+    "lines": 19008,
+    "sha256": "dd2d50355a4fe508d02194c03b52316d480234720363acfb5f1ea72d045d6ae4",
     "source_url": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
-    "updated_at": "2026-01-27 11:02:49"
+    "updated_at": "2026-01-27 15:55:02"
   },
   "EasyPrivacy.txt": {
-    "etag": "\"daa43f1521c8312c3eb50f84e88c4deb:1769482708.442286\"",
+    "etag": "\"74867c2c89e0ea756124ba175db735b0:1769500109.46153\"",
     "filename": "EasyPrivacy.txt",
-    "last_modified": "Tue, 27 Jan 2026 02:55:20 GMT",
-    "lines": 53467,
-    "sha256": "4c537afaad40aaf920d4afd4e3428cd9395e12b82a087517c52a5f4822afd8fe",
+    "last_modified": "Tue, 27 Jan 2026 07:45:40 GMT",
+    "lines": 53468,
+    "sha256": "cdf60e04b6f28d16279fd2455fcf02649f3c5432d4efb4789df317844f93eeb5",
     "source_url": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
-    "updated_at": "2026-01-27 11:02:49"
+    "updated_at": "2026-01-27 15:55:03"
   },
   "HaGeZi's_Apple_Tracker_Blocklist.txt": {
     "etag": "W/\"69646222-cd0\"",
@@ -279,13 +279,13 @@
     "updated_at": "2026-01-27 11:02:48"
   },
   "Scam_Blocklist.txt": {
-    "etag": "W/\"a152c2a1cf122a98094fda524fdc82551f3a5e21a3b647a52b8ffa7bcc317a5b\"",
+    "etag": "W/\"027615b757a35273e10ad48aa1ce008c2510e03a7e5c2d286760d3656831714c\"",
     "filename": "Scam_Blocklist.txt",
     "last_modified": "",
-    "lines": 1129,
-    "sha256": "35df074c885fe8530806657d2a654bc15673cf988d00a848c18be04f803a3c81",
+    "lines": 1132,
+    "sha256": "7ba975646cd2e7d5bf1c22db40512ca283a1ac48293b89d35915057ed2ab0018",
     "source_url": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/refs/heads/master/adguard.txt",
-    "updated_at": "2026-01-26 21:25:09"
+    "updated_at": "2026-01-27 15:55:02"
   },
   "StevenBlack_hosts.txt": {
     "etag": "W/\"4c7417ed0889b473fd145fa0430d55e410511a9d3cf5873c4e1ad62f73f1b1b2\"",
