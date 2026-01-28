@@ -96,34 +96,51 @@ class Filter(object):
         return blackSet
 
     # 获取白名单，收集的误杀规则
-    def __getWhiteList(self, fileName:str) -> Set[str]:
+    def __getWhiteList(self, fileName:str) -> Tuple[Set[str], Set[str], Set[str], Set[str]]:
         logger.info("resolve white list...")
-        whiteSet = set()
+        whiteRules:Set[str] = set()
+        whiteDomains:Set[str] = set()
+        whiteWildcardAll:Set[str] = set()  # +.example.com -> root + subdomains
+        whiteWildcardSub:Set[str] = set()  # *.example.com -> subdomains only
         if os.path.exists(fileName):
             with open(fileName, 'r') as f:
                 for line in f.readlines():
                     line = line.replace("\n", "").strip()
-                    if not line or line.startswith("#"):
+                    if not line or line.startswith("#") or line.startswith("!"):
+                        continue
+                    whiteRules.add(line)
+                    if line.startswith("+.") or line.startswith("*."):
+                        domain = self.__normalize_domain(line[2:])
+                        try:
+                            res = get_tld(domain, fix_protocol=True, as_object=True)
+                            if res.fld:
+                                fld = self.__normalize_domain(res.fld)
+                                if line.startswith("+."):
+                                    whiteWildcardAll.add(fld)
+                                else:
+                                    whiteWildcardSub.add(fld)
+                        except Exception:
+                            pass
                         continue
                     try:
                         ipaddress.ip_address(line)
-                        whiteSet.add(line)
+                        whiteDomains.add(line)
                         continue
                     except Exception:
                         pass
                     try:
                         res = get_tld(line, fix_protocol=True, as_object=True)
                         if res.fld:
-                            whiteSet.add(self.__normalize_domain(line))
+                            whiteDomains.add(self.__normalize_domain(line))
                     except Exception:
                         pass
-        logger.info("white list: %d"%(len(whiteSet)))
-        return whiteSet
+        logger.info("white list: %d"%(len(whiteDomains)))
+        return whiteRules, whiteDomains, whiteWildcardAll, whiteWildcardSub
     
-    def __getWhiteDict(self, whiteSet:Set[str]) -> Dict[str,Set[str]]:
+    def __getWhiteDict(self, whiteDomains:Set[str]) -> Dict[str,Set[str]]:
         whiteDict = dict()
 
-        for address in whiteSet:
+        for address in whiteDomains:
             try:
                 res = get_tld(address, fix_protocol=True, as_object=True)
                 fld = res.fld
@@ -149,7 +166,7 @@ class Filter(object):
         return ChinaSet
     
     # 去重、排序
-    def __domainSort(self, domainDict:Dict[str, Set[str]], blackSet:Set[str], whiteDict:Dict[str,Set[str]]) -> Tuple[List[str], Set[str]]:
+    def __domainSort(self, domainDict:Dict[str, Set[str]], blackSet:Set[str], whiteDict:Dict[str,Set[str]], whiteWildcardAll:Set[str], whiteWildcardSub:Set[str]) -> Tuple[List[str], Set[str]]:
         def repetition(l): # 短域名已被拦截，则干掉所有长域名。如'a.example'、'b.example'、'example'，则只保留'example'
             l = sorted(l, key = lambda item:len(item), reverse=False) # 按从短到长排序
             if len(l) < 2:
@@ -176,7 +193,12 @@ class Filter(object):
         fldList = list(domainDict.keys())
         fldList.sort() # 排序
         for fld in fldList:
-            subdomainList_origin = list(domainDict[fld] - whiteDict.get(fld, set())) # 去除需要保留的白名单域名
+            if fld in whiteWildcardAll:
+                continue
+            subdomainList_origin = list(domainDict[fld])
+            if fld in whiteWildcardSub:
+                subdomainList_origin = [item for item in subdomainList_origin if item == '']
+            subdomainList_origin = list(set(subdomainList_origin) - whiteDict.get(fld, set())) # 去除需要保留的白名单域名
             subdomainList = repetition(subdomainList_origin) # 短域名已被拦截，则干掉所有长域名。如'a.example'、'b.example'、'example'，则只保留'example'
             for subdomain in subdomainList:
                 subdomain_not_black = False
@@ -207,7 +229,7 @@ class Filter(object):
             
         return domanList,domanSet_all
 
-    def __filterSort(self, filterDict:Dict[str,FilterDomainInfo], blockSet:Set[str], unblockSet:Set[str], blackSet:Set[str], whiteSet:Set[str]) -> Tuple[List[str], List[str], Set[str]]:
+    def __filterSort(self, filterDict:Dict[str,FilterDomainInfo], blockSet:Set[str], unblockSet:Set[str], blackSet:Set[str], whiteRules:Set[str], whiteDomains:Set[str], whiteWildcardAll:Set[str], whiteWildcardSub:Set[str]) -> Tuple[List[str], List[str], Set[str]]:
         def in_domain_set(domain: str, domain_set: Set[str]) -> bool:
             if domain in domain_set:
                 return True
@@ -217,7 +239,35 @@ class Filter(object):
             except Exception:
                 fld = ''
             return bool(fld and fld in domain_set)
-        filterList = list(set(filterDict) - whiteSet) # 剔除白名单
+        domain_cache:Dict[str,Tuple[str,str]] = dict()
+        def split_domain(domain: str) -> Tuple[str,str]:
+            if domain in domain_cache:
+                return domain_cache[domain]
+            try:
+                res = get_tld(domain, fix_protocol=True, as_object=True)
+                fld = self.__normalize_domain(res.fld) if res.fld else ''
+                subdomain = self.__normalize_domain(res.subdomain) if res.subdomain else ''
+            except Exception:
+                fld, subdomain = '', ''
+            domain_cache[domain] = (fld, subdomain)
+            return fld, subdomain
+        def is_whitelisted(domain: str) -> bool:
+            if domain in whiteDomains:
+                return True
+            try:
+                ipaddress.ip_address(domain)
+                return False
+            except Exception:
+                pass
+            fld, subdomain = split_domain(domain)
+            if not fld:
+                return False
+            if fld in whiteWildcardAll:
+                return True
+            if fld in whiteWildcardSub and subdomain:
+                return True
+            return False
+        filterList = list(set(filterDict) - whiteRules) # 剔除白名单
         filterList.sort() # 排序
         # 与 adblockdns 去重
         filterList_var = []
@@ -231,6 +281,8 @@ class Filter(object):
             domain_info = filterDict[filter]
             domains = domain_info.domains if domain_info and domain_info.source in {"target", "context"} else set()
             if domains:
+                if all(is_whitelisted(domain) for domain in domains):
+                    continue
                 if all(in_domain_set(domain, blackSet) for domain in domains): # 剔除黑名单
                     continue
                 if filter.startswith('@@'):
@@ -267,14 +319,14 @@ class Filter(object):
 
         # 提取黑名单、白名单、China domain
         blackSet = self.__getBlackList(self.work_dir + "/black.txt")  # 经测试已无法解析的域名
-        whiteSet = self.__getWhiteList(self.work_dir + "/white.txt")  # 收集的误杀规则
-        whiteDict = self.__getWhiteDict(whiteSet)
+        whiteRules, whiteDomains, whiteWildcardAll, whiteWildcardSub = self.__getWhiteList(self.work_dir + "/white.txt")  # 收集的误杀规则
+        whiteDict = self.__getWhiteDict(whiteDomains)
         ChinaSet = self.__getChinaList(self.work_dir + "/china.txt")  # 国内域名
 
         # 规则处理：合并、去重、排序、剔除剔除黑名单、剔除白名单
-        blockList, blockSet_block = self.__domainSort(blockDict, blackSet, whiteDict)
-        unblockList, unblockSet_unblock = self.__domainSort(unblockDict, blackSet, whiteDict)
-        filterList_var, filterList, domainSet_filter = self.__filterSort(filterDict, set(blockList), set(unblockList), blackSet, whiteSet)
+        blockList, blockSet_block = self.__domainSort(blockDict, blackSet, whiteDict, whiteWildcardAll, whiteWildcardSub)
+        unblockList, unblockSet_unblock = self.__domainSort(unblockDict, blackSet, whiteDict, whiteWildcardAll, whiteWildcardSub)
+        filterList_var, filterList, domainSet_filter = self.__filterSort(filterDict, set(blockList), set(unblockList), blackSet, whiteRules, whiteDomains, whiteWildcardAll, whiteWildcardSub)
 
         lite_candidates = []
         lite_unknown = 0

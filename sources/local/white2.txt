@@ -1,6 +1,9 @@
 # Custom Whitelist
 #
 # Add your own whitelist entries here, one domain per line.
+# Supports:
+#   +.example.com  (root + subdomains)
+#   *.example.com  (subdomains only)
 # This will be merged with upstream white.txt during sync.
 #
 # Example:
