@@ -24,6 +24,7 @@ class ReadMe(object):
     def __init__(self, filename:str):
         self.filename = filename
         self.ruleList:List[Rule] = []
+        self.accel_size_threshold = 20 * 1024 * 1024
         self.proxyList = [
             "",
             "https://testingcf.jsdelivr.net/gh",
@@ -59,23 +60,41 @@ class ReadMe(object):
     def setRules(self, ruleList:List[Rule]):
         self.ruleList = ruleList
 
+    def _get_local_path(self, base_dir: str, fileName: str) -> str:
+        base_dir = base_dir.strip("/")
+        base_root = os.path.dirname(self.filename)
+        return os.path.join(base_root, base_dir, fileName)
+
+    def _should_use_boki(self, base_dir: str, fileName: str) -> bool:
+        if base_dir.strip("/") != "rules":
+            return False
+        try:
+            return os.path.getsize(self._get_local_path(base_dir, fileName)) >= self.accel_size_threshold
+        except Exception:
+            return False
+
     def __subscribeLink(self, fileName:str, url:str=None, base_dir:str="rules"):
         link = ""
         base_dir = base_dir.strip("/")
+        raw_url = ""
 
         if url:
             link += " [原始链接](%s) |"%(url)
         else:
-            link += " [原始链接](https://raw.githubusercontent.com/%s/%s/%s/%s) |"%(
+            raw_url = "https://raw.githubusercontent.com/%s/%s/%s/%s" % (
                 self.repo,
                 self.branch,
                 base_dir,
                 fileName,
             )
+            link += " [原始链接](%s) |" % raw_url
         
         for i in range(1, len(self.proxyList)):
             proxy = self.proxyList[i]
             link_name = "加速链接" if len(self.proxyList) == 2 else "加速链接%d" % i
+            if raw_url and self._should_use_boki(base_dir, fileName):
+                link += " [%s](https://github.boki.moe/%s) |"%(link_name, raw_url)
+                continue
             if proxy.rstrip("/").endswith("/gh"):
                 link += " [%s](%s/%s@%s/%s/%s) |"%(
                     link_name,
@@ -157,7 +176,7 @@ class ReadMe(object):
 
             f.write("## 订阅链接\n")
             f.write("1. 规则x’为规则x的 Lite 版，仅针对国内域名拦截，体积较小（如添加完整规则报错数量限制，请尝试 Lite 规则）\n")
-            f.write("2. 已对 testingcf.jsdelivr.net CDN 缓存进行主动刷新，但仍存在一定刷新延时\n")
+            f.write("2. 默认使用 testingcf.jsdelivr.net CDN，加速大文件会自动切换至 github.boki.moe\n")
             f.write("3. AdGuard 等浏览器插件使用规则1 + 规则2（规则2为规则1的补充，仅适用浏览器插件）\n")
             f.write("\n")
             tmp = "| 规则 | 原始链接 |"
