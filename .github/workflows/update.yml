@@ -53,6 +53,7 @@ jobs:
       - name: Sync upstream whitelist
         run: |
           curl -fsSL "https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/white.txt" -o white_upstream.txt
+          mkdir -p build
           python - << 'PY'
           upstream_domains = set()
           with open('white_upstream.txt', 'r', encoding='utf-8') as f:
@@ -63,7 +64,7 @@ jobs:
 
           custom_domains = set()
           try:
-              with open('rules/white2.txt', 'r', encoding='utf-8') as f:
+              with open('sources/local/white2.txt', 'r', encoding='utf-8') as f:
                   for line in f:
                       line = line.strip()
                       if line and not line.startswith('#') and not line.startswith('!'):
@@ -80,8 +81,8 @@ jobs:
                   for domain in sorted(custom_domains):
                       f.write(domain + '\n')
           PY
-          if ! cmp -s white_final.txt "rules/white.txt"; then
-            mv white_final.txt "rules/white.txt"
+          if ! cmp -s white_final.txt "build/white.txt"; then
+            mv white_final.txt "build/white.txt"
           else
             rm white_final.txt
           fi
@@ -113,7 +114,7 @@ jobs:
               echo "Downloading SmartDNS from: $LATEST_URL"
               if wget -q "$LATEST_URL" -O "$SMARTDNS_PATH/smartdns" && [ -s "$SMARTDNS_PATH/smartdns" ]; then
                 chmod +x "$SMARTDNS_PATH/smartdns"
-          cp config/smartdns.conf "$SMARTDNS_PATH/smartdns.conf"
+                cp config/smartdns.conf "$SMARTDNS_PATH/smartdns.conf"
                 nohup "$SMARTDNS_PATH/smartdns" -f -x -c "$SMARTDNS_PATH/smartdns.conf" > /dev/null 2>&1 &
                 echo "SmartDNS started."
                 break

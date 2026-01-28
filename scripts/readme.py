@@ -60,15 +60,17 @@ class ReadMe(object):
     def setRules(self, ruleList:List[Rule]):
         self.ruleList = ruleList
 
-    def __subscribeLink(self, fileName:str, url:str=None):
+    def __subscribeLink(self, fileName:str, url:str=None, base_dir:str="rules"):
         link = ""
+        base_dir = base_dir.strip("/")
 
         if url:
             link += " [原始链接](%s) |"%(url)
         else:
-            link += " [原始链接](https://raw.githubusercontent.com/%s/%s/rules/%s) |"%(
+            link += " [原始链接](https://raw.githubusercontent.com/%s/%s/%s/%s) |"%(
                 self.repo,
                 self.branch,
+                base_dir,
                 fileName,
             )
         
@@ -76,19 +78,21 @@ class ReadMe(object):
             proxy = self.proxyList[i]
             link_name = "加速链接" if len(self.proxyList) == 2 else "加速链接%d" % i
             if proxy.rstrip("/").endswith("/gh"):
-                link += " [%s](%s/%s@%s/rules/%s) |"%(
+                link += " [%s](%s/%s@%s/%s/%s) |"%(
                     link_name,
                     proxy,
                     self.repo,
                     self.branch,
+                    base_dir,
                     fileName,
                 )
             else:
-                link += " [%s](%s/https://raw.githubusercontent.com/%s/%s/rules/%s) |"%(
+                link += " [%s](%s/https://raw.githubusercontent.com/%s/%s/%s/%s) |"%(
                     link_name,
                     proxy,
                     self.repo,
                     self.branch,
+                    base_dir,
                     fileName,
                 )
         
@@ -117,13 +121,13 @@ class ReadMe(object):
             f.write("## 说明\n")
             f.write("1. 定时从上游各规则源获取更新，合并去重。\n")
             f.write("2. 使用本地 SmartDNS 对上游各规则源拦截的域名进行解析，去除已无法解析的域名。（上游各规则源中存在大量已无法解析的域名，无需加入拦截规则）\n")
-            f.write("3. 本项目仅对上游规则进行合并、去重、去除无效域名，不做任何修改。如发现误拦截情况，可在 `rules/white2.txt` 中自行添加白名单，或临时添加放行规则（如 `@@||www.example.com^$important`），并向上游规则反馈。\n")
+            f.write("3. 本项目仅对上游规则进行合并、去重、去除无效域名，不做任何修改。如发现误拦截情况，可在 `sources/local/white2.txt` 中自行添加白名单，或临时添加放行规则（如 `@@||www.example.com^$important`），并向上游规则反馈。\n")
             f.write("\n")
 
             f.write("## 相比原版 adblockfilters 的改进与新增\n")
             f.write("1. 改进了处理逻辑，缩短工作流运行时间。\n")
             f.write("2. 改进了中国规则和无效规则的处理流程，现在每次生成规则前均会对这两类规则进行验证，不再使用历史数据。\n")
-            f.write("3. 白名单自动同步上游仓库，并支持 `rules/white2.txt` 本地补充合并。\n")
+            f.write("3. 白名单自动同步上游仓库，并支持 `sources/local/white2.txt` 本地补充合并。\n")
             f.write("4. 域名提取与规则解析更完善，覆盖更多 filter/dns/host 规则格式，减少漏提取。\n")
             f.write("5. 新增/独有规则源（相对原版，详见下表）：\n")
             f.write("   - AdGuard Annoyances\n")
@@ -212,7 +216,7 @@ class ReadMe(object):
             tmp = "| " + ":- | " * ( 2 + len(self.proxyList) + 1) + "\n"
             f.write(tmp)
             for rule in self.ruleList:
-                f.write("| %s | %s |%s %s |\n" % (rule.name, rule.type, self.__subscribeLink(rule.filename, rule.url),rule.latest))
+                f.write("| %s | %s |%s %s |\n" % (rule.name, rule.type, self.__subscribeLink(rule.filename, rule.url, base_dir="sources/upstream"),rule.latest))
             f.write("\n")
             
             f.write("## Star History\n")

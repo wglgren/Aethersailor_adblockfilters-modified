@@ -15,8 +15,11 @@ class FilterDomainInfo(NamedTuple):
     source: str  # target|context|none
 
 class Resolver(object):
-    def __init__(self, path:str):
-        self.path = path
+    def __init__(self, paths):
+        if isinstance(paths, (list, tuple)):
+            self.paths = [p for p in paths if p]
+        else:
+            self.paths = [paths] if paths else []
         self.options = {# Adblock Plus filter options
                         'script',         '~script',
                         'image',          '~image',
@@ -42,6 +45,13 @@ class Resolver(object):
                         'stealth',
                         'domain'
                     }
+
+    def _find_file(self, filename: str) -> str:
+        for base in self.paths:
+            candidate = os.path.join(base, filename)
+            if os.path.exists(candidate):
+                return candidate
+        return ""
     
     def __normalize_domain(self, domain: str) -> str:
         domain = domain.strip().lower()
@@ -569,9 +579,9 @@ class Resolver(object):
         unblockDict:Dict[str,Set[str]] = dict()
         filterDict:Dict[str,FilterDomainInfo] = dict()
 
-        filename = self.path + '/' + rule.filename
+        filename = self._find_file(rule.filename)
 
-        if not os.path.exists(filename):
+        if not filename or not os.path.exists(filename):
             return blockDict,unblockDict,filterDict
 
         with open(filename, "r") as f:
@@ -596,9 +606,9 @@ class Resolver(object):
         unblockDict:Dict[str,Set[str]] = dict()
         filterDict:Dict[str,FilterDomainInfo] = dict()
 
-        filename = self.path + '/' + rule.filename
+        filename = self._find_file(rule.filename)
 
-        if not os.path.exists(filename):
+        if not filename or not os.path.exists(filename):
             return blockDict,unblockDict,filterDict
 
         with open(filename, "r") as f:
@@ -631,9 +641,9 @@ class Resolver(object):
         unblockDict:Dict[str,Set[str]] = dict()
         filterDict:Dict[str,FilterDomainInfo] = dict()
 
-        filename = self.path + '/' + rule.filename
+        filename = self._find_file(rule.filename)
 
-        if not os.path.exists(filename):
+        if not filename or not os.path.exists(filename):
             return blockDict,unblockDict,filterDict
 
         with open(filename, "r") as f:

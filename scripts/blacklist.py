@@ -110,16 +110,22 @@ class ChinaDomian(object):
 
 class BlackList(object):
     def __init__(self):
-        self.__ChinalistFile = os.getcwd() + "/rules/china.txt"
-        self.__blacklistFile = os.getcwd() + "/rules/black.txt"
-        self.__domainlistFile = os.getcwd() + "/rules/domain.txt"
-        self.__domainlistFile_CN = os.getcwd() + "/rules/direct-list.txt"
+        root = os.getcwd()
+        self.__buildDir = os.path.join(root, "build")
+        self.__geoDir = os.path.join(root, "data", "geo")
+        os.makedirs(self.__buildDir, exist_ok=True)
+        os.makedirs(self.__geoDir, exist_ok=True)
+
+        self.__ChinalistFile = os.path.join(self.__buildDir, "china.txt")
+        self.__blacklistFile = os.path.join(self.__buildDir, "black.txt")
+        self.__domainlistFile = os.path.join(self.__buildDir, "domain.txt")
+        self.__domainlistFile_CN = os.path.join(self.__geoDir, "direct-list.txt")
         self.__domainlistUrl_CN = "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/direct-list.txt"
-        self.__domainlistFile_CN_Apple = os.getcwd() + "/rules/apple-cn.txt"
+        self.__domainlistFile_CN_Apple = os.path.join(self.__geoDir, "apple-cn.txt")
         self.__domainlistUrl_CN_Apple = "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/apple-cn.txt"
-        self.__domainlistFile_CN_Google = os.getcwd() + "/rules/google-cn.txt"
+        self.__domainlistFile_CN_Google = os.path.join(self.__geoDir, "google-cn.txt")
         self.__domainlistUrl_CN_Google = "https://raw.githubusercontent.com/Loyalsoldier/v2ray-rules-dat/refs/heads/release/google-cn.txt"
-        self.__iplistFile_CN = os.getcwd() + "/rules/CN-ip-cidr.txt"
+        self.__iplistFile_CN = os.path.join(self.__geoDir, "CN-ip-cidr.txt")
         self.__iplistUrl_CN = "https://raw.githubusercontent.com/Aethersailor/geoip/refs/heads/release/text/cn-ipv4.txt"
         self.__maxTask = 500  # 控制并发数避免触发公共 DNS 的 QPS 限制
         self.__dns_timeout = 5.0

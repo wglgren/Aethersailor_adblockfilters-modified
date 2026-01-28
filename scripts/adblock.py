@@ -9,10 +9,20 @@ from filter import Filter
 
 class ADBlock(object):
     def __init__(self):
-        self.pwd = os.getcwd()
+        self.root = os.getcwd()
+        self.rules_dir = os.path.join(self.root, "rules")
+        self.sources_dir = os.path.join(self.root, "sources")
+        self.upstream_dir = os.path.join(self.sources_dir, "upstream")
+        self.local_dir = os.path.join(self.sources_dir, "local")
+        self.build_dir = os.path.join(self.root, "build")
+
+    def _ensure_dirs(self):
+        for path in (self.rules_dir, self.upstream_dir, self.local_dir, self.build_dir):
+            os.makedirs(path, exist_ok=True)
 
     def refresh(self, mode: str = "all", force: bool = False):
-        readme = ReadMe(self.pwd + '/README.md')
+        self._ensure_dirs()
+        readme = ReadMe(self.root + '/README.md')
         ruleList = readme.getRules()
         '''
         # for test
@@ -27,20 +37,20 @@ class ADBlock(object):
         if mode in ("all", "prepare"):
             # 更新上游规
             updater = Updater(ruleList)
-            update, ruleList = updater.update(self.pwd + '/rules')
+            update, ruleList = updater.update(self.upstream_dir)
             if not update and not force and mode == "all":
                 return
 
             if mode == "prepare":
                 # 仅生成域名备份，用于黑名单检测
-                filter = Filter(ruleList, self.pwd + '/rules')
+                filter = Filter(ruleList, [self.upstream_dir, self.local_dir], self.build_dir, self.rules_dir)
                 filter.generate(readme.getRulesNames(), generate_rules=False, generate_domain_backup=True)
                 readme.setRules(ruleList)
                 readme.regenerate()
                 return
 
         # 生成新规则
-        filter = Filter(ruleList, self.pwd + '/rules')
+        filter = Filter(ruleList, [self.upstream_dir, self.local_dir], self.build_dir, self.rules_dir)
         generate_domain_backup = (mode == "all")
         filter.generate(readme.getRulesNames(), generate_rules=True, generate_domain_backup=generate_domain_backup)
         
