@@ -1,6 +1,8 @@
 import re
 import os
 import subprocess
+import time
+from datetime import datetime, timedelta, timezone
 from typing import List
 
 from loguru import logger
@@ -26,7 +28,6 @@ class ReadMe(object):
             "",
             "https://testingcf.jsdelivr.net/gh",
             "https://gcore.jsdelivr.net/gh",
-            "https://cdn.jsdelivr.net/gh",
         ]
         self.repo = self._resolve_repo()
         self.branch = self._resolve_branch()
@@ -39,6 +40,8 @@ class ReadMe(object):
                 line = line.replace('\r', '').replace('\n', '')
                 if line.find('|')==0 and line.rfind('|')==len(line)-1:
                     rule = list(map(lambda x: x.strip(), line[1:-1].split('|')))
+                    if len(rule) < 4:
+                        continue
                     if rule[2].find('(') > 0 and rule[2].find(')') > 0 and rule[1].find('(') < 0:
                         url = rule[2][rule[2].find('(')+1:rule[2].find(')')]
                         matchObj1 = re.match('(http|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&:/~\+#]*[\w\-\@?^=%&/~\+#])?', url)
@@ -96,9 +99,19 @@ class ReadMe(object):
         if os.path.exists(self.filename):
             os.remove(self.filename)
         
+        beijing_tz = timezone(timedelta(hours=8))
+        update_time = datetime.now(beijing_tz).strftime("%Y/%m/%d %H:%M:%S") + " (UTC+08:00)"
+        total_rules, china_rules = self._get_rule_counts()
+
         with open(self.filename, 'a') as f:
             f.write("# AdBlock DNS Filters Modified\n")
             f.write("adblockfilters 去广告合并规则增强版，每天更新一次。  \n")
+            f.write("\n")
+            f.write("| 指标 | 数值 |\n")
+            f.write("| :- | :- |\n")
+            f.write("| 上次更新 | %s |\n" % update_time)
+            f.write("| 规则总数目 | %s |\n" % (total_rules if total_rules is not None else "N/A"))
+            f.write("| 中国规则数目 | %s |\n" % (china_rules if china_rules is not None else "N/A"))
             f.write("\n")
 
             f.write("## 说明\n")
@@ -213,6 +226,42 @@ class ReadMe(object):
             '''
 
             '''
+
+    def _get_rule_counts(self):
+        base_dir = os.path.dirname(self.filename)
+        total_path = os.path.join(base_dir, "rules", "adblockfilters.txt")
+        china_path = os.path.join(base_dir, "rules", "adblockfilterslite.txt")
+        total_rules = self._read_blocked_filters(total_path)
+        china_rules = self._read_blocked_filters(china_path)
+        return total_rules, china_rules
+
+    def _read_blocked_filters(self, path: str):
+        try:
+            with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                for line in f:
+                    line = line.strip()
+                    if line.startswith("! Blocked Filters:"):
+                        value = line.split(":", 1)[1].strip()
+                        if value.isdigit():
+                            return int(value)
+                        break
+        except Exception:
+            return None
+
+        return self._count_rule_lines(path)
+
+    def _count_rule_lines(self, path: str):
+        try:
+            count = 0
+            with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("!"):
+                        continue
+                    count += 1
+            return count
+        except Exception:
+            return None
 
     def _resolve_repo(self) -> str:
         repo = os.environ.get("GITHUB_REPOSITORY")
