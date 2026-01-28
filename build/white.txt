@@ -252,4 +252,7 @@ www.360.cn
 bce.baidu.com
 
 # Custom whitelist entries
++.ip.sb
++.ipip.net
++.skk.moe
 t.co
