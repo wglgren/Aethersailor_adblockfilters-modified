@@ -7,14 +7,7 @@ on:
     branches:
     - main
     paths:
-    - adblock.py
-    - blacklist.py
-    - filter.py
-    - resolver.py
-    - updater.py
-    - readme.py
-    - app/**/*.py
-    - scripts/**/*.py
+    - py/**/*.py
     - smartdns.conf
     - .github/workflows/update.yml
 
@@ -96,7 +89,7 @@ jobs:
 
       - name: Prepare sources and domain backup
         run: |
-          python adblock.py --mode prepare --force
+          python py/adblock.py --mode prepare --force
 
       - name: Setup SmartDNS
         run: |
@@ -175,19 +168,19 @@ jobs:
 
       - name: Generate blacklist and China list
         run: |
-          python blacklist.py
+          python py/blacklist.py
 
       - name: Generate final rules
         id: update
         run: |
-          python adblock.py --mode generate
-          rm -rf __pycache__
-          rm -rf app/__pycache__
+          python py/adblock.py --mode generate
+          rm -rf py/__pycache__
+          rm -rf py/app/__pycache__
           echo "message=chore(rules): update filters and blacklist [$(TZ='Asia/Shanghai' date +'%F %T%:z')]" >> $GITHUB_OUTPUT
 
       - name: Validate rule counts
         run: |
-          python scripts/validate_rule_counts.py
+          python py/scripts/validate_rule_counts.py
 
       - name: Compile Sing-Box filters
         run: |
@@ -233,7 +226,7 @@ jobs:
       
       - name: Refsh CDN Cache
         run: |
-          python refreshcdn.py
+          python py/refreshcdn.py
 
   Delete_Workflow_Runs:
     needs: [ Refresh_CDN ]
