@@ -27,7 +27,6 @@ class ReadMe(object):
         self.proxyList = [
             "",
             "https://testingcf.jsdelivr.net/gh",
-            "https://gcore.jsdelivr.net/gh",
         ]
         self.repo = self._resolve_repo()
         self.branch = self._resolve_branch()
