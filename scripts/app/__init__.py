@@ -3,6 +3,7 @@ from .adguard import AdGuard
 from .adguardhome import AdGuardHome
 from .clash_classical import ClashClassical
 from .dnsmasq import DNSMasq
+from .dnsmasq_addnhosts import DNSMasqAddnHosts
 from .hosts import Hosts
 from .invizible import InviZible
 from .loon import Loon
