@@ -190,38 +190,38 @@ class ReadMe(object):
                     tmp += " 加速链接 |"
                 else:
                     tmp += " 加速链接%d |"%(i)
-            tmp += " 规则数量 | 适配说明 |\n"
+            tmp += " 文件体积(MB) | 规则数量 | 适配说明 |\n"
             f.write(tmp)
-            tmp = "| " + ":- | " * ( 1 + len(self.proxyList) + 2) + "\n"
+            tmp = "| " + ":- | " * ( 1 + len(self.proxyList) + 3) + "\n"
             f.write(tmp)
-            f.write("| 规则1 |" + self.__subscribeLink("adblockdns.txt") + " %s | AdGuard、AdGuard Home 等 |\n" % (self._get_product_count("adblockdns.txt") or "N/A"))
-            f.write("| 规则1' |" + self.__subscribeLink("adblockdnslite.txt") + " %s | AdGuard、AdGuard Home 等 |\n" % (self._get_product_count("adblockdnslite.txt") or "N/A"))
-            f.write("| 规则2 |" + self.__subscribeLink("adblockfilters.txt") + " %s | AdGuard 等 |\n" % (self._get_product_count("adblockfilters.txt") or "N/A"))
-            f.write("| 规则2' |" + self.__subscribeLink("adblockfilterslite.txt") + " %s | AdGuard 等 |\n" % (self._get_product_count("adblockfilterslite.txt") or "N/A"))
-            f.write("| 规则3 |" + self.__subscribeLink("adblockdomain.txt") + " %s | InviZible Pro、personalDNSfilter |\n" % (self._get_product_count("adblockdomain.txt") or "N/A"))
-            f.write("| 规则3' |" + self.__subscribeLink("adblockdomainlite.txt") + " %s | InviZible Pro、personalDNSfilter |\n" % (self._get_product_count("adblockdomainlite.txt") or "N/A"))
-            f.write("| 规则4 |" + self.__subscribeLink("adblockdnsmasq.txt") + " %s | DNSMasq |\n" % (self._get_product_count("adblockdnsmasq.txt") or "N/A"))
-            f.write("| 规则4' |" + self.__subscribeLink("adblockdnsmasqlite.txt") + " %s | DNSMasq |\n" % (self._get_product_count("adblockdnsmasqlite.txt") or "N/A"))
-            f.write("| 规则5 |" + self.__subscribeLink("adblocksmartdns.conf") + " %s | SmartDNS |\n" % (self._get_product_count("adblocksmartdns.conf") or "N/A"))
-            f.write("| 规则5' |" + self.__subscribeLink("adblocksmartdnslite.conf") + " %s | SmartDNS |\n" % (self._get_product_count("adblocksmartdnslite.conf") or "N/A"))
-            f.write("| 规则6 |" + self.__subscribeLink("adblockclash.list") + " %s | Shadowrocket |\n" % (self._get_product_count("adblockclash.list") or "N/A"))
-            f.write("| 规则6' |" + self.__subscribeLink("adblockclashlite.list") + " %s | Shadowrocket |\n" % (self._get_product_count("adblockclashlite.list") or "N/A"))
-            f.write("| 规则7 |" + self.__subscribeLink("adblockqx.conf") + " %s | QuantumultX |\n" % (self._get_product_count("adblockqx.conf") or "N/A"))
-            f.write("| 规则7' |" + self.__subscribeLink("adblockqxlite.conf") + " %s | QuantumultX |\n" % (self._get_product_count("adblockqxlite.conf") or "N/A"))
-            f.write("| 规则8 |" + self.__subscribeLink("adblockmihomo.yaml") + " %s | Clash Meta(Mihomo) yaml |\n" % (self._get_product_count("adblockmihomo.yaml") or "N/A"))
-            f.write("| 规则8' |" + self.__subscribeLink("adblockmihomolite.yaml") + " %s | Clash Meta(Mihomo) yaml |\n" % (self._get_product_count("adblockmihomolite.yaml") or "N/A"))
-            f.write("| 规则9 |" + self.__subscribeLink("adblockmihomo.mrs") + " %s | Clash Meta(Mihomo) mrs |\n" % (self._get_product_count("adblockmihomo.mrs") or "N/A"))
-            f.write("| 规则9' |" + self.__subscribeLink("adblockmihomolite.mrs") + " %s | Clash Meta(Mihomo) mrs |\n" % (self._get_product_count("adblockmihomolite.mrs") or "N/A"))
-            f.write("| 规则10 |" + self.__subscribeLink("adblockhosts.txt") + " %s | Hosts |\n" % (self._get_product_count("adblockhosts.txt") or "N/A"))
-            f.write("| 规则10' |" + self.__subscribeLink("adblockhostslite.txt") + " %s | Hosts |\n" % (self._get_product_count("adblockhostslite.txt") or "N/A"))
-            f.write("| 规则11 |" + self.__subscribeLink("adblocksingbox.json") + " %s | sing-box 1.12.x json |\n" % (self._get_product_count("adblocksingbox.json") or "N/A"))
-            f.write("| 规则11' |" + self.__subscribeLink("adblocksingboxlite.json") + " %s | sing-box 1.12.x json |\n" % (self._get_product_count("adblocksingboxlite.json") or "N/A"))
-            f.write("| 规则12 |" + self.__subscribeLink("adblocksingbox.srs") + " %s | sing-box 1.12.x srs |\n" % (self._get_product_count("adblocksingbox.srs") or "N/A"))
-            f.write("| 规则12' |" + self.__subscribeLink("adblocksingboxlite.srs") + " %s | sing-box 1.12.x srs |\n" % (self._get_product_count("adblocksingboxlite.srs") or "N/A"))
-            f.write("| 规则13 |" + self.__subscribeLink("adblockloon.list") + " %s | Loon |\n" % (self._get_product_count("adblockloon.list") or "N/A"))
-            f.write("| 规则13' |" + self.__subscribeLink("adblockloonlite.list") + " %s | Loon |\n" % (self._get_product_count("adblockloonlite.list") or "N/A"))
-            f.write("| 规则14 |" + self.__subscribeLink("adblocksurge.list") + " %s | Surge |\n" % (self._get_product_count("adblocksurge.list") or "N/A"))
-            f.write("| 规则14' |" + self.__subscribeLink("adblocksurgelite.list") + " %s | Surge |\n" % (self._get_product_count("adblocksurgelite.list") or "N/A"))
+            f.write("| 规则1 |" + self.__subscribeLink("adblockdns.txt") + " %s | %s | AdGuard、AdGuard Home 等 |\n" % (self._get_product_size_mb("adblockdns.txt") or "N/A", self._get_product_count("adblockdns.txt") or "N/A"))
+            f.write("| 规则1' |" + self.__subscribeLink("adblockdnslite.txt") + " %s | %s | AdGuard、AdGuard Home 等 |\n" % (self._get_product_size_mb("adblockdnslite.txt") or "N/A", self._get_product_count("adblockdnslite.txt") or "N/A"))
+            f.write("| 规则2 |" + self.__subscribeLink("adblockfilters.txt") + " %s | %s | AdGuard 等 |\n" % (self._get_product_size_mb("adblockfilters.txt") or "N/A", self._get_product_count("adblockfilters.txt") or "N/A"))
+            f.write("| 规则2' |" + self.__subscribeLink("adblockfilterslite.txt") + " %s | %s | AdGuard 等 |\n" % (self._get_product_size_mb("adblockfilterslite.txt") or "N/A", self._get_product_count("adblockfilterslite.txt") or "N/A"))
+            f.write("| 规则3 |" + self.__subscribeLink("adblockdomain.txt") + " %s | %s | InviZible Pro、personalDNSfilter |\n" % (self._get_product_size_mb("adblockdomain.txt") or "N/A", self._get_product_count("adblockdomain.txt") or "N/A"))
+            f.write("| 规则3' |" + self.__subscribeLink("adblockdomainlite.txt") + " %s | %s | InviZible Pro、personalDNSfilter |\n" % (self._get_product_size_mb("adblockdomainlite.txt") or "N/A", self._get_product_count("adblockdomainlite.txt") or "N/A"))
+            f.write("| 规则4 |" + self.__subscribeLink("adblockdnsmasq.txt") + " %s | %s | DNSMasq |\n" % (self._get_product_size_mb("adblockdnsmasq.txt") or "N/A", self._get_product_count("adblockdnsmasq.txt") or "N/A"))
+            f.write("| 规则4' |" + self.__subscribeLink("adblockdnsmasqlite.txt") + " %s | %s | DNSMasq |\n" % (self._get_product_size_mb("adblockdnsmasqlite.txt") or "N/A", self._get_product_count("adblockdnsmasqlite.txt") or "N/A"))
+            f.write("| 规则5 |" + self.__subscribeLink("adblocksmartdns.conf") + " %s | %s | SmartDNS |\n" % (self._get_product_size_mb("adblocksmartdns.conf") or "N/A", self._get_product_count("adblocksmartdns.conf") or "N/A"))
+            f.write("| 规则5' |" + self.__subscribeLink("adblocksmartdnslite.conf") + " %s | %s | SmartDNS |\n" % (self._get_product_size_mb("adblocksmartdnslite.conf") or "N/A", self._get_product_count("adblocksmartdnslite.conf") or "N/A"))
+            f.write("| 规则6 |" + self.__subscribeLink("adblockclash.list") + " %s | %s | Shadowrocket |\n" % (self._get_product_size_mb("adblockclash.list") or "N/A", self._get_product_count("adblockclash.list") or "N/A"))
+            f.write("| 规则6' |" + self.__subscribeLink("adblockclashlite.list") + " %s | %s | Shadowrocket |\n" % (self._get_product_size_mb("adblockclashlite.list") or "N/A", self._get_product_count("adblockclashlite.list") or "N/A"))
+            f.write("| 规则7 |" + self.__subscribeLink("adblockqx.conf") + " %s | %s | QuantumultX |\n" % (self._get_product_size_mb("adblockqx.conf") or "N/A", self._get_product_count("adblockqx.conf") or "N/A"))
+            f.write("| 规则7' |" + self.__subscribeLink("adblockqxlite.conf") + " %s | %s | QuantumultX |\n" % (self._get_product_size_mb("adblockqxlite.conf") or "N/A", self._get_product_count("adblockqxlite.conf") or "N/A"))
+            f.write("| 规则8 |" + self.__subscribeLink("adblockmihomo.yaml") + " %s | %s | Clash Meta(Mihomo) yaml |\n" % (self._get_product_size_mb("adblockmihomo.yaml") or "N/A", self._get_product_count("adblockmihomo.yaml") or "N/A"))
+            f.write("| 规则8' |" + self.__subscribeLink("adblockmihomolite.yaml") + " %s | %s | Clash Meta(Mihomo) yaml |\n" % (self._get_product_size_mb("adblockmihomolite.yaml") or "N/A", self._get_product_count("adblockmihomolite.yaml") or "N/A"))
+            f.write("| 规则9 |" + self.__subscribeLink("adblockmihomo.mrs") + " %s | %s | Clash Meta(Mihomo) mrs |\n" % (self._get_product_size_mb("adblockmihomo.mrs") or "N/A", self._get_product_count("adblockmihomo.mrs") or "N/A"))
+            f.write("| 规则9' |" + self.__subscribeLink("adblockmihomolite.mrs") + " %s | %s | Clash Meta(Mihomo) mrs |\n" % (self._get_product_size_mb("adblockmihomolite.mrs") or "N/A", self._get_product_count("adblockmihomolite.mrs") or "N/A"))
+            f.write("| 规则10 |" + self.__subscribeLink("adblockhosts.txt") + " %s | %s | Hosts |\n" % (self._get_product_size_mb("adblockhosts.txt") or "N/A", self._get_product_count("adblockhosts.txt") or "N/A"))
+            f.write("| 规则10' |" + self.__subscribeLink("adblockhostslite.txt") + " %s | %s | Hosts |\n" % (self._get_product_size_mb("adblockhostslite.txt") or "N/A", self._get_product_count("adblockhostslite.txt") or "N/A"))
+            f.write("| 规则11 |" + self.__subscribeLink("adblocksingbox.json") + " %s | %s | sing-box 1.12.x json |\n" % (self._get_product_size_mb("adblocksingbox.json") or "N/A", self._get_product_count("adblocksingbox.json") or "N/A"))
+            f.write("| 规则11' |" + self.__subscribeLink("adblocksingboxlite.json") + " %s | %s | sing-box 1.12.x json |\n" % (self._get_product_size_mb("adblocksingboxlite.json") or "N/A", self._get_product_count("adblocksingboxlite.json") or "N/A"))
+            f.write("| 规则12 |" + self.__subscribeLink("adblocksingbox.srs") + " %s | %s | sing-box 1.12.x srs |\n" % (self._get_product_size_mb("adblocksingbox.srs") or "N/A", self._get_product_count("adblocksingbox.srs") or "N/A"))
+            f.write("| 规则12' |" + self.__subscribeLink("adblocksingboxlite.srs") + " %s | %s | sing-box 1.12.x srs |\n" % (self._get_product_size_mb("adblocksingboxlite.srs") or "N/A", self._get_product_count("adblocksingboxlite.srs") or "N/A"))
+            f.write("| 规则13 |" + self.__subscribeLink("adblockloon.list") + " %s | %s | Loon |\n" % (self._get_product_size_mb("adblockloon.list") or "N/A", self._get_product_count("adblockloon.list") or "N/A"))
+            f.write("| 规则13' |" + self.__subscribeLink("adblockloonlite.list") + " %s | %s | Loon |\n" % (self._get_product_size_mb("adblockloonlite.list") or "N/A", self._get_product_count("adblockloonlite.list") or "N/A"))
+            f.write("| 规则14 |" + self.__subscribeLink("adblocksurge.list") + " %s | %s | Surge |\n" % (self._get_product_size_mb("adblocksurge.list") or "N/A", self._get_product_count("adblocksurge.list") or "N/A"))
+            f.write("| 规则14' |" + self.__subscribeLink("adblocksurgelite.list") + " %s | %s | Surge |\n" % (self._get_product_size_mb("adblocksurgelite.list") or "N/A", self._get_product_count("adblocksurgelite.list") or "N/A"))
             f.write("\n")
 
             f.write("## 上游规则源\n")
@@ -377,6 +377,15 @@ class ReadMe(object):
         effective_count = max(domain_count - invalid_count, 0)
         effective_ratio = self._format_ratio(effective_count, domain_count)
         return effective_count, effective_ratio
+
+    def _get_product_size_mb(self, file_name: str):
+        base_dir = os.path.dirname(self.filename)
+        path = os.path.join(base_dir, "rules", file_name)
+        try:
+            size_bytes = os.path.getsize(path)
+        except Exception:
+            return None
+        return "{:.2f}".format(size_bytes / (1024 * 1024))
 
     def _get_product_count(self, file_name: str):
         base_dir = os.path.dirname(self.filename)
