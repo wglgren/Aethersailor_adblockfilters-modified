@@ -520,7 +520,7 @@ class ReadMe(object):
         if repo:
             return repo
 
-        return "Aethersailor/adblockfilters-modified"
+        return ""
 
     def _resolve_branch(self) -> str:
         ref = os.environ.get("GITHUB_REF", "")
