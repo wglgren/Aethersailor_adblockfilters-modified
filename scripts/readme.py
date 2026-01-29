@@ -291,12 +291,49 @@ class ReadMe(object):
             with open(path, "r", encoding="utf-8", errors="ignore") as f:
                 for line in f:
                     line = line.strip()
-                    if not line or line.startswith("!"):
+                    if not line or line.startswith(("!", "#")):
                         continue
                     count += 1
             return count
         except Exception:
             return None
+
+    def _count_yaml_payload(self, path: str):
+        try:
+            count = 0
+            with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or line.startswith("#"):
+                        continue
+                    if line.startswith("-"):
+                        count += 1
+            return count
+        except Exception:
+            return None
+
+    def _count_singbox_json(self, path: str):
+        try:
+            with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                data = json.load(f)
+            total = 0
+            for rule in data.get("rules", []):
+                if not isinstance(rule, dict):
+                    continue
+                for _, value in rule.items():
+                    if isinstance(value, list):
+                        total += len(value)
+            return total
+        except Exception:
+            return self._count_rule_lines(path)
+
+    def _map_binary_product(self, file_name: str) -> str:
+        lower = file_name.lower()
+        if lower.endswith(".mrs"):
+            return file_name[:-4] + ".yaml"
+        if lower.endswith(".srs"):
+            return file_name[:-4] + ".json"
+        return file_name
 
     def _format_ratio(self, numerator, denominator):
         if numerator is None or denominator is None or denominator == 0:
@@ -343,7 +380,13 @@ class ReadMe(object):
 
     def _get_product_count(self, file_name: str):
         base_dir = os.path.dirname(self.filename)
-        path = os.path.join(base_dir, "rules", file_name)
+        mapped_name = self._map_binary_product(file_name)
+        path = os.path.join(base_dir, "rules", mapped_name)
+        ext = os.path.splitext(mapped_name)[1].lower()
+        if ext == ".yaml":
+            return self._count_yaml_payload(path)
+        if ext == ".json":
+            return self._count_singbox_json(path)
         return self._read_blocked_filters(path)
 
     def _load_source_meta(self) -> dict:
