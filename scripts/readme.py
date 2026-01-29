@@ -226,6 +226,8 @@ class ReadMe(object):
             f.write("| 规则15' |" + self.__subscribeLink("adblockmosdnslite.txt") + " %s | %s | MosDNS v5 |\n" % (self._get_product_size_mb("adblockmosdnslite.txt") or "N/A", self._get_product_count("adblockmosdnslite.txt") or "N/A"))
             f.write("| 规则16 |" + self.__subscribeLink("adblocksurgeruleset.list") + " %s | %s | Surge RULE-SET |\n" % (self._get_product_size_mb("adblocksurgeruleset.list") or "N/A", self._get_product_count("adblocksurgeruleset.list") or "N/A"))
             f.write("| 规则16' |" + self.__subscribeLink("adblocksurgerulesetlite.list") + " %s | %s | Surge RULE-SET |\n" % (self._get_product_size_mb("adblocksurgerulesetlite.list") or "N/A", self._get_product_count("adblocksurgerulesetlite.list") or "N/A"))
+            f.write("| 规则17 |" + self.__subscribeLink("adblockclashclassical.yaml") + " %s | %s | Clash Classical yaml |\n" % (self._get_product_size_mb("adblockclashclassical.yaml") or "N/A", self._get_product_count("adblockclashclassical.yaml") or "N/A"))
+            f.write("| 规则17' |" + self.__subscribeLink("adblockclashclassicallite.yaml") + " %s | %s | Clash Classical yaml |\n" % (self._get_product_size_mb("adblockclashclassicallite.yaml") or "N/A", self._get_product_count("adblockclashclassicallite.yaml") or "N/A"))
             f.write("\n")
 
             f.write("## 上游规则源\n")

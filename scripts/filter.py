@@ -6,7 +6,7 @@ from typing import List,Dict,Set,Tuple
 from loguru import logger
 from tld import get_tld
 
-from app import APPBase, AdGuard, AdGuardHome, DNSMasq, Hosts, InviZible, Loon, Mihomo, MosDNS, QuantumultX, Shadowrocket, SingBox, SmartDNS, Surge, SurgeRuleSet
+from app import APPBase, AdGuard, AdGuardHome, ClashClassical, DNSMasq, Hosts, InviZible, Loon, Mihomo, MosDNS, QuantumultX, Shadowrocket, SingBox, SmartDNS, Surge, SurgeRuleSet
 from readme import Rule
 from resolver import Resolver, FilterDomainInfo
 
@@ -362,6 +362,7 @@ class Filter(object):
                 Hosts       (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockhosts.txt",     sourceRule),
                 InviZible   (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockdomain.txt",    sourceRule),
                 Loon        (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockloon.list",      sourceRule),
+                ClashClassical(blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockclashclassical.yaml", sourceRule),
                 Mihomo      (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockmihomo.yaml",   sourceRule),
                 QuantumultX (blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockqx.conf",       sourceRule),
                 Shadowrocket(blockList, unblockList, filterDict, filterList, filterList_var, ChinaSet, self.output_dir + "/adblockclash.list",    sourceRule),

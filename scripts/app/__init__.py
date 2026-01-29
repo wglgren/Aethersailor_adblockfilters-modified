@@ -1,6 +1,7 @@
 from .base import APPBase
 from .adguard import AdGuard
 from .adguardhome import AdGuardHome
+from .clash_classical import ClashClassical
 from .dnsmasq import DNSMasq
 from .hosts import Hosts
 from .invizible import InviZible
