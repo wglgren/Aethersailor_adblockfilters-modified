@@ -1009,8 +1009,8 @@ disqus.com##+js(href-sanitizer, a[href^="https://disq.us/url?url="][title^="http
 disqus.com##+js(href-sanitizer, a[href^="https://disq.us/?url=http"], ?url)
 disqus.com##a[href][data-link-out]:remove-attr(data-link-out)
 ! https://steamcommunity.com/games/221410/announcements/detail/1602634609636894200
-! steamcommunity.com##+js(href-sanitizer, a[href^="https://steamcommunity.com/linkfilter/?url=http"], ?url)
-! steamcommunity.com##+js(href-sanitizer, a[href^="https://steamcommunity.com/linkfilter/?u=http"], ?u)
+steamcommunity.com,store.steampowered.com##+js(href-sanitizer, a[href^="https://steamcommunity.com/linkfilter/?url=http"], ?url)
+steamcommunity.com,store.steampowered.com##+js(href-sanitizer, a[href^="https://steamcommunity.com/linkfilter/?u=http"], ?u)
 ! https://colab.research.google.com/ - Needs sign-in
 colab.research.google.com##+js(href-sanitizer, a[href^="https://colab.research.google.com/corgiredirector?site=http"], ?site)
 ! https://www.xda-developers.com/lenovo-yoga-7i-500-deal/
@@ -2082,6 +2082,9 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F$image
 .washingtonpost.com/s/$image
 .washingtonpost.com%2Fq%2F$image
 .washingtonpost.com%2Fs%2F$image
+! heroku.com
+/hello.heroku.com/r/*/open/*$image
+*%2Fhello.heroku.com%2Fr%2F*%2Fopen%2F$image
 ! others
 static.adsugar.ch/img?ord=$image
 static.adsugar.ch%2Fimg%3Ford%3D$image

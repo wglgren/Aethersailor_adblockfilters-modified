@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Badware Hoster Blocklist
 ! Description: Blocks known free hosters that also host badware via user content to prevent the use of these hosters for malicious purposes.
-! Version: 1.0.18.84
+! Version: 1.0.18.86
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-02-03T23:13:15.957Z
+! Last modified: 2026-02-04T23:11:51.246Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -894,23 +894,19 @@
 ||newmail.ru^
 ||nexgenelectricct.com^
 ||nichesite.org^
-||nikoha.shop^
 ||nl.gp^
 ||nl.kg^
 ||noads.biz^
 ||nobody.jp^
 ||nofeeshost.com^
-||nokojp.shop^
 ||now.lc^
 ||npx.de^
 ||nut.cc^
 ||o.gp^
 ||o-f.com^
 ||of-love.de^
-||officialcity.shop^
 ||officialsitebuilder.com^
 ||okis.ru^
-||okistore.shop^
 ||omas.in^
 ||on.gp^
 ||on.lc^
@@ -1008,13 +1004,11 @@
 ||bookp.ru.com^
 ||euspray.ru.com^
 ||sexpay.ru.com^
-||rubberphone.shop^
 ||rumahweb.org^
 ||runhosting.com^
 ||s.gp^
 ||sa.com^
 ||sa.gp^
-||safe-girogate.com^
 ||schmust.de^
 ||schoolrack.com^
 ||scienceontheweb.net^
@@ -1094,7 +1088,6 @@
 ||team.cx^
 ||team.tl^
 ||teamzonesports.com^
-||teenradio.shop^
 ||tehno-politen.ru^
 ||teleporthq.app^
 ||tempisite.com^
@@ -1112,7 +1105,6 @@
 ||tinyblogging.com^
 ||tld.cc^
 ||tmweb.ru^
-||tokusi.shop^
 ||tokyoca.top^
 ||top.lc^
 ||top.tc^
@@ -1126,8 +1118,6 @@
 ||trend.in^
 ||tribalpages.com^
 ||tripod.com^
-||truistcooperative.com^
-||tsure.shop^
 ||turbo.site^
 ||turkish.lc^
 ||tuxfamily.org^
@@ -1155,7 +1145,6 @@
 ||umbler.net^
 ||unaux.com^
 ||unblog.fr^
-||underxdown.com^
 ||untergrund.net^
 ||uphero.com^
 ||uploader.eu^
