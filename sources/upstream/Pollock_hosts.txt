@@ -10,7 +10,7 @@
 # Please forward any additions, corrections or comments by email to
 # hosts@someonewhocares.org
 
-# Last updated: Mon, 23 Feb 2026 at 19:16:23 GMT
+# Last updated: Tue, 24 Feb 2026 at 22:16:38 GMT
 
 # Use this file to prevent your computer from connecting to selected
 # internet hosts. This is an easy and effective way to protect you from 
@@ -1810,6 +1810,7 @@ ff02::3		ip6-allhosts
 127.0.0.1 costorama.fr
 127.0.0.1 countrystore.fr
 127.0.0.1 coupondio.fr
+127.0.0.1 cp.forest-host.cc
 127.0.0.1 cplelangues.fr
 127.0.0.1 cra-arc-gc-ca.noads.biz
 127.0.0.1 cra-etransfer.online
@@ -2438,6 +2439,7 @@ ff02::3		ip6-allhosts
 127.0.0.1 mightyfungi.fr
 127.0.0.1 mije.fr
 127.0.0.1 mikvr.comfortykive.xyz
+127.0.0.1 mimikacooney.acemlnc.com
 127.0.0.1 mindshareworld.fr
 127.0.0.1 mineacraft.fr
 127.0.0.1 minecraft-frannce.fr
@@ -2869,6 +2871,8 @@ ff02::3		ip6-allhosts
 127.0.0.1 siliconf.fr
 127.0.0.1 sinera.org
 127.0.0.1 sinochem.fr
+127.0.0.1 sinu24.de
+127.0.0.1 sinu24.ee
 127.0.0.1 siteliner.fr
 127.0.0.1 sitesofa.za.com
 127.0.0.1 sitrion.fr
@@ -3264,10 +3268,14 @@ ff02::3		ip6-allhosts
 127.0.0.1 www.gimp.es
 127.0.0.1 www.globalbuffer.com
 127.0.0.1 www.goggle.com
+127.0.0.1 www.googdiy.com
+127.0.0.1 www.gotorobeks.com
 127.0.0.1 www.gparted.fr
+127.0.0.1 www.gpolitico.com
 127.0.0.1 www.gradedoctortutoring.com
 127.0.0.1 www.greenshot.fr
 127.0.0.1 www.greenvistazj.pro
+127.0.0.1 www.grocreyoutlet.com
 127.0.0.1 www.grouphappy.com
 127.0.0.1 www.hajoopteg.com
 127.0.0.1 www.hakerzy.net
@@ -3309,6 +3317,7 @@ ff02::3		ip6-allhosts
 127.0.0.1 www.lomalindasda.org			# Facebook trojan
 127.0.0.1 www.lostbestsgames.com
 127.0.0.1 www.magento-analytics.com
+127.0.0.1 www.maillazy.com
 127.0.0.1 www.makearestaurant.com
 127.0.0.1 www.manoces.waw.pl
 127.0.0.1 www.mikras.nl
@@ -3338,14 +3347,17 @@ ff02::3		ip6-allhosts
 127.0.0.1 www.oppery.com
 127.0.0.1 www.otsserver.com
 127.0.0.1 www.outonixan.com
+127.0.0.1 www.pagibigfundservicers.com
 127.0.0.1 www.paintnet.es
 127.0.0.1 www.paintnet.fr
 127.0.0.1 www.paramutplus.com
 127.0.0.1 www.parejaamateur.com
 127.0.0.1 www.partsttown.com
 127.0.0.1 www.paviro.cfd
+127.0.0.1 www.pdrill.com
 127.0.0.1 www.peachysailwv.pro
 127.0.0.1 www.pearlyappss.pro
+127.0.0.1 www.peopleesbancorp.com
 127.0.0.1 www.pepernity.com
 127.0.0.1 www.phantomluck.com
 127.0.0.1 www.phormlabs.com
@@ -3434,6 +3446,7 @@ ff02::3		ip6-allhosts
 127.0.0.1 www.wrestlewebnews.com
 127.0.0.1 www.yendermsoul.com
 127.0.0.1 www.youfiletor.com
+127.0.0.1 www.zenithvault.uk
 127.0.0.1 www.zippylakeri.name
 127.0.0.1 www1-van-city-signon.com
 127.0.0.1 wyoutube.fr
