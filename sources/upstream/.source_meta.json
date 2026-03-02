@@ -9,40 +9,40 @@
     "updated_at": "2026-02-11 11:58:40"
   },
   "AdGuard_Annoyances.txt": {
-    "etag": "W/\"96ad15ebd145e9c220b06e42ee0766159a941b88db5a86471400b945da840463\"",
+    "etag": "W/\"d499b7095e4cc7d5e828d73afe0598bdd4381219b715bcd8826c3cc50233eec6\"",
     "filename": "AdGuard_Annoyances.txt",
     "last_modified": "",
-    "lines": 64621,
-    "sha256": "18695a5924c16005c607d043dd869ba48268cc536261f2279128da73b3db47e8",
+    "lines": 64642,
+    "sha256": "13d3c73293b3dc3f3f4f2a5f421aac0f72eb7c1c4a06134f1f6067cf80d7b1de",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_14_Annoyances/filter.txt",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "AdGuard_Base_filter.txt": {
-    "etag": "W/\"f0eb9a34a1fd3600a63b77fc109995efeaaf8610d540163b9f2db986c4dd4895\"",
+    "etag": "W/\"75975d0962b4e0492d11daeb855e12767851e2323281e349f6bd72151cb04c0b\"",
     "filename": "AdGuard_Base_filter.txt",
     "last_modified": "",
-    "lines": 166855,
-    "sha256": "9dd5e992da6c4e3f0cc296a370bf50bb47a047f485424f694662f4af9b61b811",
+    "lines": 167146,
+    "sha256": "046eb9bd7c8982e1b39e7302c5cf974c4d46d8034cad0a659898e2fbdd0e308d",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_2_Base/filter.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "AdGuard_Chinese_filter.txt": {
-    "etag": "W/\"1bbaa002380f40a3aeefe1429bd9aafd0ef79893bb94e32bec986efb69d7b949\"",
+    "etag": "W/\"f4ca479608b5aae12b20ebb0bafc96ed345e54cf9f4e55b3aec6de1ff02d51c5\"",
     "filename": "AdGuard_Chinese_filter.txt",
     "last_modified": "",
-    "lines": 22837,
-    "sha256": "f6341339b94b87bd881102e0f1cb2a7ce4ff1853668d61dc4e30a09022882596",
+    "lines": 22848,
+    "sha256": "0cfee7363add7ab1f9c8eb88020b200ad5b8388cc5fb62c2b851bfac9e8ccff8",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_224_Chinese/filter.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "AdGuard_DNS_filter.txt": {
-    "etag": "W/\"69a3adcb-3877e9\"",
+    "etag": "W/\"69a4fe47-389109\"",
     "filename": "AdGuard_DNS_filter.txt",
-    "last_modified": "Sun, 01 Mar 2026 03:08:59 GMT",
-    "lines": 157525,
-    "sha256": "4dafab8cbde737c1ce8b65823fb1c51a38f0e19e44035ef2482dd15b729cb1b4",
+    "last_modified": "Mon, 02 Mar 2026 03:04:39 GMT",
+    "lines": 157814,
+    "sha256": "4311585ca406ea1248bf95bbe77ff57a002052a03bd247027191e9c06c5a8dbb",
     "source_url": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "AdGuard_Mobile_Ads_filter.txt": {
     "etag": "W/\"57e048276a5bd1e4bb0c8e3fa9d90ebc1a0905e8b2c4444bafe2e34b4a3bb1eb\"",
@@ -54,31 +54,31 @@
     "updated_at": "2026-02-24 11:46:53"
   },
   "AdGuard_Tracking_Protection.txt": {
-    "etag": "W/\"0f65eea42049b253261a834806ee9d9d72bccb35472a51fe67b6f8a76e316346\"",
+    "etag": "W/\"61938c2025547c86d19b822f95143ad2390a1dad96d7e5c8857a537a00e3a878\"",
     "filename": "AdGuard_Tracking_Protection.txt",
     "last_modified": "",
-    "lines": 151435,
-    "sha256": "928a2b4467f8298686f7190ef0fd6605f8d63dce137da304eeb391f48b7265e7",
+    "lines": 151441,
+    "sha256": "26e700c62e509e427d09aa24bb8c2782154b9550af60956ea4582b9800aadbc4",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_3_Spyware/filter.txt",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "AdRules_DNS_List.txt": {
-    "etag": "W/\"11603306161f7c9b3cca924f48df36a383e9c78c00c6225f7fed4aa0a53b0c84\"",
+    "etag": "W/\"d9d4cbb477a862cbc111a6846657a167bd1d36d98754d3c4f245e6c3874c8004\"",
     "filename": "AdRules_DNS_List.txt",
     "last_modified": "",
-    "lines": 174306,
-    "sha256": "93ace42c61c5cf559c268cab95f4739ee19a1486327a9cd8c28aa07e4bac4f53",
+    "lines": 174574,
+    "sha256": "46310ab3c79845990da7b74550353435032fe2d8c028d8ad3d2816f7171ec062",
     "source_url": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "CERT.PL's_Warning_List.txt": {
-    "etag": "W/\"69a3b77b-4a77ad\"",
+    "etag": "W/\"69a507cf-4a6531\"",
     "filename": "CERT.PL's_Warning_List.txt",
-    "last_modified": "Sun, 01 Mar 2026 03:50:19 GMT",
-    "lines": 143958,
-    "sha256": "d75d75ae63ff3213740e4b13168fa44cf5e5d6960f9bde40b6b02b27abbe6ed5",
+    "last_modified": "Mon, 02 Mar 2026 03:45:19 GMT",
+    "lines": 143811,
+    "sha256": "aa23e290c5fd6f7dbbf6463d7b731e052bd612a3b397139ce4cbab33015cf936",
     "source_url": "https://hole.cert.pl/domains/v2/domains_hosts.txt",
-    "updated_at": "2026-03-01 11:53:01"
+    "updated_at": "2026-03-02 11:48:23"
   },
   "CJX's_Annoyance_List.txt": {
     "etag": "W/\"e94f4743c54a16d385af90ef74db4b29f284196d0c3e6c2a4d627522858c1e72\"",
@@ -90,40 +90,40 @@
     "updated_at": "2026-02-27 11:42:20"
   },
   "DNS-Blocklists_Light.txt": {
-    "etag": "W/\"0c9c61f7fc90ac52df3f95f4e203700fac557645089c9d8f13786ba024baa328\"",
+    "etag": "W/\"e31716d0f2ab060c18fcfec9f8e7f4ca5fd7461cb587ca9bb39da268c8ff96cf\"",
     "filename": "DNS-Blocklists_Light.txt",
     "last_modified": "",
-    "lines": 64007,
-    "sha256": "340b1d681737b21db9973edc88227f81261a6f7ad473eff34ece16846ab36d91",
+    "lines": 63124,
+    "sha256": "0862a617e4d8b3b9bce01af9a965d612010b5cbe83aa567cb68f827c1e5eb0c3",
     "source_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "EasyList.txt": {
-    "etag": "\"3260551c6f5bbedc3d850b8b51af2179:1772336799.772119\"",
+    "etag": "\"301a14bd8b8691584a60c8ccba407b46:1772423189.849031\"",
     "filename": "EasyList.txt",
-    "last_modified": "Sun, 01 Mar 2026 03:44:21 GMT",
-    "lines": 90001,
-    "sha256": "f6eee0b88fb74a4adfc2184749fa088c16a4fcdddbeb8991a79241ac16092022",
+    "last_modified": "Mon, 02 Mar 2026 03:44:15 GMT",
+    "lines": 90289,
+    "sha256": "39b19b27d2d6a23352dace79f76bdeb816ea0be73685539827a26693d55dd2d8",
     "source_url": "https://easylist-downloads.adblockplus.org/easylist.txt",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "EasyList_China.txt": {
-    "etag": "\"07f7035b6b6e7551818fb845bcb88ccf:1772336800.884259\"",
+    "etag": "\"a7a4ad5749fcc35b15388a505921b71a:1772423190.636809\"",
     "filename": "EasyList_China.txt",
-    "last_modified": "Sun, 01 Mar 2026 03:44:21 GMT",
-    "lines": 19109,
-    "sha256": "0b6f203c6a36d7e112734631c60aaf141153358412e1e6c564ded8d18dc685a4",
+    "last_modified": "Mon, 02 Mar 2026 03:44:15 GMT",
+    "lines": 19119,
+    "sha256": "cd94f28f30e2f51664b298e5da6d8a73dd18c719b4d73d1e5af65392e1cd46b7",
     "source_url": "https://easylist-downloads.adblockplus.org/easylistchina.txt",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "EasyPrivacy.txt": {
-    "etag": "\"4d277ec353766f733a144d911fe9dc85:1772336803.941143\"",
+    "etag": "\"503e671e332f410c3462a5f283616285:1772423193.764447\"",
     "filename": "EasyPrivacy.txt",
-    "last_modified": "Sun, 01 Mar 2026 03:44:21 GMT",
-    "lines": 53612,
-    "sha256": "332c9fad2e64d2867cee8a1f8817b383f748c89a77050d397ecd5cdccfaa24b7",
+    "last_modified": "Mon, 02 Mar 2026 03:44:15 GMT",
+    "lines": 53613,
+    "sha256": "0255c957083059f756184bbc1d248e6c892dc730543db29cdccdc2cd32bd5e19",
     "source_url": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "HaGeZi's_Apple_Tracker_Blocklist.txt": {
     "etag": "W/\"69646222-cd0\"",
@@ -144,13 +144,13 @@
     "updated_at": "2026-02-27 11:42:20"
   },
   "HaGeZi's_Gambling_Blocklist.txt": {
-    "etag": "W/\"a3f1df9ad268cbb56d8378c6039816e3bfe143d9d38cee3095bd51514d48579c\"",
+    "etag": "W/\"4d47cd1e371f5f02e2ecc78a0f114c68e88965c3bfe7a317a576634963067f44\"",
     "filename": "HaGeZi's_Gambling_Blocklist.txt",
     "last_modified": "",
-    "lines": 192926,
-    "sha256": "2f308604116de776e37b6979f978e10bad2d0aa146420a7c35e6f3cbfbd71e36",
+    "lines": 201639,
+    "sha256": "9926f4b88e245b3c300b423574864587079cbc52e5f53ce167083daccbc3fe5b",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/refs/heads/main/filters/other/filter_47_HageziGamblingBlocklist/filter.txt",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "HaGeZi's_OPPO_&_Realme_Tracker_Blocklist.txt": {
     "etag": "W/\"351cb01e195bcc7b1066361e88b832318f2ee74dc07e97eecf1a896cec8ccaa7\"",
@@ -180,13 +180,13 @@
     "updated_at": "2026-01-20 10:58:31"
   },
   "HaGeZi's_Threat_Intelligence_Feeds.txt": {
-    "etag": "W/\"1200d2dae4121b095b67949266b3ac76a22c5d449e7db331365f23bf2b1fa25c\"",
+    "etag": "W/\"d8af0f2c792fb58a12af5202b0b3bfef4d7b1fe57a6dd1bd135aa1e94720c90d\"",
     "filename": "HaGeZi's_Threat_Intelligence_Feeds.txt",
     "last_modified": "",
-    "lines": 682981,
-    "sha256": "58655f891a5e7df47ebc125f510216de73d95cb103eb1bef27dbb73969b0f07d",
+    "lines": 688753,
+    "sha256": "0dbd1372964da62419da0d34a18ec2e7cc8c02b9bb4b2107594f0e3719aff107",
     "source_url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/domains/tif.txt",
-    "updated_at": "2026-03-01 11:53:00"
+    "updated_at": "2026-03-02 11:48:23"
   },
   "HaGeZi's_Vivo_Tracker_Blocklist.txt": {
     "etag": "W/\"69a25962-1da6\"",
@@ -216,13 +216,13 @@
     "updated_at": "2026-02-21 11:38:06"
   },
   "HageziMultiPro.txt": {
-    "etag": "W/\"ef54d56c6baa0e877443d5762109efcbd5f332b796c34bdfe073a8d324e02063\"",
+    "etag": "W/\"783e7065205cbacd5273281f3221dfa62f9147597e233f21ec3d7f214db20450\"",
     "filename": "HageziMultiPro.txt",
     "last_modified": "",
-    "lines": 181462,
-    "sha256": "dd1753c701ee39e47bedd9b597b03800718fcce0f9cdbda4ee304cbe118f0ab5",
+    "lines": 180825,
+    "sha256": "a5494ee48ca3ce83383973c124a08f7176047ae9611f4fb36657e100ed489bff",
     "source_url": "https://raw.githubusercontent.com/AdguardTeam/HostlistsRegistry/refs/heads/main/filters/general/filter_48_HageziMultiPro/filter.txt",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "Hblock.txt": {
     "etag": "W/\"69951931-a59474\"",
@@ -234,40 +234,40 @@
     "updated_at": "2026-02-18 11:49:25"
   },
   "Malicious_URL_Blocklist.txt": {
-    "etag": "W/\"69a3aea0-25543\"",
+    "etag": "W/\"69a4ff1e-249f6\"",
     "filename": "Malicious_URL_Blocklist.txt",
-    "last_modified": "Sun, 01 Mar 2026 03:12:32 GMT",
-    "lines": 6199,
-    "sha256": "eb35d9f359d9588f98e1ba74799f5716d4b844acf3185a41f7cd8587b9a42e42",
+    "last_modified": "Mon, 02 Mar 2026 03:08:14 GMT",
+    "lines": 6060,
+    "sha256": "da7cc20254ba81d0be0549d87910b984d7b0ebb460d448130ae58c6a910f5254",
     "source_url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "OISD_Basic.txt": {
-    "etag": "\"69a34400-72848\"",
+    "etag": "\"69a4bfb8-6d25b\"",
     "filename": "OISD_Basic.txt",
-    "last_modified": "Sat, 28 Feb 2026 19:37:36 GMT",
-    "lines": 56573,
-    "sha256": "dc3c25951eec8d04eb8f14fc6b637bee0901ac465520fcc64700903cda937d4c",
+    "last_modified": "Sun, 01 Mar 2026 22:37:44 GMT",
+    "lines": 54451,
+    "sha256": "f97dc81af8a0e214bfef137e7cb899482d85aa1e88f52739548fe9c166ee9148",
     "source_url": "https://abp.oisd.nl/basic/",
-    "updated_at": "2026-03-01 11:52:59"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "OISD_Big.txt": {
-    "etag": "\"69a39eec-25f343\"",
+    "etag": "\"69a4fe69-228a4e\"",
     "filename": "OISD_Big.txt",
-    "last_modified": "Sun, 01 Mar 2026 02:05:32 GMT",
-    "lines": 328925,
-    "sha256": "c483db14eae0f6b883e1e6836fecd6dc194cc219cd6946cee1d77be042d5529b",
+    "last_modified": "Mon, 02 Mar 2026 03:05:13 GMT",
+    "lines": 294742,
+    "sha256": "7b38ff3c0f4b229ac85a25d474d563ba2d8b1e6ef964696adbaa27f9f2a91027",
     "source_url": "https://big.oisd.nl",
-    "updated_at": "2026-03-01 11:53:00"
+    "updated_at": "2026-03-02 11:48:23"
   },
   "Online_Malicious_URL_Blocklist.txt": {
-    "etag": "\"92965f6414b72ab5b45ae67a9428cfc48d503f24b2b0e7cc8784f92a0198956c-gzip\"",
+    "etag": "\"ee9dce465e7bdd89878a535f46f6cbf02e868479c30a73f78c5840e44f92aee3-gzip\"",
     "filename": "Online_Malicious_URL_Blocklist.txt",
-    "last_modified": "Sun, 01 Mar 2026 00:32:18 GMT",
-    "lines": 2597,
-    "sha256": "b7826c15c6f748085ace67771d8ecbc1ee4d894bf9931753ee2edd3582cb1350",
+    "last_modified": "Mon, 02 Mar 2026 00:31:56 GMT",
+    "lines": 2583,
+    "sha256": "6c0028c5844a46c730ba285053ee4577eff493e67281137f792a5930b1a17360",
     "source_url": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "PeterLowe.txt": {
     "etag": "W/\"47e7715b47fb43bcb2fbe54d43ca41a63d9561c4dae6ebc2856c8409ea7100a5\"",
@@ -279,31 +279,31 @@
     "updated_at": "2026-03-01 11:52:58"
   },
   "Phishing_URL_Blocklist.txt": {
-    "etag": "W/\"69a3aea0-bba34\"",
+    "etag": "W/\"69a4ff1e-bad01\"",
     "filename": "Phishing_URL_Blocklist.txt",
-    "last_modified": "Sun, 01 Mar 2026 03:12:32 GMT",
-    "lines": 23860,
-    "sha256": "ca99fd1d665648cb3abe7802d4faa73f858d6a7bd9387b6edf77b5a1fb5fc34c",
+    "last_modified": "Mon, 02 Mar 2026 03:08:14 GMT",
+    "lines": 23720,
+    "sha256": "afffd3a0e81b4e85cc092e373dda26a6eb3695af8fc691e5992a200dc67f6c3c",
     "source_url": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "Pollock_hosts.txt": {
-    "etag": "\"5a0c8-64be49b93ba86-gzip\"",
+    "etag": "\"5a0e1-64bf92f6d31da-gzip\"",
     "filename": "Pollock_hosts.txt",
-    "last_modified": "Sat, 28 Feb 2026 16:11:35 GMT",
-    "lines": 12519,
-    "sha256": "749c5fd15509be6ff268a84797cef0b7d39c5bdf7d518250b4371fb43c7b2415",
+    "last_modified": "Sun, 01 Mar 2026 16:44:34 GMT",
+    "lines": 12520,
+    "sha256": "6a3fab13692e10bfb229d896fcbe4b46c5adfe31bd71ea9328613c1d60f788c5",
     "source_url": "https://someonewhocares.org/hosts/hosts",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "Scam_Blocklist.txt": {
-    "etag": "W/\"b47e68945dafea198871cdb475bb63318f0f9ad6d917c334a0dd42673d3d72fe\"",
+    "etag": "W/\"8f89f01dd681fcc0cd5001eb05f5d9a94d7f10cb41b23f2602486092df9d7b2f\"",
     "filename": "Scam_Blocklist.txt",
     "last_modified": "",
-    "lines": 1011,
-    "sha256": "3323fcbdee493f2f2bcf4f7d4d51f272ebd9f1d6aec93d1debaac7e1ff1e20f2",
+    "lines": 1002,
+    "sha256": "08b56df22f560f972ae5b99904e7fadf08bb964c6b60400f0b1b0ceebe8e71bd",
     "source_url": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/refs/heads/master/adguard.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   },
   "StevenBlack_hosts.txt": {
     "etag": "W/\"eaa5a673babcf00326cd36bce207d115f131ee4aa60f96fc990cb7f348af51cf\"",
@@ -315,13 +315,13 @@
     "updated_at": "2026-03-01 11:52:58"
   },
   "anti-AD.txt": {
-    "etag": "W/\"287dbe5a83d49fe6b5aa687936a6bf4052559c9d39406ee440ef35cac501096b\"",
+    "etag": "W/\"fb9ce5472d5587c1efcb6203e0a96168de3f077f6e7171df7cac7e4393366f93\"",
     "filename": "anti-AD.txt",
     "last_modified": "",
-    "lines": 101032,
-    "sha256": "b6fe983c647fcf678cb2edcc874c121c9f3f173f6b0da15761145a6770e000c6",
+    "lines": 101308,
+    "sha256": "4166582c135d80bbeda6781bc34350d34ae6da16defa1e55782d6396293cca0f",
     "source_url": "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-easylist.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "jiekouAD.txt": {
     "etag": "W/\"ead0ef78bf10f2d196a98903951771d3c33988871b1204dd09626865022761a8\"",
@@ -333,13 +333,13 @@
     "updated_at": "2026-02-23 11:51:29"
   },
   "lingeringsound_adblock_auto.txt": {
-    "etag": "W/\"879f9b52c98c22ff9b336936d51dd1cfcf46df28dc721e04c13637256c6af10d\"",
+    "etag": "W/\"f238099cbccf2d1cdbb7d99f17eb4ac9bf0bd933be8b074e84e8bb33bc4bd91c\"",
     "filename": "lingeringsound_adblock_auto.txt",
     "last_modified": "",
-    "lines": 244660,
-    "sha256": "fa3a07b5ced9ce9423a534d137d61b678f017bf3aa1955da7998fb55cf2032d0",
+    "lines": 244947,
+    "sha256": "6abd1df3d16f8b5b1c5fe9f841a42eec77331f53a70d72e905298a51c3c15550",
     "source_url": "https://raw.githubusercontent.com/lingeringsound/adblock_auto/main/Rules/adblock_auto.txt",
-    "updated_at": "2026-03-01 11:53:00"
+    "updated_at": "2026-03-02 11:48:22"
   },
   "uBlock_Ads.txt": {
     "etag": "W/\"80cb8e4586c412071f30652d1608a36efa983336acd1efcda097337dec68f22f\"",
@@ -360,12 +360,12 @@
     "updated_at": "2026-03-01 11:52:58"
   },
   "uBlock_Privacy.txt": {
-    "etag": "W/\"47deea0bfcab45724892459ba279e9210457fc2d275fadcd5365c200a9ef0563\"",
+    "etag": "W/\"a46fc3c553ad134139f05b697820bedd2a44569979ce3959bb55242e6fd64c4d\"",
     "filename": "uBlock_Privacy.txt",
     "last_modified": "",
-    "lines": 2204,
-    "sha256": "ea7baadb3d2faeef4415caec68c2513bf036ffe27cae47bcf94a836db558552b",
+    "lines": 2215,
+    "sha256": "57ed3125463e773dd1ab440609a8bba59468e5f5c6d95c8f78e0d30340619a60",
     "source_url": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
-    "updated_at": "2026-03-01 11:52:58"
+    "updated_at": "2026-03-02 11:48:21"
   }
 }
