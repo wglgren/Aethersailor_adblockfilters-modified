@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Badware Hoster Blocklist
 ! Description: Blocks known free hosters that also host badware via user content to prevent the use of these hosters for malicious purposes.
-! Version: 1.0.19.21
+! Version: 1.0.19.23
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-03-05T11:18:17.682Z
+! Last modified: 2026-03-06T19:19:08.769Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -221,6 +221,7 @@
 ||blackapplehost.com^
 ||blackblogs.org^
 ||blinkweb.com^
+||blo.gg^
 ||blog.com^
 ||blog.hr^
 ||blog.lc^
@@ -237,6 +238,7 @@
 ||blogia.com^
 ||blogmaster.net^
 ||blogmonster.de^
+||blogsidea.com^
 ||blogsky.com^
 ||blogspot.ae^
 ||blogspot.al^
@@ -330,6 +332,7 @@
 ||byethost9.com^
 ||byto.de^
 ||bz.tc^
+||c.la^
 ||c.pl^
 ||c0.pl^
 ||ca.gp^
@@ -1091,6 +1094,7 @@
 ||trend.in^
 ||tribalpages.com^
 ||tripod.com^
+||ttblogs.com^
 ||turbo.site^
 ||turkish.lc^
 ||tuxfamily.org^
