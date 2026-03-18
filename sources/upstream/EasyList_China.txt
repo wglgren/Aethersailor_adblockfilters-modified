@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: B6veQ1lho1Vn8b/wl+nufA
-! Version: 202603150401
+! Checksum: 3Teq45xH3/VtAlou2Kyeww
+! Version: 202603180351
 ! Title: EasyList China
-! Last modified: 15 Mar 2026 04:01 UTC
+! Last modified: 18 Mar 2026 03:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -419,7 +419,7 @@
 /html/709/*.js
 /html/taobao_focus_
 /huijiad/huijiad.
-/huya/main/widget/roomGg
+/huya/main3/widget_roomGaTop_
 /huya_promotion_content_
 /ifeng_jdttemplate.js
 /ifengRotatorAd.js
@@ -1773,12 +1773,48 @@ newduba.cn###jq_youxi
 ||cnzz.trafficmanager.net^
 ||cupfox.app^$third-party
 !
+||kvxc7buwv3.com^
+||z9sab7vr0b.com^
+||ynkunarlg.com^
+||verboten84.top^
+||lkhmlx.icu^
+||rypebb.icu^
+||qmeqraen.com^
+||wral.cn^
+||b4641y3dw.com^
+||vigyn4gpx.com^
+||nhlrzf.icu^
+||invocation22.com^
+||neraenyqq.com^
+||bfgu.cn^
+||trlzqly.com^
+||hyaplnr.com^
+||af1tsjdta.com^
+||cbhzxctgm.com^
+||d48paxyhx.com^
+||aiheatta.com^
+||w97nv5ibv4.com^
+||1tvg524vih.com^
+||pepwpv.icu^
+||surmount35.com^
+||nsxrfh.icu^
+||curogmc.com^
+||dtrurqeq.com^
+||ste000u5mk.com^
+||a2pfs5k90i.com^
+||wdtw.cn^
+||dz6xqe19d2.com^
+||vbunpfvdn.com^
 ||1nevsf92q.com^
 ||h57vpulpu.com^
 ||jotedd.icu^
 ||cpvx.cn^
 ||falsehood67.top^
 ||hohmanrtit.com^
+||zmg15qfvi.com^
+||cyq8vqq9s.com^
+||k69wes8q8.com^
+||wyqqanziid.com^
 ||jhhpvy7cp3.com^
 ||x4hu95mh0t.com^
 ||llxjrt.icu^
@@ -9549,7 +9585,6 @@ meijutt.*/js/pcjs/
 ||msdn.hk/templets/msdn/css/index.js
 ||msdn.hk/templets/msdn/css/msdng.js
 ||msstatic.com/huya/main/img/mc-recom_
-||msstatic.com/huya/main3/widget/roomGg
 ||msstatic.net/main3/common/assets/template/head/ad.
 ||mtime.cn/tg/
 ||muyuge.com/fw.html/
@@ -10940,6 +10975,7 @@ meijutt.*/js/pcjs/
 ||pan0304.com/ads.
 !------------------------Specific element hiding rules------------------------!
 zhihu.com##.Pc-word-new
+4hu.tv##.kkm-content
 vpstop.cn##a[href*="/ClickAd"]
 joyacg.top##a[href^="http"] > .img-fluid
 ttks.tw##.txtcenter
@@ -17350,23 +17386,23 @@ guailie.com#@#.google-ad
 ||17ce.com^*_$image
 !#18comic.org
 /exads-adblock-$image
-18comic.org,18comic.vip,18comic.ink###guide-modal
-18comic.org,18comic.vip,18comic.ink##.div_sticky2
-18comic.org,18comic.vip,18comic.ink##.modal-backdrop
-18comic.org,18comic.vip,18comic.ink##.row[style="display: flex;flex-wrap: wrap;"]
-18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > [style*="back"]
-18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > div[style]
-18comic.org,18comic.vip,18comic.ink##a[herf*="//"]:not([href*="18c"]) > img
-18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > img
-18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > img + [style]
-18comic.org,18comic.vip,18comic.ink##div[data-group][data-width="300"]
-18comic.org,18comic.vip,18comic.ink##style + div[style="cursor: pointer; position: relative;"]
-18comic.org,18comic.vip,18comic.ink#?#:-abp-has(>ins+div)
-18comic.org,18comic.vip,18comic.ink#?#:-abp-has(>ins+script)
-18comic.org,18comic.vip,18comic.ink#?#:-abp-has(>ins+style)
-18comic.org,18comic.vip,18comic.ink#?#:-abp-has(>script+ins)
-18comic.org,18comic.vip,18comic.ink#?#:not(body):-abp-has(>script[src*=".realsrv.com"])
-18comic.org,18comic.vip,18comic.ink#?#div[data-group]:-abp-has(>.group-notice)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink###guide-modal
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##.div_sticky2
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##.modal-backdrop
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##.row[style="display: flex;flex-wrap: wrap;"]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > [style*="back"]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > div[style]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[herf*="//"]:not([href*="18c"]) > img
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > img
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##a[href*="//"]:not([href*="18c"]) > img + [style]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##div[data-group][data-width="300"]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink##style + div[style="cursor: pointer; position: relative;"]
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink#?#:-abp-has(>ins+div)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink#?#:-abp-has(>ins+script)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink#?#:-abp-has(>ins+style)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink#?#:-abp-has(>script+ins)
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink#?#:not(body):-abp-has(>script[src*=".realsrv.com"])
+jm18c-oec.net,18comic.org,18comic.vip,18comic.ink#?#div[data-group]:-abp-has(>.group-notice)
 ||18comic.*/media/albums/*?$media
 !#2
 !#3

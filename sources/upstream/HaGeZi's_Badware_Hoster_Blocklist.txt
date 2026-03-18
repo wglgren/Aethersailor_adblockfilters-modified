@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Badware Hoster Blocklist
 ! Description: Blocks known free hosters that also host badware via user content to prevent the use of these hosters for malicious purposes.
-! Version: 1.0.19.27
+! Version: 1.0.19.33
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-03-10T11:17:35.636Z
+! Last modified: 2026-03-17T23:14:46.307Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -156,7 +156,6 @@
 ||alboompro.com^
 ||all.lc^
 ||allemal.de^
-||allpubmusic.my^
 ||als-geschenk.de^
 ||altervista.org^
 ||am-geilsten.de^
@@ -707,7 +706,6 @@
 ||inbox24.eu^
 ||inbox24.net^
 ||inbox24.org^
-||indexcm-t.com^
 ||infinityfree.net^
 ||infinityfreeapp.com^
 ||info.cm^
@@ -819,7 +817,6 @@
 ||megabyet.net^
 ||merchats.com^
 ||mex.tl^
-||middletownsd.org^
 ||mindnmagick.com^
 ||mit-wenig-geld.de^
 ||mixh.jp^
@@ -980,9 +977,6 @@
 ||ru.cm^
 ||ru.gp^
 ||ru.nu^
-||bookp.ru.com^
-||euspray.ru.com^
-||sexpay.ru.com^
 ||rumahweb.org^
 ||runhosting.com^
 ||s.gp^

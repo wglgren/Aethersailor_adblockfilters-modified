@@ -10,6 +10,7 @@
 ||1stireland.com^
 ||1sttheworld.com^
 ||270278609-2020004278-462904544-440202503325--570202500372x-usps.com^
+||365analytics.xyz^
 ||3ab48a20-acaa-49ab-95cc-3eb16f1cda78-00-1a0l3yf6hw9aq.sisko.replit.dev^
 ||3ae52b08mbt3oxw4zh32q5-z5m.hop.clickbank.net^
 ||42gixk.98kk89.com^
@@ -47,7 +48,6 @@
 ||altruetech.com^
 ||altwi-zgs.com^
 ||amorpulse.com^
-||animeshoppers.com^
 ||anydebrid.com^
 ||aoptee.com^
 ||appdrive.info^
@@ -76,6 +76,7 @@
 ||balticpipe.wordpress.com^
 ||bcb.game^
 ||bccnerty.com^
+||bcm8.shop^
 ||beautysolution24.com^
 ||beeaar.com^
 ||beecrave.com^
@@ -175,6 +176,7 @@
 ||couponxoo.com^
 ||courier-tracking.com^
 ||covex.it^
+||crackedpc.org^
 ||cracksway.com^
 ||crocssalenz.com^
 ||crypto030.online^
@@ -268,6 +270,7 @@
 ||familygiftville.com^
 ||familystore.com^
 ||fapst.com^
+||faunugraipt.com^
 ||faze1.com^
 ||faze10.com^
 ||faze2.com^
@@ -355,10 +358,10 @@
 ||habtoorloyal.com^
 ||hairyfy.com^
 ||happymod.cloud^
+||haruko.store^
 ||headsets4business.co.uk^
 ||helpnanacenter.helpscoutdocs.com^
 ||hernoclothing.com^
-||heyfusio.com^
 ||hfr67jhqrw8.com^
 ||hindustantowergroupltd.com^
 ||hippie-pets.com^
@@ -441,6 +444,7 @@
 ||kinonline.pl^
 ||kisserine.com^
 ||kitchendecor.shop^
+||klelnanzeigen-deutch.confirm542351.info^
 ||kms-pc.com^
 ||kms-tool.com^
 ||kmsauto.info^
@@ -470,13 +474,13 @@
 ||lisabuddy.com^
 ||litcomplex.com^
 ||liverepsae.adeftsolutions.com^
+||load.365analytics.xyz^
 ||lojavariedadesvariedades.com^
 ||look-like-star.myshopify.com^
 ||lorenzettibrasil-vendas.com^
 ||lozly.com^
 ||lucatee.com^
 ||lucidtiger.com^
-||lucysstyle.com^
 ||luxsgear.com^
 ||maebl.com^
 ||magnite.shop^
@@ -571,6 +575,7 @@
 ||nayatowerinstallation.in.net^
 ||nbdiscount.com^
 ||neozor.com^
+||netsugar.shop^
 ||nevaon.com^
 ||new.gdtot.me^
 ||new.piratedrive.com^
@@ -643,6 +648,7 @@
 ||pandzee.com^
 ||paradisevs.com^
 ||path2zillion.com^
+||paypays.shop^
 ||peaveymartca.com^
 ||penguinnow.com^
 ||peppatees.com^
@@ -674,12 +680,14 @@
 ||primeleech.com^
 ||primevod.pl^
 ||printteestore.com^
+||promo-offer.com^
 ||promoalfresco.com^
 ||promotion40-form.com^
 ||pslcpdfhjmxpldvfrhttxxdqzgr2.godaddysites.com^
 ||punchonsol.top^
 ||qq51f.short.gy^
 ||qriedf.info^
+||qttlpn.shop^
 ||quoka.dk9zc9.pro^
 ||quotex.com.in^
 ||resources4gaming.com^
@@ -760,6 +768,7 @@
 ||sportswearforfans.com^
 ||spotgee.com^
 ||staging.zendrop.com^
+||stallioncredit.com^
 ||startuplatte.com^
 ||steamgateways.com^
 ||steampowered.cn.com^
@@ -819,7 +828,6 @@
 ||tomadamsenergy.com^
 ||touristvisaonline.com^
 ||toweragency.in^
-||towerdepartment.com^
 ||townaptdesk.info^
 ||toyrube.com^
 ||tpqcywcx.page.link^
@@ -860,6 +868,7 @@
 ||ureashi.com^
 ||us99.pro^
 ||uschse04.my03.com^
+||uszjj.fyjkxzq.shop^
 ||uusilemmikki.com^
 ||valeofoodsgroup.com^
 ||validsteamkeys.com^
@@ -870,7 +879,6 @@
 ||venezuelabaseballjerseys.com^
 ||verfun.com^
 ||vernahora.app^
-||vessideutschland.net^
 ||vessisdeutschland.com^
 ||vider-cda.online^
 ||vider-cda.pl^
@@ -942,12 +950,12 @@
 ||yhdshop.com^
 ||yofi-yofi.com^
 ||youdebrid.com^
-||yourdatefind.com^
 ||yoursecrethookup.com^
 ||youtunbe.com^
 ||youutube.com^
 ||ytvancedpro.com^
 ||yuaonew.com^
+||yyderfreap.shop^
 ||z-lib.is^
 ||zalukaj-film.pl^
 ||zalukaj-pl.tv^
